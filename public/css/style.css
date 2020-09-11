@@ -596,10 +596,15 @@ color: #777;
 }
 
 .fundEntry {
-	background-color:  '#733b83';
-	height: 40px;
+	background-color:  #733b83;
+	/* height: 40px; */
 	width: 80px;
-	border-color: '#733b83';
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-style: solid;
+	text-align: center;
+	align-items: center;
+	border-color: #733b83;
 	border-width: 2px;
 	border-radius: 3px;
 }

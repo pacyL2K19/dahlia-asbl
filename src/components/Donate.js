@@ -1,9 +1,7 @@
 import React from 'react';
 import {
     FormControl,
-    InputLabel,
-    OutlinedInput,
-    InputAdornment,
+    OutlinedInput
 } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
 
@@ -14,6 +12,8 @@ const useStyles = makeStyles((theme) => ({
     },
     margin: {
       margin: theme.spacing(1),
+      width : '100%',
+      right : 10,
     },
     withoutLabel: {
       marginTop: theme.spacing(3),
@@ -37,17 +37,18 @@ export const Donate = () => {
             <p style = {{ color : '#dddddd'}}>
                 Veuillez entrer le montant
             </p><br />
-            <FormControl style = {{ color : 'white'}} fullWidth className={classes.margin} variant="outlined">
-                <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
+            <FormControl fullWidth className={classes.margin} variant="standard">
+                {/* <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel> */}
                 <OutlinedInput
+                    style = {{ color : 'black', fontSize : 12, borderColor : 'white', backgroundColor : 'white'}}
                     id="outlined-adornment-amount"
                     value={values.amount}
                     onChange={handleChange('amount')}
-                    startAdornment={<InputAdornment position="start">$</InputAdornment>}
+                    startAdornment={<span style = {{ position : 'initial', marginRight : 30, marginLeft : 15}}>$</span>}
                     labelWidth={60}
                 />
-                </FormControl>
-            <div style={{ display : 'flex', flexDirection : 'row', justifyContent : 'space-around'}}>
+            </FormControl>
+            <div style={{ display : 'flex', flexDirection : 'row', justifyContent : 'space-around', marginTop : 25, marginBottom : 25}}>
                 <p className = 'fundEntry'>10 $</p>
                 <p className = 'fundEntry'>100 $</p>
                 <p className = 'fundEntry'>1.000 $</p>
