@@ -125,5 +125,3 @@ export const Navbar = () => {
         </div>
     )
 }
-
-// const styles
