@@ -11,7 +11,7 @@ h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
 h2 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin: 0 0 20px 0;
 	font-weight: 800;
 	font-size: 36px;
@@ -183,11 +183,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Header Section */
-.intro {
+.mainHeader {
 	display: table;
-	width: 100%;
+	/* width: 100%; */
 	padding: 0;
-	background: url(../img/images/headerImg.png) center center no-repeat;
+	background: url(../../src/images/bgHome.jpg) center center no-repeat;
 	/* background-color: #e5e5e5; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -593,4 +593,39 @@ color: #777;
 
 #navSection i:hover {
 	color: red;
+}
+/* #mainHeader {
+	background : url('../../src/images/bgHome.jpg')
+} */
+
+.fundEntry {
+	background-color:  '#733b83';
+	height: 40px;
+	width: 80px;
+	border-color: '#733b83';
+	border-width: 2px;
+	border-radius: 3px;
+}
+
+.donateBtn {
+	height: 40px;
+	width: 120px;
+	border-color: '#21082e';
+	border-radius: 3px;
+	border-width: 2px;
+	background-color: '#21082e';
+}
+
+#donateField {
+	/* display: flex;
+	flex : 1; */
+	padding : 50;
+	border-color: white;
+	border-width: 5px;
+	border-radius: 5px;
+}
+
+#mainHeader {
+	padding-top: 100;
+	padding-bottom: 100;
 }

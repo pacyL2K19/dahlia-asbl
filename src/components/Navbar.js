@@ -57,6 +57,9 @@ export const Navbar = () => {
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                         <a href = '#top'><i className = 'fa fa-twitter'></i></a>
                     </div>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                        <a href = '#top'><i className = 'fa fa-google-plus'></i></a>
+                    </div>
                 </div>
             </section>
             <nav id='menu' className = 'navbar navbar-default navbar-sticky-top'>
