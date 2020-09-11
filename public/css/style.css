@@ -98,7 +98,8 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background-image: linear-gradient(to right, #ec3131 0%, #ee9d9d 100%);
+	background-color: black;
+	/* background-image: linear-gradient(to right, #ec3131 0%, #ee9d9d 100%); */
 	content: "";
 	transition: width 0.2s;
 }
@@ -579,4 +580,17 @@ color: #777;
 
 .navSection span {
 	font-size: 10;
+}
+
+#navSection span:hover {
+	font-weight: bold;
+	color: red;
+}
+
+#navSection i {
+	color: #21082e;
+}
+
+#navSection i:hover {
+	color: red;
 }

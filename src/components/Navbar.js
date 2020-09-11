@@ -17,10 +17,10 @@ import { css } from 'emotion'
 
 export const Navbar = () => {
     const classes = css`
-        span : hover {
+        span:hover {
             color : '#ffffff';
         }
-        span {
+        .fa {
             color : '#fff
         }
     `
@@ -34,21 +34,29 @@ export const Navbar = () => {
         showing ? setShowing(false) : setShowing(false)
     }
     return (
-        <div className = {classes}>
-            <section  style = {{ backgroundColor : '#efefef'}}>
-                <div className = 'container' style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
-                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 30}}>
+        <div id = 'navSection' className = {classes}>
+            <section  style = {{ backgroundColor : '#efefef', display : 'flex', flexDirection : 'row', height : 50, justifyContent : 'space-between'}}>
+                <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                         <i className = 'fa fa-phone'></i>  <span style = {styles.spans}>+243 819 740 723 </span>
                     </div>
-                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 30}}>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                         <i className = 'fa fa-envelope-o'></i>  <span style = {styles.spans}>info@dahlia-asbl.org</span>
                     </div>
-                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 30}}>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                         <i className = 'fa fa-clock-o'></i>   <span style = {styles.spans}>Lun-Ven 9:00 - 16:00</span>
                     </div>
                 </div>
-                <div>
-                     
+                <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }}>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                        <a href = '#top'><i className = 'fa fa-facebook'></i></a>
+                    </div>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                        <a href = '#top'><i className = 'fa fa-instagram'></i></a>
+                    </div>
+                    <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                        <a href = '#top'><i className = 'fa fa-twitter'></i></a>
+                    </div>
                 </div>
             </section>
             <nav id='menu' className = 'navbar navbar-default navbar-sticky-top'>
