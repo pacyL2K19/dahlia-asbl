@@ -629,3 +629,17 @@ color: #777;
 	padding-top: 100;
 	padding-bottom: 100;
 }
+
+#supportTransition {
+	margin-top: 80px;
+}
+
+#supportTransition .transitionElement {
+	background-color: #21082e;
+	padding : 50px;
+}
+
+#supportTransition .transitionElementM {
+	background-color: '#efefef';
+	padding : 50px;
+}
