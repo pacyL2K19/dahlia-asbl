@@ -6,10 +6,13 @@ import {
 
 const MainHeader = () => {
     return (
-        <div id = 'mainHeader' style = {{ display : 'flex', flexDirection : 'row'}} className = 'container'>
-            <Grid container>
+        <div style = {{ display : 'flex', flexDirection : 'row'}} className = 'container' id = 'mainHeader'>
+            <Grid 
+                container
+            >
                 <Grid
                     item
+                    className = 'branch1'
                     xs = {12}
                     xl = {8}
                     lg = {8}

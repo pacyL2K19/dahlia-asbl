@@ -9,7 +9,7 @@ import supportimg from '../images/Support 1.png'
 
 export const SupportTransition = () => {
     return (
-        <div id = 'supportTransition'>
+        <div id = 'supportTransition' style = {{height : 300}}>
             <Grid container>
                 <Grid
                     xs = {12}
@@ -37,7 +37,7 @@ export const SupportTransition = () => {
                         <img
                             src = {supportimg} 
                             alt = ''
-                            style = {{ height : 50, width : 50}}
+                            style = {{ height : 50, width : 50, borderRadius : 25, backgroundColor : '#21082e'}}
                         />
                         <h3>{dataJson.supportTransition[1].title}</h3>
                         <p>{dataJson.supportTransition[1].description}</p>

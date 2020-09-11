@@ -62,7 +62,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </section>
-            <nav id='menu' className = 'navbar navbar-default navbar-sticky-top'>
+            <nav id='menu' className = 'navbar sticky-top navbar-default'>
                 <div className = 'container'>
                     <div className = 'navbar-header'>
                         {
@@ -93,7 +93,7 @@ export const Navbar = () => {
                             )
                         }
                         <a href = '#menu' className = 'navbar-brand page-scroll'>
-                            <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff'}} />
+                            <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff', borderRadius : 45}} />
                         </a>
                     </div>
                     <div

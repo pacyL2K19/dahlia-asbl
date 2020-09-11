@@ -7,7 +7,7 @@ export const Home = () => {
     return (
         <div>
             <Navbar />
-            <div id = 'mainHeader'> 
+            <div style={{backgroundImage : 'url('+ require('../images/bgHome1.jpg') +')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', marginTop : -20 }}> 
                 <MainHeader />
             </div>
             <SupportTransition />

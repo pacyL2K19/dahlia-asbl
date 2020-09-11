@@ -35,10 +35,10 @@ h5 {
 p {
 	font-size: 15px;
 }
-p.intro {
+/* p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
-}
+} */
 a {
 	color: #608dfd;
 	font-weight: 400;
@@ -183,17 +183,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Header Section */
-.mainHeader {
+/* #mainHeader {
 	display: table;
 	/* width: 100%; */
-	padding: 0;
+	/* padding: 0;
 	background: url(../../src/images/bgHome.jpg) center center no-repeat;
 	/* background-color: #e5e5e5; */
-	-webkit-background-size: cover;
+	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
+} */
 .intro .overlay {
 	background: rgba(0,0,0,0.05);
 }
@@ -594,9 +594,6 @@ color: #777;
 #navSection i:hover {
 	color: red;
 }
-/* #mainHeader {
-	background : url('../../src/images/bgHome.jpg')
-} */
 
 .fundEntry {
 	background-color:  '#733b83';
@@ -619,27 +616,64 @@ color: #777;
 #donateField {
 	/* display: flex;
 	flex : 1; */
-	padding : 50;
-	border-color: white;
-	border-width: 5px;
+	background-color: rgba(31, 65, 97, 0.3);
+	border-style: solid;
+	padding-top : 60px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-color: rgba(200, 200, 200, 0.6);
+	border-width: 8px;
 	border-radius: 5px;
 }
 
 #mainHeader {
-	padding-top: 100;
+	/* margin-top: 100;
 	padding-bottom: 100;
+	background : url();
+	background-image: url('../../src//images/bgHome.jpg'); */
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#mainHeader p {
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainHeader h2 {
+	color: #ccc;
+}
+
+#mainHeader .branch1 {
+	padding : 30px;
+	/* background-color: red; */
 }
 
 #supportTransition {
-	margin-top: 80px;
+	margin-top: 0px;
 }
 
 #supportTransition .transitionElement {
 	background-color: #21082e;
-	padding : 50px;
+	padding-left : 30px;
+	padding-right: 30px;
+	height: 280px;
+	padding-top: 50px;
+}
+
+#supportTransition .transitionElement h3 {
+	color: white;
+}
+
+#supportTransition .transitionElement p {
+	color: #b6acac;
 }
 
 #supportTransition .transitionElementM {
-	background-color: '#efefef';
-	padding : 50px;
+	background-color: #fff;
+	padding-left : 30px;
+	padding-right: 30px;
+	height: 280px;
+	padding-top: 50px;
 }
