@@ -1,7 +1,6 @@
 import React from 'react';
 import {Donate} from './Donate';
 import {
-    Container,
     Grid
 } from '@material-ui/core'
 

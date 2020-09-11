@@ -1,0 +1,19 @@
+{
+    "supportTransition" : [
+        {
+            "icon" : "/images/Donation.png",
+            "title" : "Faire un don",
+            "description" : "votre don contribuera à donner aux femmes et aux enfants un meilleur avenir"
+        },
+        {
+            "icon" : "/images/Support1.png",
+            "title" : "Nous soutenir",
+            "description" : "Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier"
+        },
+        {
+            "icon" : "/images/Volunteer.png",
+            "title" : "Devenir volontaire",
+            "description" : "Comment devenir volontaire ? <br / > <a href='#top'>En savoir plus</a>"
+        }
+    ]
+}
