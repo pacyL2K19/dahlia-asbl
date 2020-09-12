@@ -113,6 +113,9 @@ const MainBody = () => {
                             <p>
                                 Notre objectif est de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.
                             </p>
+                            <p className = 'btnPlus'>
+                                En savoir plus 
+                            </p>
                         </div>
                         
                     </Grid>
@@ -137,7 +140,50 @@ const MainBody = () => {
                 </Grid>
             </div>
             <div id = 'lastContent'>
-                                
+                <Grid container>
+                    <Grid 
+                        item
+                        className = 'unEmpty'
+                        xs = {12}
+                        md = {6}
+                        xl = {6}
+                        lg = {12}
+                    >
+                        <p>Nous existons pour</p>
+                        <h3>Donner à chaque femme et enfant les chances de réussir leur avenir</h3>
+                        <p>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur.</p>
+                        <Grid className = 'btnGroupL' container>
+                        <Grid 
+                                xs = {12}
+                                md = {6}
+                                xl = {6}
+                                lg = {12}
+                                item
+                            >
+                                <p></p>
+                            </Grid>
+                            <Grid 
+                                xs = {12}
+                                md = {6}
+                                xl = {6}
+                                lg = {12}
+                                item
+                            >
+                                <p></p>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid 
+                        item
+                        className = 'empty'
+                        xs = {12}
+                        md = {6}
+                        xl = {6}
+                        lg = {12}
+                    >
+
+                    </Grid>
+                </Grid>
             </div>
         </div>
     )

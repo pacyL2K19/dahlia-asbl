@@ -778,7 +778,7 @@ color: #777;
 #videoBan .introVideo {
 	padding: 10px;
 	background-color: #926ba1;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 	margin-right: -20px;
 	z-index: 100;
 }
@@ -804,3 +804,20 @@ color: #777;
 /* .videoContent {
 	margin-top: 40px;
 } */
+
+.introVideo .btnPlus {
+	padding : 15px;
+	background-color: #733b8a;
+	color: white;
+	width: 50%;
+	text-align: center;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+
+.introVideo .btnPlus:hover {
+	background-color: #8d5ea0;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+}
