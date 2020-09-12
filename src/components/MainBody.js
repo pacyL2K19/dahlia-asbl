@@ -123,9 +123,9 @@ const MainBody = () => {
                         xl = {8}
                         lg = {8}
                     >
-                        <h5>Nous avons une mission</h5><br />
-                        <h3>Aider ceux qui en ont besoin</h3>
-                        <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/videoScreen.png')+')'}}>
+                        <h4>Nous avons une mission</h4><br />
+                        <h2>Aider ceux qui en ont besoin</h2>
+                        <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/videoScreen.png')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat'}}>
                             <img
                                 src = {gifPlayer}
                                 alt = ''

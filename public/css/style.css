@@ -743,5 +743,29 @@ color: #777;
 }
 
 #videoBan .videoBack {
-	height: 300px;
+	height: 500px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding : 30px;
+	margin-left : 30px;
+}
+
+#videoBan .videoContent img {
+	display: flex;
+	height: 120px;
+	width:  120px;
+	border-radius: 60px;
+}
+
+#videoBan .videoContent h4 {
+	text-align: end;
+}
+
+.videoContent h2 {
+	text-align:  end;
+}
+
+#videoBan {
+	margin-top: 50px;
 }
