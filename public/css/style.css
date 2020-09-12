@@ -704,7 +704,7 @@ color: #777;
 }
 
 #iconContents .itemIconContent:hover {
-	background-color: rgb(245, 238, 238);
+	background-color: rgb(247, 241, 241);
 	color: #926ba1;
 }
 
@@ -748,7 +748,7 @@ color: #777;
 	justify-content: flex-end;
 	align-items: flex-end;
 	padding : 30px;
-	margin-left : 30px;
+	
 }
 
 #videoBan .videoContent img {
@@ -769,3 +769,38 @@ color: #777;
 #videoBan {
 	margin-top: 50px;
 }
+
+#videoBan .introVideo h3 {
+	text-align: start;
+	font-size: 28px;
+}
+
+#videoBan .introVideo {
+	padding: 10px;
+	background-color: #926ba1;
+	margin-bottom: 80px;
+	margin-right: -20px;
+	z-index: 100;
+}
+
+#videoBan .introVideo .introIn{
+	padding: 20px;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	border-radius: 5px;
+	height: 100%;
+}
+
+#videoBan .introVideo .introIn p{
+	color: white;
+}
+
+#videoBan .introVideo .introIn h3{
+	color: white;
+	margin-bottom: 30px;
+}
+
+/* .videoContent {
+	margin-top: 40px;
+} */

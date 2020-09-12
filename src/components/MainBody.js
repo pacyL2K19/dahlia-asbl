@@ -108,12 +108,13 @@ const MainBody = () => {
                         xl = {4}
                         lg = {4}
                     >
-                        <div>
+                        <div className = 'introIn'>
                             <h3>Le bien être social, <br /> C'est notre objectif</h3>
                             <p>
                                 Notre objectif est de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.
                             </p>
                         </div>
+                        
                     </Grid>
                     <Grid
                         item
