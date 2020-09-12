@@ -741,3 +741,7 @@ color: #777;
 #firstContent h2 {
 	padding : 20px;
 }
+
+#videoBan .videoBack {
+	height: 300px;
+}

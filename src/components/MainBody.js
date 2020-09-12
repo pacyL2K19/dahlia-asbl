@@ -6,6 +6,7 @@ import data from '../helpers/data.json';
 import oreilleIcon from '../images/ecouteIcon.png';
 import okIcon from '../images/okIcon.png';
 import feuilleIcon from '../images/feuilleIcon.png';
+import gifPlayer from '../images/playing.gif';
 
 const MainBody = () => {
     return (
@@ -116,13 +117,21 @@ const MainBody = () => {
                     </Grid>
                     <Grid
                         item
-                        className = 'introVideo'
+                        className = 'videoContent'
                         xs = {12}
                         md = {12}
                         xl = {8}
                         lg = {8}
                     >
-
+                        <h5>Nous avons une mission</h5><br />
+                        <h3>Aider ceux qui en ont besoin</h3>
+                        <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/videoScreen.png')+')'}}>
+                            <img
+                                src = {gifPlayer}
+                                alt = ''
+                                // to put request to youtube api before playing
+                            />
+                        </div>
                     </Grid>
                 </Grid>
             </div>
