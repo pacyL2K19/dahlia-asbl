@@ -19,11 +19,11 @@ const MainBody = () => {
                         lg = {6}
                         xl = {6}
                     >
-                        <h3 style = {{textAlign : 'end'}}>
+                        <h2 style = {{textAlign : 'end'}}>
                             Nous travaillons <br />
                             Auprès de tous ceux qui sont<br />
                             Dans le besoin <br />
-                        </h3>
+                        </h2>
                     </Grid>
                     <Grid 
                         item
@@ -95,11 +95,39 @@ const MainBody = () => {
                     </Grid>
                  </Grid>
             </div>
-            <div id = 'videoBan'>
-                 
+            <div id = 'videoBan' className = 'container'>
+                <Grid 
+                    container
+                >
+                    <Grid
+                        item
+                        className = 'introVideo'
+                        xs = {12}
+                        md = {12}
+                        xl = {4}
+                        lg = {4}
+                    >
+                        <div>
+                            <h3>Le bien être social, <br /> C'est notre objectif</h3>
+                            <p>
+                                Notre objectif est de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid
+                        item
+                        className = 'introVideo'
+                        xs = {12}
+                        md = {12}
+                        xl = {8}
+                        lg = {8}
+                    >
+
+                    </Grid>
+                </Grid>
             </div>
             <div id = 'lastContent'>
-
+                                
             </div>
         </div>
     )

@@ -696,6 +696,7 @@ color: #777;
 	margin-left: 20%;
 	align-self: center;
 	padding: 20px;
+	border-radius: 3px;
 }
 
 #iconContents .itemIconContent p {
@@ -726,4 +727,17 @@ color: #777;
 	border-radius: 30px;
 	padding : 5px;
 	margin-bottom: 10px;
+}
+
+#firstContent {
+	padding : 20px;
+}
+
+#firstContent p {
+	padding : 20px;
+	font-size: 18px;
+}
+
+#firstContent h2 {
+	padding : 20px;
 }
