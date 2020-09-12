@@ -676,9 +676,54 @@ color: #777;
 }
 
 #supportTransition .transitionElementM {
-	background-color: #fff;
+	background-color: rgb(238, 231, 231);
 	padding-left : 30px;
 	padding-right: 30px;
 	height: 280px;
 	padding-top: 50px;
+}
+
+/* for the body elemnts */
+
+#iconContents {
+	margin-top: 50px;
+}
+
+#iconContents .itemIconContent {
+	background-color: #926ba1;
+	height : 180px;
+	width: 60%;
+	margin-left: 20%;
+	align-self: center;
+	padding: 20px;
+}
+
+#iconContents .itemIconContent p {
+	color : white
+}
+
+#iconContents .itemIconContent:hover {
+	background-color: rgb(245, 238, 238);
+	color: #926ba1;
+}
+
+#iconContents .itemIconContent:hover img {
+	background-color: #733b8a;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	padding : 5px;
+	margin-bottom: 10px;
+}
+
+#iconContents .itemIconContent:hover p {
+	color: #926ba1;
+}
+
+#iconContents .itemIconContent img {
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	padding : 5px;
+	margin-bottom: 10px;
 }

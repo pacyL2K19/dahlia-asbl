@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar} from '../components/Navbar'
 import MainHeader from '../components/MainHeader'
 import {SupportTransition} from '../components/SupportTransition'
+import MainBody from '../components/MainBody'
 
 export const Home = () => {
     return (
@@ -11,6 +12,7 @@ export const Home = () => {
                 <MainHeader />
             </div>
             <SupportTransition />
+            <MainBody />
         </div>
     )
 }

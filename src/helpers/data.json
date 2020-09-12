@@ -15,5 +15,19 @@
             "title" : "Devenir volontaire",
             "description" : "Comment devenir volontaire ?"
         }
+    ],
+    "bodyElements" : [
+        {
+            "icon" : "",
+            "description" : "L’écoute, le respect, la coopération sont au cœur de nos actions."
+        },
+        {
+            "icon" : "",
+            "description" : "Distinguer l’essentiel du superflu"
+        },
+        {
+            "icon" : "",
+            "description" : "Oeuvrer pour la préservation de l’ensemble du vivant"
+        }
     ]
 }
