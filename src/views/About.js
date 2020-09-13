@@ -15,7 +15,7 @@ import { Grid } from '@material-ui/core';
 const About = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {apropos} alt = ''/><br /><br />
                 <h2>À propos</h2>

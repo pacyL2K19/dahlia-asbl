@@ -94,25 +94,25 @@ export const Navbar = () => {
                     >
                         <ul className = 'nav navbar-nav navbar-right'>
                             <li>
-                                <Link to ={'/'}>Accueil</Link>
+                                <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
                             </li>
                             <li>
-                                <Link to = {'/about'}>A propos</Link>
+                                <Link to = {'/about'} className = 'nav-link page-scroll' >A propos</Link>
                             </li>
                             <li>
-                                <Link to = {'/vision'}>Vision</Link>
+                                <Link to = {'/vision'} className = 'nav-link page-scroll' >Vision</Link>
                             </li>
-                            <li>
-                                <Link to={'/contact'}>Contact</Link>
-                            </li>
+                            {/* <li>
+                                <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
             </nav>
             <Switch>
-                <Route exact path = '/' component = {Home}/>
-                <Route path = '/about' component = {About}/>
-                <Route exact path = '/vision' component = {Vision}/>
+                <Route exact path = '/' component = {Home} />
+                <Route exact path = '/about' component = {About} />
+                <Route exact path = '/vision' component = {Vision} />
             </Switch>
         </div>
         </Router>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar} from '../components/Navbar';
+// import {Navbar} from '../components/Navbar';
 import MainHeader from '../components/MainHeader';
 import {SupportTransition} from '../components/SupportTransition';
 import MainBody from '../components/MainBody';
@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 export const Home = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <div style={{backgroundImage : 'url('+ require('../images/bgHome1.jpg') +')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', marginTop : -20 }}> 
                 <MainHeader />
             </div>
