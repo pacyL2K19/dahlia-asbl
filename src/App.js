@@ -1,14 +1,10 @@
 import React from 'react';
-import {Home} from './views/Home';
-import About from './views/About';
-import Vision from './views/Vision';
+import NavBar from './components/Navbar'
 
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <About /> */}
-      <Vision />
+      <NavBar />
     </div>
   );
 }

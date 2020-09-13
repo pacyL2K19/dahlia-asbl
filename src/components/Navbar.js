@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import logo from '../images/logo.png'
-import { css } from 'emotion'
+import logo from '../images/logo.png';
+import { css } from 'emotion';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {Home} from '../views/Home';
+import About from '../views/About';
+import Vision from '../views/Vision';
 
 export const Navbar = () => {
     const classes = css`
@@ -21,6 +25,7 @@ export const Navbar = () => {
         showing ? setShowing(false) : setShowing(false)
     }
     return (
+        <Router>
         <div id = 'navSection' className = {classes}>
             <section  style = {{ backgroundColor : '#efefef', display : 'flex', flexDirection : 'row', height : 50, justifyContent : 'space-between'}}>
                 <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
@@ -89,29 +94,27 @@ export const Navbar = () => {
                     >
                         <ul className = 'nav navbar-nav navbar-right'>
                             <li>
-                                <a href = '#top' className = 'page-scroll'>
-                                    Accueil
-                                </a>
+                                <Link to ={'/'}>Accueil</Link>
                             </li>
                             <li>
-                                <a href = '#top' className = 'page-scroll'>
-                                    A propos
-                                </a>
+                                <Link to = {'/about'}>A propos</Link>
                             </li>
                             <li>
-                                <a href = '#top' className = 'page-scroll'>
-                                    Vision
-                                </a>
+                                <Link to = {'/vision'}>Vision</Link>
                             </li>
                             <li>
-                                <a href = '#top' className = 'page-scroll'> 
-                                    Contacts
-                                </a>
+                                <Link to={'/contact'}>Contact</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <Switch>
+                <Route exact path = '/' component = {Home}/>
+                <Route path = '/about' component = {About}/>
+                <Route exact path = '/vision' component = {Vision}/>
+            </Switch>
         </div>
+        </Router>
     )
 }
