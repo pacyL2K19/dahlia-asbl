@@ -665,6 +665,7 @@ color: #777;
 	padding-right: 30px;
 	height: 280px;
 	padding-top: 50px;
+	margin : 20px;
 }
 
 #supportTransition .transitionElement h3 {
@@ -680,6 +681,7 @@ color: #777;
 	padding-left : 30px;
 	padding-right: 30px;
 	height: 280px;
+	margin: 20px;
 	padding-top: 50px;
 }
 
@@ -897,4 +899,18 @@ color: #777;
 	color: #733b83;
 	background-color: white;
 
+}
+
+#footer .mainFooter {
+	background-color: #8d5ea0;
+}
+
+#footer .mainFooter p, #footer .mainFooter h3 {
+	color: white;
+}
+
+#signature {
+	height: 50px;
+	background-color: white;
+	text-align: center;
 }

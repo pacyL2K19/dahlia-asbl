@@ -1,9 +1,10 @@
 import React from 'react';
-import {Navbar} from '../components/Navbar'
-import MainHeader from '../components/MainHeader'
-import {SupportTransition} from '../components/SupportTransition'
-import MainBody from '../components/MainBody'
-import PreFooter from '../components/PreFooter'
+import {Navbar} from '../components/Navbar';
+import MainHeader from '../components/MainHeader';
+import {SupportTransition} from '../components/SupportTransition';
+import MainBody from '../components/MainBody';
+import PreFooter from '../components/PreFooter';
+import Footer from '../components/Footer';
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
             </div>
             <MainBody />
             <PreFooter />
+            <Footer />
         </div>
     )
 }
