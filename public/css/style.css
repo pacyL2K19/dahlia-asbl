@@ -866,3 +866,35 @@ color: #777;
 	border-color: white;
 	border-width: 1px;
 }
+
+#pre-footer {
+	padding : 60px;
+	background-color: #55226a;
+}
+
+#pre-footer span {
+	color : white;
+}
+
+#pre-footer h2 {
+	color : white;
+}
+
+#outlined-basic {
+	background-color: white;
+	border-radius: 5px;
+}
+
+#pre-footer span {
+	height: 100%;
+	padding : 15px;
+	background-color: #8d5ea0;
+	margin-left: -10px;
+	border-radius: 5px;
+}
+
+#pre-footer span:hover {
+	color: #733b83;
+	background-color: white;
+
+}
