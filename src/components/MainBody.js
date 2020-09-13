@@ -10,8 +10,8 @@ import gifPlayer from '../images/playing.gif';
 
 const MainBody = () => {
     return (
-        <div id = 'mainBody' className = 'container'>
-            <div id = 'firstContent'>
+        <div id = 'mainBody'>
+            <div id = 'firstContent' className = 'container'>
                 <Grid container>
                     <Grid 
                         item
@@ -39,7 +39,7 @@ const MainBody = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div id = 'iconContents'>
+            <div id = 'iconContents' className = 'container'>
                  <Grid
                     container
                  >
@@ -139,7 +139,7 @@ const MainBody = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div id = 'lastContent'>
+            <div id = 'lastContent' style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
                 <Grid container>
                     <Grid 
                         item
@@ -147,41 +147,43 @@ const MainBody = () => {
                         xs = {12}
                         md = {6}
                         xl = {6}
-                        lg = {12}
+                        lg = {6}
                     >
                         <p>Nous existons pour</p>
                         <h3>Donner à chaque femme et enfant les chances de réussir leur avenir</h3>
-                        <p>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur.</p>
-                        <Grid className = 'btnGroupL' container>
-                        <Grid 
+                        <p>Chez Dahlia asbl, nous sommes convaincus que la connaissance <br /> et le savoir sont les clés d’un monde meilleur.</p>
+                        <Grid container className = 'btnGroupL'>
+                            <Grid 
                                 xs = {12}
                                 md = {6}
                                 xl = {6}
-                                lg = {12}
+                                lg = {6}
                                 item
                             >
-                                <p></p>
+                                <p>FAIRE UN DON MAINTENANT</p>
                             </Grid>
                             <Grid 
                                 xs = {12}
                                 md = {6}
                                 xl = {6}
-                                lg = {12}
+                                lg = {6}
                                 item
                             >
-                                <p></p>
+                                <p>DEVENIR VOLONTAIRE</p>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid 
                         item
-                        className = 'empty'
+                        className = 'empty1'
                         xs = {12}
                         md = {6}
                         xl = {6}
-                        lg = {12}
+                        lg = {6}
                     >
-
+                        {/* <div>
+                            <p></p>
+                        </div> */}
                     </Grid>
                 </Grid>
             </div>
