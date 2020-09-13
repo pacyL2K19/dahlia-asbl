@@ -1,19 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png'
 import { css } from 'emotion'
-// import {
-//     makeStyles
-// } from '@material-ui/core'
-
-// const useStyles = makeStyles (() => ({
-//     logo : {
-//         height : 80,
-//         width : 80
-//     },
-//     spans : {
-//         fontSize : 10,
-//     }
-// }))
 
 export const Navbar = () => {
     const classes = css`

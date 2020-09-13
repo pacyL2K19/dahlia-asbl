@@ -925,3 +925,14 @@ color: #777;
 	font-weight: bold;
 	text-decoration-line: none;
 }
+
+#introAbout {
+	padding : 30px;;
+	margin-top: -20px;
+}
+
+#introAbout h2 {
+	color : white;
+	font-size: 40px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
