@@ -38,7 +38,7 @@ const MainHeader = () => {
                         className = 'donateBtn'
                         onClick = {() => console.log('Ok')}
                     >
-                        Donate Now
+                        Donner maintenant
                     </button>
                 </Grid>
                 <Grid

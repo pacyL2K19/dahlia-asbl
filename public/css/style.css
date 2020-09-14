@@ -620,17 +620,18 @@ color: #777;
 
 .donateBtn {
 	height: 40px;
-	width: 120px;
-	border-color: '#21082e';
+	padding : 10px;
+	border-color: #fdfdfd;
 	border-radius: 3px;
 	border-width: 2px;
-	background-color: '#21082e';
+	background-color: #21082e;
+	color: white;
 }
 
 #donateField {
 	/* display: flex;
 	flex : 1; */
-	background-color: rgba(31, 65, 97, 0.3);
+	background-color: rgba(31, 65, 97, 0.1);
 	border-style: solid;
 	padding-top : 60px;
 	padding-bottom: 60px;
@@ -915,7 +916,7 @@ color: #777;
 
 #footer .mainFooter {
 	background-color: #8d5ea0;
-	padding : 40px;
+	padding : 20px;
 	margin-top: -30px;
 }
 

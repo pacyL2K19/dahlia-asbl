@@ -58,7 +58,7 @@ export const Donate = () => {
                 className = 'donateBtn'
                 onClick = {() => console.log('Ok')}
             >
-                Donate Now
+                Donner maintenant
             </button>
         </div>
     )
