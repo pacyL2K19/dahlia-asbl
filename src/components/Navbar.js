@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png';
-import { css } from 'emotion';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {Home} from '../views/Home';
 import About from '../views/About';
@@ -8,19 +7,6 @@ import Vision from '../views/Vision';
 import Contacts from '../views/Contacts'
 
 export const Navbar = () => {
-    // const classes = css`
-    //     span:hover {
-    //         color : '#ffffff';
-    //     }
-    //     .fa {
-    //         color : '#fff
-    //     }
-    // `
-    // const styles = {
-    //     spans : {
-    //         fontSize : 12
-    //     }
-    // }
     const [showing, setShowing] = useState (false)
     const handleCliclk = () => {
         showing ? setShowing(false) : setShowing(false)
@@ -55,7 +41,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </section>
-            <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default'>
+            <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default' data-spy="affix" data-offset-top="197">
                 <div className = 'container'>
                     <div className = 'navbar-header'>
                         {

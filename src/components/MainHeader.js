@@ -2,7 +2,8 @@ import React from 'react';
 import {Donate} from './Donate';
 import {
     Grid
-} from '@material-ui/core'
+} from '@material-ui/core';
+import Typical from 'react-typical'
 
 const MainHeader = () => {
     return (
@@ -26,7 +27,11 @@ const MainHeader = () => {
                         de réussir leur avenir.
                     </h2><br />
                     <p>
-                        Apporter de l’aide et de l’espoir aux enfants
+                        <Typical 
+                            steps={[' Apporter de l’aide et de l’espoir aux enfants', 1000, '   ', 100]}
+                            loop={Infinity}
+                            wrapper="p"
+                        />
                     </p>
                     <button
                         type = 'button'

@@ -32,5 +32,11 @@
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
     <script type="text/javascript" src="js/contact_me.js"></script> 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function(){
+        var menu = document.querySelector('nav');
+        menu.classList.toggle('sticky', window.scrollY > 0);
+      })
+    </script>
   </body>
 </html>

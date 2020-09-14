@@ -68,7 +68,16 @@ hr {
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
+	width: 100%;
+	z-index: 10000;
 }
+
+#navSection .sticky {
+	padding : 5px;
+	margin-top: -50px;
+	opacity: 0.8;
+}
+
 #menu.navbar-default {
 	background-color: #ffffff;
 	border-color: rgba(231, 231, 231, 0);
@@ -648,6 +657,11 @@ color: #777;
 
 #mainHeader h2 {
 	color: #ccc;
+	
+}
+
+#mainHeader Typical {
+	font-size: 50px;
 }
 
 #mainHeader .branch1 {
