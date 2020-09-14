@@ -10,7 +10,9 @@ const useStyles = makeStyles((theme) => ({
       '& > *': {
         margin: theme.spacing(1),
         width: '25ch',
-      },
+        },
+        display : 'flex',
+        flexDirection : 'row'
     },
 }));
 
@@ -36,7 +38,7 @@ const PreFooter = () => {
                     xl = {6}
                 >
                     <form className={classes.root} noValidate autoComplete="off">
-                        <TextField id="outlined-basic" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><span>Souscrire</span>
+                        <TextField id="outlined-basic" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Souscrire</div>
                     </form>
                 </Grid>
             </Grid>

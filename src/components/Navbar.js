@@ -15,7 +15,7 @@ export const Navbar = () => {
         <Router>
         <div id = 'navSection' className = 'sticky-top'>
             <section  style = {{ backgroundColor : '#efefef', display : 'flex', flexDirection : 'row', height : 50, justifyContent : 'space-between'}}>
-                <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
+                <div className = 'contactsN' style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                         <i className = 'fa fa-phone'></i>  <span>+243 819 740 723 </span>
                     </div>

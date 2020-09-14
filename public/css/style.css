@@ -530,41 +530,6 @@ color: #777;
 .form-control:-ms-input-placeholder {
 color: #777;
 }
-#contact .contact-item {
-	margin: 20px 0;
-}
-#contact .contact-item span {
-	color: rgba(255,255,255,1);
-	margin-bottom: 10px;
-	display: block;
-}
-#contact .contact-item i.fa {
-	margin-right: 10px;
-}
-#contact .social {
-	border-top: 1px solid rgba(255,255,255,0.15);
-	padding-top: 50px;
-	margin-top: 50px;
-	text-align: center;
-}
-#contact .social ul li {
-	display: inline-block;
-	margin: 0 20px;
-}
-#contact .social i.fa {
-	font-size: 22px;
-	width: 48px;
-	height: 48px;
-	padding: 12px 0;
-	border: 2px solid #fff;
-	color: #fff;
-	border-radius: 50%;
-	transition: all 0.3s;
-}
-#contact .social i.fa:hover {
-	color: #608dfd;
-	background: #fff;
-}
 /* Footer Section*/
 #footer {
 	background: #f6f6f6;
@@ -585,6 +550,10 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+#navSection section .contactsN {
+	opacity: 0;
+	padding : 0px;
+}
 }
 
 .navSection span {
@@ -593,7 +562,7 @@ color: #777;
 
 #navSection span:hover {
 	font-weight: bold;
-	color: red;
+	color: #733b83;
 }
 
 #navSection i {
@@ -601,7 +570,7 @@ color: #777;
 }
 
 #navSection i:hover {
-	color: red;
+	color: #733b83;
 }
 
 .fundEntry {
@@ -887,7 +856,7 @@ color: #777;
 	background-color: #55226a;
 }
 
-#pre-footer span {
+#pre-footer .btnNew {
 	color : white;
 }
 
@@ -900,15 +869,16 @@ color: #777;
 	border-radius: 5px;
 }
 
-#pre-footer span {
+#pre-footer .btnNew {
 	height: 100%;
 	padding : 15px;
 	background-color: #8d5ea0;
-	margin-left: -10px;
+	margin-left: -12px;
+	width: auto;
 	border-radius: 5px;
 }
 
-#pre-footer span:hover {
+#pre-footer .btnNew:hover {
 	color: #733b83;
 	background-color: white;
 
@@ -936,7 +906,7 @@ color: #777;
 }
 
 #footer .mainFooter a:hover {
-	color : red;
+	/* color : #733b83; */
 	font-weight: bold;
 	text-decoration-line: none;
 }

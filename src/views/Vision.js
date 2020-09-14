@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Navbar} from '../components/Navbar';
 import PreFooter from '../components/PreFooter';
 import Footer from '../components/Footer'; 
 
