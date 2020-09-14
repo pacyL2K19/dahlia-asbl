@@ -20,7 +20,7 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>INFORMATIONS</h3><br />
-                            <p>Dahlia asb est la pour redonner le sourire aux femmes et aux enfants, vous pouvez egalement participer en faisant un don a ces enfants</p>
+                            <p>Dahlia asbl est la pour redonner le sourire aux femmes et aux enfants, vous pouvez egalement participer en faisant un don a ces enfants</p>
                         </Grid>
                         <Grid
                             item
@@ -90,7 +90,7 @@ const Footer = () => {
                 </div>
             </div>
             <div id = 'signature'>
-                copyright &copy; 2020 Dahlia-asbl - Designed by Cedric Mangosa
+                &copy; 2020 Dahlia-asbl Cabinet de conseil <a href = 'https://www.instagram.com/aurelia_mpiry/'>AM Consulting</a> site ré́alisé́ par Cedric Mangosa
             </div>
         </div>
     )

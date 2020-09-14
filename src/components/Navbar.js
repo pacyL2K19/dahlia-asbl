@@ -5,38 +5,39 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {Home} from '../views/Home';
 import About from '../views/About';
 import Vision from '../views/Vision';
+import Contacts from '../views/Contacts'
 
 export const Navbar = () => {
-    const classes = css`
-        span:hover {
-            color : '#ffffff';
-        }
-        .fa {
-            color : '#fff
-        }
-    `
-    const styles = {
-        spans : {
-            fontSize : 12
-        }
-    }
+    // const classes = css`
+    //     span:hover {
+    //         color : '#ffffff';
+    //     }
+    //     .fa {
+    //         color : '#fff
+    //     }
+    // `
+    // const styles = {
+    //     spans : {
+    //         fontSize : 12
+    //     }
+    // }
     const [showing, setShowing] = useState (false)
     const handleCliclk = () => {
         showing ? setShowing(false) : setShowing(false)
     }
     return (
         <Router>
-        <div id = 'navSection' className = {classes}>
+        <div id = 'navSection' className = 'sticky-top'>
             <section  style = {{ backgroundColor : '#efefef', display : 'flex', flexDirection : 'row', height : 50, justifyContent : 'space-between'}}>
                 <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }} >
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                        <i className = 'fa fa-phone'></i>  <span style = {styles.spans}>+243 819 740 723 </span>
+                        <i className = 'fa fa-phone'></i>  <span>+243 819 740 723 </span>
                     </div>
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                        <i className = 'fa fa-envelope-o'></i>  <span style = {styles.spans}>info@dahlia-asbl.org</span>
+                        <i className = 'fa fa-envelope-o'></i>  <span>info@dahlia-asbl.org</span>
                     </div>
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                        <i className = 'fa fa-clock-o'></i>   <span style = {styles.spans}>Lun-Ven 9:00 - 16:00</span>
+                        <i className = 'fa fa-clock-o'></i>   <span>Lun-Ven 9:00 - 16:00</span>
                     </div>
                 </div>
                 <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }}>
@@ -54,7 +55,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </section>
-            <nav id='menu' className = 'navbar sticky-top navbar-default'>
+            <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default'>
                 <div className = 'container'>
                     <div className = 'navbar-header'>
                         {
@@ -102,17 +103,18 @@ export const Navbar = () => {
                             <li>
                                 <Link to = {'/vision'} className = 'nav-link page-scroll' >Vision</Link>
                             </li>
-                            {/* <li>
-                                <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
-                            </li> */}
+                            <li>
+                                <Link to = {'/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <Switch>
                 <Route exact path = '/' component = {Home} />
-                <Route exact path = '/about' component = {About} />
-                <Route exact path = '/vision' component = {Vision} />
+                <Route path = '/about' component = {About} />
+                <Route path = '/vision' component = {Vision} />
+                <Route path = '/contacts' component = {Contacts} />
             </Switch>
         </div>
         </Router>
