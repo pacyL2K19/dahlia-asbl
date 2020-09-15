@@ -592,8 +592,12 @@ color: #777;
 	padding : 10px;
 	border-color: #fdfdfd;
 	border-radius: 3px;
-	border-width: 2px;
+	border-width: 1px;
 	background-color: #21082e;
+	color: white;
+}
+
+.donateBtn .donBtns {
 	color: white;
 }
 

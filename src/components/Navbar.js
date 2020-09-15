@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {Home} from '../views/Home';
 import About from '../views/About';
 import Vision from '../views/Vision';
-import Contacts from '../views/Contacts'
+import Contacts from '../views/Contacts';
+import Donate from '../views/Donate';
 
 export const Navbar = () => {
     const [showing, setShowing] = useState (false)
@@ -71,8 +72,8 @@ export const Navbar = () => {
                                 </button>
                             )
                         }
-                        <a href = '#menu' className = 'navbar-brand page-scroll'>
-                            <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff', borderRadius : 45}} />
+                        <a href = '#top' className = 'navbar-brand page-scroll'>
+                            <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff', borderRadius : 45, marginTop : -25}} />
                         </a>
                     </div>
                     <div
@@ -101,6 +102,7 @@ export const Navbar = () => {
                 <Route path = '/about' component = {About} />
                 <Route path = '/vision' component = {Vision} />
                 <Route path = '/contacts' component = {Contacts} />
+                <Route path = '/donate' component = {Donate}/>
             </Switch>
         </div>
         </Router>

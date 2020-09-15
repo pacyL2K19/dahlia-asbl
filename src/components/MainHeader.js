@@ -3,6 +3,7 @@ import {Donate} from './Donate';
 import {
     Grid
 } from '@material-ui/core';
+import {Link} from 'react-router-dom';
 import Typical from 'react-typical'
 
 const MainHeader = () => {
@@ -38,7 +39,7 @@ const MainHeader = () => {
                         className = 'donateBtn'
                         onClick = {() => console.log('Ok')}
                     >
-                        Donner maintenant
+                        <Link to = '/donate' className = 'donBtns'>Donner maintenant</Link>
                     </button>
                 </Grid>
                 <Grid
