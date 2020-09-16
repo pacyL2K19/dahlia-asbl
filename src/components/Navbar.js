@@ -6,6 +6,7 @@ import About from '../views/About';
 import Vision from '../views/Vision';
 import Contacts from '../views/Contacts';
 import Donate from '../views/Donate';
+import Founder from '../views/Founder';
 
 export const Navbar = () => {
     const [showing, setShowing] = useState (false)
@@ -38,7 +39,7 @@ export const Navbar = () => {
                         <a href = '#top'><i className = 'fa fa-twitter'></i></a>
                     </div>
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                        <a href = '#top'><i className = 'fa fa-google-plus'></i></a>
+                        <a href = '#top'><i className = 'fa fa-youtube'></i></a>
                     </div>
                 </div>
             </section>
@@ -85,7 +86,10 @@ export const Navbar = () => {
                                 <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
                             </li>
                             <li>
-                                <Link to = {'/about'} className = 'nav-link page-scroll' >A propos</Link>
+                                <Link to = {'/about'} className = 'nav-link dropdown-toggle page-scroll'>A propos</Link>
+                            </li>
+                            <li>
+                                <Link to = {'/founder'} className = 'nav-link dropdown-toggle page-scroll'>Fondatrice</Link>
                             </li>
                             <li>
                                 <Link to = {'/vision'} className = 'nav-link page-scroll' >Vision</Link>
@@ -103,6 +107,7 @@ export const Navbar = () => {
                 <Route path = '/vision' component = {Vision} />
                 <Route path = '/contacts' component = {Contacts} />
                 <Route path = '/donate' component = {Donate}/>
+                <Route path = '/founder' component = {Founder} />
             </Switch>
         </div>
         </Router>
