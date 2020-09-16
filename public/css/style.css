@@ -930,3 +930,30 @@ color: #777;
 	display: flex;
 	flex-direction: column;
 } */
+
+#founder .elmtFounder {
+	height: 500px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#founder .elmtFounder .divElmt {
+	height: 500px;
+	margin-left: 48px;
+	margin-right: 80px;
+	margin-top: 25px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px #888888;;
+}
+
+#founder .textBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#founder a, #founder i {
+	height: 100px;
+	width: 100px;
+}
