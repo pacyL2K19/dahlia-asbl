@@ -39,7 +39,7 @@ export const Navbar = () => {
                         <a href = '#top'><i className = 'fa fa-twitter'></i></a>
                     </div>
                     <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                        <a href = '#top'><i className = 'fa fa-youtube'></i></a>
+                        <a href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                     </div>
                 </div>
             </section>

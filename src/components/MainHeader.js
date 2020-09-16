@@ -3,10 +3,42 @@ import {Donate} from './Donate';
 import {
     Grid
 } from '@material-ui/core';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import Typical from 'react-typical'
+import {
+    makeStyles
+} from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import paypal from '../images/paypal.png';
+import visa from '../images/images.png';
+
+const useStyles = makeStyles((theme) => ({
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+}));
 
 const MainHeader = () => {
+    const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
     return (
         <div style = {{ display : 'flex', flexDirection : 'row'}} className = 'container' id = 'mainHeader'>
             <Grid 
@@ -37,9 +69,9 @@ const MainHeader = () => {
                     <button
                         type = 'button'
                         className = 'donateBtn'
-                        onClick = {() => console.log('Ok')}
+                        onClick = {handleOpen}
                     >
-                        <Link to = '/donate' className = 'donBtns'>Donner maintenant</Link>
+                        <a className = 'donBtns' href ='#top'>Donner maintenant</a>
                     </button>
                 </Grid>
                 <Grid
@@ -52,6 +84,34 @@ const MainHeader = () => {
                     <Donate />
                 </Grid>
             </Grid>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classes.modal}
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                timeout: 500,
+                }}
+            >
+                <Fade in={open}>
+                <div className={classes.paper}>
+                    <div id = 'headerDon'><p>Faire un don maintenant</p></div> 
+                    <p>Montant souscrit</p>
+                    <div id = 'amountContainer'>
+                        {'10 USD'}
+                    </div>
+                    <p>Quelle méthode de paiement ?</p>
+                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120}} />
+                        <img src = {visa} alt = '' style = {{height : 100, width : 120}}/>
+                    </div>
+
+                </div>
+                </Fade>
+            </Modal>
         </div>
     )
 }

@@ -957,3 +957,16 @@ color: #777;
 	height: 100px;
 	width: 100px;
 }
+
+#headerDon {
+	padding : 20px;
+	background-color: #733b8a;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#headerDon p{
+	color: white;
+	font-size: 20px;
+}
