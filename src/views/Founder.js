@@ -10,7 +10,7 @@ const Founder = () => {
                 <img src = {page} alt = '' />
                 <h2 style = {{color : 'white', margin : 10}}>La Fondatrice</h2>
             </div>
-            <div className = 'container'>
+            <div className = 'container main'>
                 <Grid container>
                     <Grid
                         item 

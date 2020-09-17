@@ -7,7 +7,7 @@ import {
 } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import Backdrop from '@material-ui/core/Backdrop';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import paypal from '../images/paypal.png';
 import visa from '../images/images.png';
 
