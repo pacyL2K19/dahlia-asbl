@@ -1,10 +1,15 @@
 import React from 'react';
 import {
     FormControl,
-    OutlinedInput
-} from '@material-ui/core'
-import {makeStyles} from '@material-ui/core/styles'
+    OutlinedInput,
+    Modal,
+    Fade
+} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
+import Backdrop from '@material-ui/core/Backdrop';
 import { Link } from 'react-router-dom';
+import paypal from '../images/paypal.png';
+import visa from '../images/images.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,10 +27,30 @@ const useStyles = makeStyles((theme) => ({
     textField: {
       width: '25ch',
     },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
   }));
 
 export const Donate = () => {
     const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
     const [values, setValues] = React.useState({
         amount: 10
     });
@@ -77,10 +102,38 @@ export const Donate = () => {
             <button
                 type = 'button'
                 className = 'donateBtn'
-                // onClick = {performPayment}
+                onClick = {handleOpen}
             >
-                <Link to = '/donate' className = 'donBtns'>Donner maintenant</Link>
+                <a className = 'donBtns' href = '#top'>Donner maintenant</a>
             </button>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classes.modal}
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                timeout: 500,
+                }}
+            >
+                <Fade in={open}>
+                <div className={classes.paper}>
+                    <div id = 'headerDon'><p>Faire un don maintenant</p></div> 
+                    <p>Montant souscrit</p>
+                    <div id = 'amountContainer'>
+                        {values.amount} USD
+                    </div>
+                    <p>Quelle méthode de paiement ?</p>
+                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
+                        <img src = {visa} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
+                    </div>
+
+                </div>
+                </Fade>
+            </Modal>
         </div>
     )
 }

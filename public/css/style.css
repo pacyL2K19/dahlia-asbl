@@ -970,3 +970,19 @@ color: #777;
 	color: white;
 	font-size: 20px;
 }
+
+#amountContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	border-radius: 10px;
+	background-color: #e4d4d4;
+	color : black;
+	font-weight: bold;
+	font-size: 23px;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+}

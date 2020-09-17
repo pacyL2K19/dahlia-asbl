@@ -16,16 +16,16 @@ import visa from '../images/images.png';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    paper: {
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-    },
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      paper: {
+        backgroundColor: theme.palette.background.paper,
+        border: '2px solid #000',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+      },
 }));
 
 const MainHeader = () => {
@@ -105,8 +105,8 @@ const MainHeader = () => {
                     </div>
                     <p>Quelle méthode de paiement ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120}} />
-                        <img src = {visa} alt = '' style = {{height : 100, width : 120}}/>
+                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
+                        <img src = {visa} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
                     </div>
 
                 </div>
