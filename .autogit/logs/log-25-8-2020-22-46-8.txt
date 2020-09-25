@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 25 2020 22:46:08 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/MainHeader.js
+
+
+Created files:
+* .autogit/logs/log-25-8-2020-22-15-57.txt
+* public/css/Muli-ExtraLight.ttf
+* public/css/Muli-Light.ttf
+* public/css/Muli-SemiBold.ttf
+
+
+Deleted files:
+
+
+Renamed files:

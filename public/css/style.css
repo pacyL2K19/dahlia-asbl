@@ -10,6 +10,10 @@
 	font-family: 'muli-extra-light';
 	src: url('Muli-ExtraLight.ttf');
 }
+@font-face {
+	font-family: 'muli-extra-bold';
+	src: url('Muli-Bold.ttf');
+}
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
