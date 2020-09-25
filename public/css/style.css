@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'muli-light';
+	src: url('Muli-Light.ttf');
+}
+@font-face {
+	font-family: 'muli-bold';
+	src: url('Muli-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'muli-extra-light';
+	src: url('Muli-ExtraLight.ttf');
+}
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -622,12 +634,28 @@ color: #777;
 
 #mainHeader p {
 	color: white;
-	font-family: muli;
+	/* font-family: ''; */
 }
+
+/*
+	@Custom css font styles 
+*/
+
+#introHeaderM {
+	font-family: 'muli-light';
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+/*
+
+	///////// - end custom fonts 
+
+*/
 
 #mainHeader h2 {
 	color: #ccc;
-	
+	font-family: 'muli-bold';
 }
 
 #mainHeader Typical {

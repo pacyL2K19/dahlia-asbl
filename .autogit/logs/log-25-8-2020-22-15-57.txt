@@ -1,0 +1,30 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 25 2020 22:15:57 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-25-8-2020-21-45-47.txt
+* src/Muli/Muli-Black.ttf
+* src/Muli/Muli-BlackItalic.ttf
+* src/Muli/Muli-Bold.ttf
+* src/Muli/Muli-BoldItalic.ttf
+* src/Muli/Muli-ExtraBold.ttf
+* src/Muli/Muli-ExtraBoldItalic.ttf
+* src/Muli/Muli-ExtraLight.ttf
+* src/Muli/Muli-ExtraLightItalic.ttf
+* src/Muli/Muli-Italic.ttf
+* src/Muli/Muli-Light.ttf
+* src/Muli/Muli-LightItalic.ttf
+* src/Muli/Muli-Regular.ttf
+* src/Muli/Muli-SemiBold.ttf
+* src/Muli/Muli-SemiBoldItalic.ttf
+* src/Muli/OFL.txt
+
+
+Deleted files:
+
+
+Renamed files:

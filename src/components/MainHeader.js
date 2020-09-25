@@ -52,7 +52,7 @@ const MainHeader = () => {
                     lg = {8}
                     md = {8}
                 >
-                    <p>Ensemble, faisons plus</p><br/>
+                    <p id = 'introHeaderM'>Ensemble, faisons plus</p><br/>
                     <h2>
                         Bienvenue chez Dahlia Asbl.
                         L'asbl qui donne à chaque
