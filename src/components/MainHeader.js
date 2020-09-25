@@ -54,12 +54,12 @@ const MainHeader = () => {
                 >
                     <p id = 'introHeaderM'>Ensemble, faisons plus</p><br/>
                     <h2>
-                        Bienvenue chez Dahlia Asbl.
+                        Bienvenue chez <span>Dahlia Asbl</span>.
                         L'asbl qui donne à chaque
                         femme et enfant les chances
                         de réussir leur avenir.
                     </h2><br />
-                    <p>
+                    <p id = 'typical'>
                         <Typical 
                             steps={[' Apporter de l’aide et de l’espoir aux enfants', 1000, '   ', 100]}
                             loop={Infinity}
@@ -71,7 +71,7 @@ const MainHeader = () => {
                         className = 'donateBtn'
                         onClick = {handleOpen}
                     >
-                        <a className = 'donBtns' href ='#top'>Donner maintenant</a>
+                        <a className = 'donBtns' href ='#top'>DONNER</a>
                     </button>
                 </Grid>
                 <Grid

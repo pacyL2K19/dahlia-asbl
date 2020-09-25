@@ -12,7 +12,7 @@
 }
 @font-face {
 	font-family: 'muli-extra-bold';
-	src: url('Muli-Bold.ttf');
+	src: url('Muli-ExtraBold.ttf');
 }
 body, html {
 	font-family: 'Open Sans', sans-serif;
@@ -605,7 +605,8 @@ color: #777;
 
 .donateBtn {
 	height: 40px;
-	padding : 10px;
+	font-family: 'muli-extra-bold';
+	padding : 20px;
 	border-color: #fdfdfd;
 	border-radius: 3px;
 	border-width: 1px;
@@ -651,6 +652,18 @@ color: #777;
 	font-size: 20px;
 }
 
+#mainHeader span {
+	font-family: 'muli-extra-bold';
+}
+
+#mainHeader span:hover {
+	color: #ccc;
+}
+
+#typical {
+	font-family: 'muli-extra-light';
+}
+
 /*
 
 	///////// - end custom fonts 
@@ -662,8 +675,9 @@ color: #777;
 	font-family: 'muli-bold';
 }
 
-#mainHeader Typical {
+#typical {
 	font-size: 50px;
+	margin-bottom: 50px;
 }
 
 #mainHeader .branch1 {
