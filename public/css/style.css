@@ -604,18 +604,51 @@ color: #777;
 }
 
 .donateBtn {
-	height: 40px;
+	width: 150px;
 	font-family: 'muli-extra-bold';
 	padding : 20px;
-	border-color: #fdfdfd;
 	border-radius: 3px;
-	border-width: 1px;
-	background-color: #21082e;
+	border-width: 0px;
+	/* box-shadow: 3px 3px 10px #000; */
+	background-color: #ccc;
 	color: white;
 }
 
-.donateBtn .donBtns {
+.donateBtn1 {
+	width: 150px;
+	font-family: 'muli-extra-bold';
+	padding : 20px;
+	border-radius: 3px;
+	border-width: 0px;
+	/* box-shadow: 3px 3px 10px #000; */
+	background-color: #ccc;
 	color: white;
+	margin-left: 75px;
+	margin-top: 18px;
+}
+
+.donateBtn a {
+	color: #21082e;
+}
+
+.donateBtn1 a {
+	color: #21082e;
+}
+
+.donateBtn:hover {
+	background-color: #21082e;
+}
+
+.donateBtn1:hover {
+	background-color: #21082e;
+}
+
+.donateBtn1:hover a {
+	color:  #ccc;
+}
+
+.donateBtn:hover a {
+	color:  #ccc;
 }
 
 #donateField {
@@ -681,8 +714,7 @@ color: #777;
 }
 
 #mainHeader .branch1 {
-	padding : 30px;
-	/* background-color: red; */
+	align-self: center;
 }
 
 #supportTransition {

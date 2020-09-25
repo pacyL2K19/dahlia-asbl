@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 25 2020 23:16:17 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/MainHeader.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

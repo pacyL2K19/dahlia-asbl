@@ -101,10 +101,10 @@ export const Donate = () => {
             </div>
             <button
                 type = 'button'
-                className = 'donateBtn'
+                className = 'donateBtn1'
                 onClick = {handleOpen}
             >
-                <a className = 'donBtns' href = '#top'>Donner maintenant</a>
+                <a className = 'donBtns' href = '#top'>DONNER</a>
             </button>
             <Modal
                 aria-labelledby="transition-modal-title"
