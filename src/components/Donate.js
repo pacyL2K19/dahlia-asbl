@@ -79,8 +79,8 @@ export const Donate = () => {
 
     return(
         <div id = 'donateField'>
-            <h2 style = {{color : '#fffeee', textAlign : 'center'}}>FAITES UN DON</h2>
-            <p style = {{ color : '#dddddd'}}>
+            <h2>FAITES UN DON</h2>
+            <p>
                 Veuillez entrer le montant
             </p><br />
             <FormControl fullWidth className={classes.margin} variant="standard">

@@ -14,6 +14,10 @@
 	font-family: 'muli-extra-bold';
 	src: url('Muli-ExtraBold.ttf');
 }
+@font-face {
+	font-family: 'muli-black';
+	src: url('Muli-Black.ttf');
+}
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -649,6 +653,18 @@ color: #777;
 
 .donateBtn:hover a {
 	color:  #ccc;
+}
+
+#donateField h2 {
+	color : #ccc;
+	text-align: center;
+	font-family: 'muli-black';
+}
+
+#donateField p {
+	color: #ccc;
+	text-align: center;
+	font-family: 'muli-extra-light';
 }
 
 #donateField {
