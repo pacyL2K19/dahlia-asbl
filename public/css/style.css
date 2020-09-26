@@ -583,9 +583,10 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
-#navSection section .contactsN {
-	opacity: 0;
-	padding : 0px;
+#navSection section .contactsN div {
+	/* opacity: 0;
+	padding : 0px; */
+	display: none;
 }
 }
 
