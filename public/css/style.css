@@ -792,14 +792,14 @@ color: #777;
 /* for the body elemnts */
 
 #iconContents {
-	margin-top: 50px;
+	margin-top: 17px;
 }
 
 #iconContents .itemIconContent {
-	background : linear-gradient(to right, #733b83 0%, #aa9daf 100%);
+	background-color :  #733b83;
 	height : 180px;
-	width: 70%;
-	margin-left: 15%;
+	width: 60%;
+	margin-left: 20%;
 	align-self: center;
 	padding: 20px;
 	border-radius: 5px;

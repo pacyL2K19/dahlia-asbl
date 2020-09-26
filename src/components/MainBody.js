@@ -52,10 +52,7 @@ const MainBody = () => {
                         xl = {4}
                     >
                         <div className = 'itemIconContent'>
-                            <img 
-                                src = {oreilleIcon}
-                                alt = ''
-                            />
+                            <a><i className = 'fa fa-facebook'></i></a>
                             <p>
                                 {data.bodyElements[0].description}
                             </p>
