@@ -760,10 +760,13 @@ color: #777;
 }
 
 #supportTransition .transitionElementM {
+	display: flex;
+	flex-direction: column;
 	background-color: rgb(238, 231, 231);
 	padding-left : 30px;
 	padding-right: 30px;
 	height: 280px;
+	align-items: center;
 	padding-top: 50px;
 }
 

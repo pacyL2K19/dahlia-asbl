@@ -5,7 +5,7 @@ import {
 } from '@material-ui/core';
 import donaImg from '../images/Donation.png';
 import voluntImg from '../images/Volunteer.png';
-import supportimg from '../images/Support 1.png'
+import supportimg from '../images/support.png'
 import {Spring} from 'react-spring/renderprops';
 
 export const SupportTransition = () => {
@@ -25,14 +25,14 @@ export const SupportTransition = () => {
                                 lg = {4}
                                 xl = {4}
                             >
-                                <div className = 'transitionElement'>
+                                <div className = 'transitionElement' style = {{display : 'flex', alignItems : 'flex-end', flexDirection : 'column', backgroundColor : '#733b83'}}>
                                     <img
                                         src = {donaImg} 
                                         alt = ''
                                         style = {{ height : 50, width : 50}}
                                     />
                                     <h3>{dataJson.supportTransition[0].title}</h3>
-                                    <p>{dataJson.supportTransition[0].description}</p>
+                                    <p style = {{textAlign : 'end'}}>{dataJson.supportTransition[0].description}</p>
                                 </div>
                             </Grid>
                             <Grid
@@ -45,10 +45,10 @@ export const SupportTransition = () => {
                                     <img
                                         src = {supportimg} 
                                         alt = ''
-                                        style = {{ height : 50, width : 50, borderRadius : 25, backgroundColor : '#21082e'}}
+                                        style = {{ height : 50, width : 50}}
                                     />
-                                    <h3>{dataJson.supportTransition[1].title}</h3>
-                                    <p>{dataJson.supportTransition[1].description}</p>
+                                    <h3 style = {{textAlign : 'center'}}>{dataJson.supportTransition[1].title}</h3>
+                                    <p style = {{textAlign : 'center'}}>{dataJson.supportTransition[1].description}</p>
                                 </div>
                             </Grid>
                             <Grid
