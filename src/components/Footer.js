@@ -20,7 +20,7 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>INFORMATIONS</h3><br />
-                            <p>Dahlia asbl est la pour redonner le sourire aux femmes et aux enfants, vous pouvez egalement participer en faisant un don a ces enfants</p>
+                            <p style = {{paddingRight : 10}}>Dahlia asbl est la pour redonner le sourire aux femmes et aux enfants, vous pouvez egalement participer en faisant un don a ces enfants</p>
                         </Grid>
                         <Grid
                             item
@@ -30,8 +30,8 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>CONTACTS</h3><br />
-                            <p>04, Av. Frédéric, Q/Kimpe, Kinshasa-Ngaliema</p><br />
-                            <p>Phone : +243 819 740 723</p> <br />
+                            <p style={{marginBottom : 10}}>04, Av. Frédéric, Q/Kimpe, Kinshasa-Ngaliema</p>
+                            <p>Phone : +243 819 740 723</p>
                             <p>Email : info@dahlia-asbl.org</p>
                         </Grid>
                         <Grid
@@ -42,7 +42,7 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>LIENS IMPORTANTS</h3><br />
-                            <ul>
+                            <ul style = {{marginLeft : 10}}>
                                 <li><a href = '#ok' >Faire un don maintenant</a></li><br />
                                 <li><a href = '#ok' >Devenir volontaire</a></li><br />
                                 <li><a href = '#ok' >Nous supporter</a></li><br />
@@ -57,14 +57,14 @@ const Footer = () => {
                         >
                             <h3>GALLERIE</h3><br />
                             <Grid container>
-                            <Grid 
+                                <Grid 
                                     item 
                                     xs = {4}
                                     lg ={4}
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50}}/>
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -73,7 +73,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {second} alt = '' style = {{height : 50}}/>
+                                    <img src = {second} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -82,7 +82,61 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {third} alt = '' style = {{height : 50}}/>
+                                    <img src = {third} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                </Grid>
+                                <Grid 
+                                    item 
+                                    xs = {4}
+                                    lg ={4}
+                                    md = {4}
+                                    xl = {4}
+                                >
+                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                             </Grid>
                         </Grid>

@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 03:57:59 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/MainBody.js
+* src/components/PreFooter.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

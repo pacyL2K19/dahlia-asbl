@@ -998,6 +998,8 @@ color: #777;
 
 #pre-footer h2 {
 	color : white;
+	align-self: center;
+	margin-top: 7px;
 }
 
 #outlined-basic {
