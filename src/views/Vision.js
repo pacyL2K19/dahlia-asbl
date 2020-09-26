@@ -26,10 +26,10 @@ const Vision = () => {
                         md = {12}
                         lg = {6}
                         xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                     >
-                        <p>Préserver et partager sont les mots-clés d’une vision renouvelée de la prospérité et d’une redéfinition du progrès qui placent comme critères premiers le bien-être et l’épanouissement de tous les hommes ainsi que le respect de la vie sous toutes ses formes.</p><br /><br />
-                        <p>Contribuer à une société́ congolaise dynamique où la femme sera libre & forte, valorisée et apportera du progrès et un regard innovant autour des valeurs de travail.</p>
+                        <p style = {{textAlign:"justify"}}>Préserver et partager sont les mots-clés d’une vision renouvelée de la prospérité et d’une redéfinition du progrès qui placent comme critères premiers le bien-être et l’épanouissement de tous les hommes ainsi que le respect de la vie sous toutes ses formes.</p><br /><br />
+                        <p style = {{textAlign:"justify"}}>Contribuer à une société́ congolaise dynamique où la femme sera libre & forte, valorisée et apportera du progrès et un regard innovant autour des valeurs de travail.</p>
                     </Grid>
                     <Grid 
                         item
@@ -61,14 +61,14 @@ const Vision = () => {
                         md = {12}
                         lg = {6}
                         xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                     >
-                        <h5>Dahlia asbl a pour mission de :</h5>
-                        <p>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
-                        <p>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
-                        <p>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
-                        <p>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
-                        <p>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
+                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
+                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
                     </Grid>
                 </Grid>
             </div>

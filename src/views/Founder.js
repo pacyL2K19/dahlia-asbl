@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import Footer from '../components/Footer';
 import page from '../images/page.png';
+import insta from '../images/insta.png';
+import link from '../images/link.png';
 
 const Founder = () => {
     return (
@@ -60,9 +62,9 @@ const Founder = () => {
                                 «  L’eau c’est la vie ! C’est pourquoi nous devons préserver cette vie et la rendre accessible à tous » – Nadège Dubier<br />
 
                                 « Je suis Nadége Dubier, une femme qui souhaite apporter un réel changement en facilitant l’accès à l’eau potable ! »<br />
-                                <div style = {{marginTop : 50}} className = 'iconSection'>
-                                    <a style = {{height : 100, width : 100}} href = '#top'><i className = 'fa fa-linkedin-square'></i></a>
-                                    <a href = '#top'><i className = 'fa fa-twitter-square'></i></a>
+                                <div style = {{marginTop  : 50}} className = 'iconSection'>
+                                    <a href = '#top'><img style = {{height : 90, width : 90}} src = {insta} href = 'https://www.instagram.com/damedubier/' alt = ''/></a>
+                                    <a href = '#top'><img style = {{height : 80, width : 80}} src = {link} href = 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/' alt = ''/></a>
                                 </div>
                             </p>
                         </div>

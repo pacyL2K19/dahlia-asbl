@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 09:25:04 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/images/mme.jpg
+* src/views/About.js
+* src/views/Founder.js
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-8-55-1.txt
+* src/images/insta.png
+* src/images/link.png
+
+
+Deleted files:
+
+
+Renamed files:

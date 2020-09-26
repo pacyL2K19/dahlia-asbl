@@ -8,7 +8,6 @@ import third from '../images/third.jpg';
 import fourth from '../images/fourth.JPG';
 import fith from '../images/fith.JPG';
 import sixth from '../images/sixth.JPG';
-import seventh from '../images/seventh.JPG';
 import eigth from '../images/eigth.JPG';
 import nineth from '../images/nineth.JPG';
 
@@ -124,7 +123,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {seventh} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {sixth} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
