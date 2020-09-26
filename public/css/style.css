@@ -1034,9 +1034,11 @@ color: #777;
 }
 
 #signature {
+	color: black;
 	height: 20px;
 	background-color: white;
 	text-align: center;
+	margin-top: 25px;
 }
 
 #footer .mainFooter a {

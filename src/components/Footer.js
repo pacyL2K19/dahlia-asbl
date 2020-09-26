@@ -30,9 +30,9 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>CONTACTS</h3><br />
-                            <p style={{marginBottom : 10}}>04, Av. Frédéric, Q/Kimpe, Kinshasa-Ngaliema</p>
-                            <p>Phone : +243 819 740 723</p>
-                            <p>Email : info@dahlia-asbl.org</p>
+                            <p style={{marginBottom : 15}}>04, Av. Frédéric, Q/Kimpe, Kinshasa-Ngaliema</p>
+                            <p style={{marginBottom : 15}}>Phone : +243 819 740 723</p>
+                            <p style={{marginBottom : 15}}>Email : info@dahlia-asbl.org</p>
                         </Grid>
                         <Grid
                             item
@@ -144,7 +144,7 @@ const Footer = () => {
                 </div>
             </div>
             <div id = 'signature'>
-                &copy; 2020 Dahlia-asbl Cabinet de conseil <a href = 'https://www.instagram.com/aurelia_mpiry/'>AM Consulting</a> site ré́alisé́ par Cedric Mangosa
+                &copy; 2020 Dahlia-asbl Cabinet de conseil <a style = {{color : '#926ba1'}} href = 'https://www.instagram.com/aurelia_mpiry/'>AM Consulting</a> site ré́alisé́ par Cedric Mangosa
             </div>
         </div>
     )
