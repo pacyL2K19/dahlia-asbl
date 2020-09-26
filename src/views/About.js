@@ -29,8 +29,8 @@ const About = () => {
                         xl = {6}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                     >
-                        <p>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
-                        <p>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
+                        <p style = {{textAlign : 'justify'}}>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
+                        <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
                     </Grid>
                     <Grid 
                         item
@@ -64,7 +64,7 @@ const About = () => {
                         xl = {6}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                     >
-                        <p>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
+                        <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
                     </Grid>
                 </Grid>
             </div>

@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 08:24:54 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/views/About.js
+* src/views/Vision.js
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-7-2-56.txt
+* src/images/imagecompressor.zip
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
