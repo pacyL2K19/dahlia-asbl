@@ -52,7 +52,11 @@ const MainBody = () => {
                         xl = {4}
                     >
                         <div className = 'itemIconContent'>
-                            <a><i className = 'fa fa-facebook'></i></a>
+                            <img 
+                                style = {{backgroundColor : "white"}}
+                                src = {oreilleIcon}
+                                alt = ''
+                            />
                             <p>
                                 {data.bodyElements[0].description}
                             </p>
@@ -67,6 +71,7 @@ const MainBody = () => {
                     >
                         <div className = 'itemIconContent'>
                             <img 
+                                style = {{backgroundColor : "white"}}
                                 src = {okIcon}
                                 alt = ''
                             />
@@ -84,6 +89,7 @@ const MainBody = () => {
                     >
                         <div className = 'itemIconContent'>
                             <img 
+                                style = {{backgroundColor : "white"}}
                                 src = {feuilleIcon}
                                 alt = ''
                             />
