@@ -7,7 +7,6 @@ import oreilleIcon from '../images/ecouteIcon.png';
 import okIcon from '../images/okIcon.png';
 import feuilleIcon from '../images/feuilleIcon.png';
 import gifPlayer from '../images/playing.gif';
-// {const [ , set ] = useState(initialState)}
 
 const MainBody = () => {
     return (
