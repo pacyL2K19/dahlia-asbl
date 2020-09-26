@@ -57,7 +57,7 @@ const MainBody = () => {
                                 src = {oreilleIcon}
                                 alt = ''
                             />
-                            <p>
+                            <p style = {{textAlign : 'center'}}>
                                 {data.bodyElements[0].description}
                             </p>
                         </div>
@@ -75,7 +75,7 @@ const MainBody = () => {
                                 src = {okIcon}
                                 alt = ''
                             />
-                            <p>
+                            <p style = {{textAlign : 'center'}}>
                                 {data.bodyElements[1].description}
                             </p>
                         </div>
@@ -93,7 +93,7 @@ const MainBody = () => {
                                 src = {feuilleIcon}
                                 alt = ''
                             />
-                            <p>
+                            <p style = {{textAlign : 'center'}}>
                                 {data.bodyElements[2].description}
                             </p>
                         </div>

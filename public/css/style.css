@@ -796,35 +796,35 @@ color: #777;
 }
 
 #iconContents .itemIconContent {
-	background-color :  #733b83;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	height : 180px;
 	width: 60%;
 	margin-left: 20%;
 	align-self: center;
 	padding: 20px;
 	border-radius: 5px;
+	background-color: white;
+	border-width: 1px;
+	border-color: #926ba1;
+	border-style: solid;
+}
+
+.itemIconContent p {
+	font-family: 'muli-light';
 }
 
 #iconContents .itemIconContent p {
-	color : white
+	color : #926ba1;
 }
 
 #iconContents .itemIconContent:hover {
-	background: linear-gradient(to right, #ffffff 0%, #733b83 100%);
-	color: #926ba1;
-}
-
-#iconContents .itemIconContent:hover img {
-	background-color: #733b8a;
-	height: 60px;
-	width: 60px;
-	border-radius: 30px;
-	padding : 5px;
-	margin-bottom: 10px;
+	background-color :  #926ba1;
 }
 
 #iconContents .itemIconContent:hover p {
-	color: black;
+	color: white;
 }
 
 #iconContents .itemIconContent img {
