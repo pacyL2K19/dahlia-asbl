@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 07:02:56 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/views/Vision.js
+
+
+Created files:
+* "src/images/Dame Dubier 5.jpg"
+
+
+Deleted files:
+
+
+Renamed files:

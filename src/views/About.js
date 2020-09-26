@@ -39,7 +39,7 @@ const About = () => {
                         lg = {6}
                         xl = {6}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../images/mme.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
                         </div>
                     </Grid>
