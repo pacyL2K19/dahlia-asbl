@@ -809,6 +809,7 @@ color: #777;
 	border-width: 1px;
 	border-color: #926ba1;
 	border-style: solid;
+	box-shadow: 2px 2px 8px #8000;
 }
 
 .itemIconContent p {
@@ -833,7 +834,14 @@ color: #777;
 	border-radius: 30px;
 	padding : 5px;
 	margin-bottom: 10px;
+	border-color: #926ba1;
+	border-style: solid;
+	border-width: 1px;
 }
+
+/* #iconContents .itemIconContent:hover img {
+	
+} */
 
 #firstContent {
 	padding : 20px;
@@ -1065,7 +1073,7 @@ color: #777;
 	margin-right: 80px;
 	margin-top: 25px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 8px #888888;;
+	box-shadow: 2px 2px 8px #888888;
 }
 
 #founder .textBox {

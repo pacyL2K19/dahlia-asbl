@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 03:27:47 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/MainBody.js
+* src/images/ecouteIcon.png
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-2-57-35.txt
+* src/images/12.png
+
+
+Deleted files:
+
+
+Renamed files:
