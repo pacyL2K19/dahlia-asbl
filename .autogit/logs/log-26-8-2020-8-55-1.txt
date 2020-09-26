@@ -1,0 +1,43 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 08:55:01 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/views/About.js
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-8-24-54.txt
+* src/images/Dahl-min.jpg
+* src/images/Dahlia-min.jpg
+* "src/images/Dalhia e-min.jpg"
+* src/images/bg-nous-1024x315-min.jpg
+* src/images/bgContact-min.jpg
+* src/images/bgHome-min.jpg
+* src/images/founder-min.jpg
+* "src/images/imagecompressor (1)/bg-nous-1024x315-min.jpg"
+* "src/images/imagecompressor (1)/bgContact-min.jpg"
+* "src/images/imagecompressor (1)/bgHome-min.jpg"
+* "src/images/imagecompressor (2)/Dahl-min.jpg"
+* "src/images/imagecompressor (2)/Dahlia-min.jpg"
+* "src/images/imagecompressor (2)/Dalhia e-min.jpg"
+* "src/images/imagecompressor (2)/founder-min.jpg"
+* src/images/imagecompressor/Fam.jpg
+* src/images/imagecompressor/IMG_0819.JPG
+* src/images/imagecompressor/IMG_1396.JPG
+* src/images/imagecompressor/IMG_2041.JPG
+* "src/images/imagecompressor/IMG_2066 2.JPG"
+* src/images/imagecompressor/IMG_2164.JPG
+* src/images/imagecompressor/IMG_2299.JPG
+* src/images/imagecompressor/IMG_7199.JPG
+* src/images/imagecompressor/IMG_9463.JPG
+* src/images/imagecompressor/bgVision.jpg
+* src/images/imagecompressor/fith.JPG
+* src/images/imagecompressor/seventh.JPG
+
+
+Deleted files:
+* src/images/imagecompressor.zip
+
+
+Renamed files:

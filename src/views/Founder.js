@@ -60,8 +60,8 @@ const Founder = () => {
                                 «  L’eau c’est la vie ! C’est pourquoi nous devons préserver cette vie et la rendre accessible à tous » – Nadège Dubier<br />
 
                                 « Je suis Nadége Dubier, une femme qui souhaite apporter un réel changement en facilitant l’accès à l’eau potable ! »<br />
-                                <div className = 'iconSection'>
-                                    <a href = '#top'><i className = 'fa fa-linkedin-square'></i></a>
+                                <div style = {{marginTop : 50}} className = 'iconSection'>
+                                    <a style = {{height : 100, width : 100}} href = '#top'><i className = 'fa fa-linkedin-square'></i></a>
                                     <a href = '#top'><i className = 'fa fa-twitter-square'></i></a>
                                 </div>
                             </p>
