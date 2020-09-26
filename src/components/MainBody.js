@@ -164,7 +164,7 @@ const MainBody = () => {
                                 lg = {6}
                                 item
                             >
-                                <p>FAIRE UN DON MAINTENANT</p>
+                                <p>FAIRE UN DON</p>
                             </Grid>
                             <Grid 
                                 xs = {12}

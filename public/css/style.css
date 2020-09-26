@@ -874,10 +874,12 @@ color: #777;
 
 #videoBan .videoContent h4 {
 	text-align: end;
+	font-family: 'muli-light';
 }
 
 .videoContent h2 {
 	text-align:  end;
+	font-family: 'muli-extra-bold';
 }
 
 #videoBan {
@@ -908,11 +910,14 @@ color: #777;
 
 #videoBan .introVideo .introIn p{
 	color: white;
+	font-family: 'muli-extra-bold';
+	font-weight: bold;
 }
 
 #videoBan .introVideo .introIn h3{
 	color: white;
 	margin-bottom: 30px;
+	font-family: 'muli-extra-bold';
 }
 
 /* .videoContent {
@@ -972,6 +977,7 @@ color: #777;
 	text-align: center;
 	margin: 20px;
 	border-radius: 5px;
+	font-family: 'muli-bold';
 }
 
 .btnGroupL p:hover {

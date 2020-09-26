@@ -28,7 +28,7 @@ const PreFooter = () => {
                     lg = {6}
                     xl = {6}
                 >
-                    <h2>Souscrivez à notre Newsletter</h2>
+                    <h2 style = {{alignSelf : 'center'}}>Souscrivez à notre Newsletter</h2>
                 </Grid>
                 <Grid 
                     item
