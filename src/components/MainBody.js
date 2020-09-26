@@ -133,11 +133,13 @@ const MainBody = () => {
                         <h4>Nous avons une mission</h4><br />
                         <h2>Aider ceux qui en ont besoin</h2>
                         <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat'}}>
-                            <img
-                                src = {gifPlayer}
-                                alt = ''
-                                // to put request to youtube api before playing
-                            />
+                            <a rel = 'noopener noreferrer' target = '_blank' href = 'https://www.youtube.com/watch?v=73Yqk3ytXMs&t=32s'>
+                                <img
+                                    src = {gifPlayer}
+                                    alt = ''
+                                    // to put request to youtube api before playing
+                                />  
+                            </a>
                         </div>
                     </Grid>
                 </Grid>
