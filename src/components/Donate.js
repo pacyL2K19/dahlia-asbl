@@ -9,7 +9,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import Backdrop from '@material-ui/core/Backdrop';
 // import { Link } from 'react-router-dom';
 import paypal from '../images/paypal.png';
-import visa from '../images/images.png';
+import visa from '../images/cartes.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -119,16 +119,16 @@ export const Donate = () => {
                 }}
             >
                 <Fade in={open}>
-                <div className={classes.paper}>
-                    <div id = 'headerDon'><p>Faire un don maintenant</p></div> 
-                    <p>Montant souscrit</p>
+                  <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
                     <div id = 'amountContainer'>
                         {values.amount} USD
                     </div>
-                    <p>Quelle méthode de paiement ?</p>
+                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                        <img src =  {paypal} alt = '' style = {{height : 85, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
-                        <img src = {visa} alt = '' style = {{height : 80, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
+                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
                     </div>
 
                 </div>

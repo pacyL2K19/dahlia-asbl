@@ -575,6 +575,7 @@ color: #777;
 }
 #donateField {
 	margin-top: 50px;
+	padding: 20px;
 }
 #donateField button {
 	margin-left: 120px;
@@ -1105,7 +1106,7 @@ color: #777;
 }
 
 #headerDon {
-	padding : 20px;
+	padding : 10px;
 	background-color: #733b8a;
 	width: 100%;
 	border-radius: 5px;

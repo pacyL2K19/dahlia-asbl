@@ -97,9 +97,9 @@ const MainHeader = () => {
                 }}
             >
                 <Fade in={open}>
-                <div className={classes.paper}>
-                    <div id = 'headerDon'><p>Faire un don maintenant</p></div> 
-                    <p>Montant souscrit</p>
+                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
                     <div id = 'amountContainer'>
                         {'10 USD'}
                     </div>

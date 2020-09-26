@@ -1,0 +1,27 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 06:32:46 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/Donate.js
+* src/components/Footer.js
+* src/components/SupportTransition.js
+* src/images/images.png
+* src/images/paypal.png
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-6-2-36.txt
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
