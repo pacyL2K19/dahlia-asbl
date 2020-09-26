@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 01:57:03 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/SupportTransition.js
+
+
+Created files:
+* .autogit/logs/log-26-8-2020-1-26-48.txt
+* src/images/support.png
+
+
+Deleted files:
+
+
+Renamed files:

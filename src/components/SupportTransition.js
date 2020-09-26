@@ -29,7 +29,7 @@ export const SupportTransition = () => {
                                     <img
                                         src = {donaImg} 
                                         alt = ''
-                                        style = {{ height : 50, width : 50}}
+                                        style = {{ height : 75, width : 75}}
                                     />
                                     <h3>{dataJson.supportTransition[0].title}</h3>
                                     <p style = {{textAlign : 'end'}}>{dataJson.supportTransition[0].description}</p>
@@ -45,7 +45,7 @@ export const SupportTransition = () => {
                                     <img
                                         src = {supportimg} 
                                         alt = ''
-                                        style = {{ height : 50, width : 50}}
+                                        style = {{ height : 75, width : 75}}
                                     />
                                     <h3 style = {{textAlign : 'center'}}>{dataJson.supportTransition[1].title}</h3>
                                     <p style = {{textAlign : 'center'}}>{dataJson.supportTransition[1].description}</p>
@@ -61,7 +61,7 @@ export const SupportTransition = () => {
                                     <img
                                         src = {voluntImg} 
                                         alt = ''
-                                        style = {{ height : 50, width : 50}}
+                                        style = {{ height : 73, width : 73}}
                                     />
                                     <h3>{dataJson.supportTransition[2].title}</h3>
                                     <p>{dataJson.supportTransition[2].description}</p>

@@ -770,6 +770,25 @@ color: #777;
 	padding-top: 50px;
 }
 
+#supportTransition .transitionElement h3 {
+	font-family: 'muli-bold';
+	font-size: 24px;
+}
+
+#supportTransition .transitionElementM h3 {
+	font-family: 'muli-bold';
+	font-size: 24px;
+}
+
+#supportTransition .transitionElement p {
+	font-family: 'muli-light';
+	color: white;
+}
+
+#supportTransition .transitionElementM p {
+	font-family: 'muli-light';
+	color: black;
+}
 /* for the body elemnts */
 
 #iconContents {
