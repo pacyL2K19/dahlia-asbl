@@ -567,6 +567,12 @@ color: #777;
 }
 
 @media (max-width: 768px) {
+#donateField {
+	margin-top: 50px;
+}
+#donateField button {
+	margin-left: 120px;
+}
 #about img {
 	margin: 50px 0;
 }
