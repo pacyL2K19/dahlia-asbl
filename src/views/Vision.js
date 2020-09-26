@@ -38,7 +38,7 @@ const Vision = () => {
                         lg = {6}
                         xl = {6}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../images/Fam.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
 
                         </div>
                     </Grid>
