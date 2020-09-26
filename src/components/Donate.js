@@ -127,8 +127,8 @@ export const Donate = () => {
                     </div>
                     <p>Quelle méthode de paiement ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
-                        <img src = {visa} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
+                        <img src =  {paypal} alt = '' style = {{height : 85, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
+                        <img src = {visa} alt = '' style = {{height : 80, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
                     </div>
 
                 </div>

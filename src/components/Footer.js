@@ -5,6 +5,12 @@ import { Grid } from '@material-ui/core';
 import first from '../images/first.jpg';
 import second from '../images/second.jpg';
 import third from '../images/third.jpg';
+import fourth from '../images/fourth.JPG';
+import fith from '../images/fith.JPG';
+import sixth from '../images/sixth.JPG';
+import seventh from '../images/seventh.JPG';
+import eigth from '../images/eigth.JPG';
+import nineth from '../images/nineth.JPG';
 
 const Footer = () => {
     return (
@@ -55,7 +61,7 @@ const Footer = () => {
                             xl = {3}
                             lg = {3}
                         >
-                            <h3>GALLERIE</h3><br />
+                            <h3>GALERIE</h3><br />
                             <Grid container>
                                 <Grid 
                                     item 
@@ -91,7 +97,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {fourth} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -100,7 +106,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {fith} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -109,7 +115,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {sixth} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -118,7 +124,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {seventh} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -127,7 +133,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {eigth} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -136,7 +142,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <img src = {nineth} alt = '' style = {{height : 50, margin : 5}}/>
                                 </Grid>
                             </Grid>
                         </Grid>

@@ -567,6 +567,12 @@ color: #777;
 }
 
 @media (max-width: 768px) {
+#supportTransition {
+	margin-bottom: 550px;
+}
+#iconContents .itemIconContent {
+	margin-bottom: 15px;
+}
 #donateField {
 	margin-top: 50px;
 }

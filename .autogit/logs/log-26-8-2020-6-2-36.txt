@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 06:02:36 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/MainBody.js
+* src/components/SupportTransition.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
