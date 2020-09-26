@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 //images 
 
 import vision from '../images/vision.png';
+import support from '../images/Volunteer.png';
 import donataire from '../images/donataire.png';
 import dialogue from '../images/dialogue.png';
 import cerveau from '../images/cerveau.png';
@@ -113,7 +114,7 @@ const Vision = () => {
                 </Grid>
             </div>
             <div style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', padding : 50, display : 'flex', flexDirection : 'column', alignItems : 'center', justifyContent : 'center'}}>
-                <img src = {vision} alt = '' /> <br />
+                <img src = {support} alt = '' style = {{height : 100, width : 100}}/> <br />
                 <h3 style = {{color : 'white', textAlign : 'center', height : 50}}>Devenir volontaire</h3><br />
                 <p style = {{color : 'white', textAlign : 'center', height : 30}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p>
                 <button
