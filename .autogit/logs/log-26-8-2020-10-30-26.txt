@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 26 2020 10:30:26 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
