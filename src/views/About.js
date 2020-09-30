@@ -16,6 +16,7 @@ import don from '../images/don.png';
 import donataire from '../images/donataire.png';
 import cadeau from '../images/cadeau.png';
 import { Grid } from '@material-ui/core';
+import { Form, Button } from 'react-bootstrap'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,19 +54,21 @@ const About = () => {
     const [typeSubsc, setTypeSubsc] = React.useState('');
 
     const handleOpen = () => {
-        setOpen1(true);
+        setOpen(true);
     };
 
     const handleOpen1 = () => {
-        setOpen2(true);
+        setOpen1(true);
     };
 
     const handleOpen2 = () => {
-        setOpen(true);
+        setOpen2(true);
     };
 
     const handleClose = () => {
         setOpen(false);
+        setOpen2(false);
+        setOpen1(false);
     };
     const [values, setValues] = React.useState({
         amount: 10
@@ -263,19 +266,26 @@ const About = () => {
                             }}
                         >
                             <Fade in={open1}>
-                                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
-                                    <div id = 'amountContainer'>
-                                        {values.amount} USD
-                                    </div>
-                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement 1 ?</p>
-                                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
-                                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
-                                    </div>
+                                <Form style={{padding : 20}}>
+                                    <Form.Group controlId="formBasicEmail">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" placeholder="Enter email" />
+                                        <Form.Text className="text-muted">
+                                        We'll never share your email with anyone else.
+                                        </Form.Text>
+                                    </Form.Group>
 
-                                </div>
+                                    <Form.Group controlId="formBasicPassword">
+                                        <Form.Label>Password</Form.Label>
+                                        <Form.Control type="password" placeholder="Password" />
+                                    </Form.Group>
+                                    <Form.Group controlId="formBasicCheckbox">
+                                        <Form.Check type="checkbox" label="Check me out" />
+                                    </Form.Group>
+                                    <Button variant="primary" type="submit">
+                                        Submit
+                                    </Button>
+                                </Form>
                             </Fade>
                         </Modal>
                         <Modal
