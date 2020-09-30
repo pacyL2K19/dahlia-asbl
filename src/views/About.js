@@ -94,6 +94,7 @@ const About = () => {
         message : 'Souscription pour '+typeSubsc,
     }
     const sendMail = () => {
+        console.log('arrived')
         if (values.from_mail !== '' && values.from_name !== '') {
             emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
                 .then(function(response) {
@@ -102,13 +103,14 @@ const About = () => {
                     console.log('FAILED...', error);
                 });
         } else {
+            console.log('error ')
             alert('Veuillez completer vos identifiants');
         }
         
     }
-    const handleChange = (prop) => (event) => {
-        setValues({ ...values, [prop] : event.target.value });
-    };
+    // const handleChange = (prop) => (event) => {
+    //     setValues({ ...values, [prop] : event.target.value });
+    // };
 
     // const 
 
@@ -304,9 +306,9 @@ const About = () => {
                                 <Form style={{padding : 30, backgroundColor : '#733b83'}}>
                                     <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
                                         <Form.Label style={{color : 'white'}}>Votre nom complet</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Mettre votre nom" onChange = {handleChange} value = {values.from_name} /><br /><br />
+                                        <Form.Control type="text" placeholder="Mettre votre nom" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {handleChange} value = {values.from_mail} /><br /><br />
+                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
                                             Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
                                         </Form.Text> 
