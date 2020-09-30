@@ -51,7 +51,7 @@ const About = () => {
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
-    const [typeSubsc, setTypeSubsc] = React.useState('');
+    const [typeSubsc, setTypeSubsc] = React.useState(' ');
 
     const handleOpen = () => {
         setOpen(true);
@@ -59,6 +59,7 @@ const About = () => {
 
     const handleOpen1 = () => {
         setOpen1(true);
+        setTypeSubsc(' ')
     };
 
     const handleOpen2 = () => {
@@ -74,6 +75,7 @@ const About = () => {
     const handleClose = () => {
         setOpen(false);
         setOpen1(false);
+        setTypeSubsc(' ')
     };
     const [values, setValues] = React.useState({
         amount: 10

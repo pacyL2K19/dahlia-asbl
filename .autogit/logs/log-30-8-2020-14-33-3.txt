@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Sep 30 2020 14:33:03 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/views/About.js
+
+
+Created files:
+* .autogit/logs/log-30-8-2020-14-2-57.txt
+
+
+Deleted files:
+
+
+Renamed files:
