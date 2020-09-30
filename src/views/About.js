@@ -1,4 +1,4 @@
-import React, {usest} from 'react';
+import React from 'react';
 import PreFooter from '../components/PreFooter';
 import Footer from '../components/Footer'; 
 import {
@@ -6,8 +6,10 @@ import {
     Fade
 } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
-//images 
-
+//images
+import Backdrop from '@material-ui/core/Backdrop'; 
+import paypal from '../images/paypal.png';
+import visa from '../images/cartes.png';
 import apropos from '../images/apropos.png';
 import volontaire from '../images/volontaire.png';
 import don from '../images/don.png';
@@ -43,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2, 4, 3),
     },
   }));
-  const classes = useStyles();
+const About = () => {
+    const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
@@ -56,26 +59,24 @@ const useStyles = makeStyles((theme) => ({
     const [values, setValues] = React.useState({
         amount: 10
     });
-    const handleChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
-    };
+    // const handleChange = (prop) => (event) => {
+    //     setValues({ ...values, [prop]: event.target.value });
+    // };
 
-    const onClickBtn1 = () => {
-      setValues({...values, amount : '10'});
-      console.log('ok');
-    }
+    // const onClickBtn1 = () => {
+    //   setValues({...values, amount : '10'});
+    //   console.log('ok');
+    // }
 
-    const onClickBtn2 = () => {
-      setValues({...values, amount : '100'});
-      console.log('ok');
-    }
+    // const onClickBtn2 = () => {
+    //   setValues({...values, amount : '100'});
+    //   console.log('ok');
+    // }
 
-    const onClickBtn3 = () => {
-      setValues({...values, amount : '1.000'});
-      console.log('ok');
-    }
-const About = () => {
-
+    // const onClickBtn3 = () => {
+    //   setValues({...values, amount : '1.000'});
+    //   console.log('ok');
+    // }
     return (
         <div>
             {/* <Navbar /> */}
@@ -143,12 +144,12 @@ const About = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 500, backgroundColor : '#F2F2F2'}}
                     >
                         <img src = {don} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Faire un Don</h2>
+                        <h2 style = {{textAlign : 'center'}}>Faire <br/> un don</h2>
                         <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
-                            onClick = {() => console.log('Ok')}
+                            onClick = {handleOpen}
                         >
                             DONNER
                         </button>
