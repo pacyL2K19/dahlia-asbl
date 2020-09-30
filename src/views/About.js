@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PreFooter from '../components/PreFooter';
 import Footer from '../components/Footer'; 
 import {
@@ -53,6 +53,7 @@ const About = () => {
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
     const [typeSubsc, setTypeSubsc] = React.useState(' ');
+    const [from_name, setToName] = useState('');
 
     const handleOpen = () => {
         setOpen(true);
@@ -79,20 +80,26 @@ const About = () => {
         setTypeSubsc(' ')
     };
     const [values, setValues] = React.useState({
-        amount: 10
+        amount: 10,
+        from_name : '',
+        from_mail : ''
     });
-
+    const templateParams = {
+        from_name,
+        to_name : 'Dahlia-asbl',
+        message : 'Souscription pour '+typeSubsc,
+    }
     const sendMail = () => {
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
         .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
+            console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
-        console.log('FAILED...', error);
+            console.log('FAILED...', error);
         });
     }
-    // const handleChange = (prop) => (event) => {
-    //     setValues({ ...values, [prop]: event.target.value });
-    // };
+    const handleChangeName = (prop) => (event) => {
+        setValues({ ...values, from_name : event.target.value });
+    };
 
     // const onClickBtn1 = () => {
     //   setValues({...values, amount : '10'});
@@ -284,9 +291,11 @@ const About = () => {
                         >
                             <Fade in={open1}>
                                 <Form style={{padding : 30, backgroundColor : '#733b83'}}>
-                                    <Form.Group controlId="formBasicEmail">
+                                    <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
+                                        <Form.Label style={{color : 'white'}}>Votre nom complet</Form.Label><br /><br /><br />
+                                        <Form.Control type="email" placeholder="Mettre votre nom" /><br /><br />
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Enter email" /><br /><br />
+                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
                                             Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
                                         </Form.Text> 
