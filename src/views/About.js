@@ -50,7 +50,7 @@ const About = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
-    const [open2, setOpen2] = React.useState(false);
+    // const [open2, setOpen2] = React.useState(false);
     const [typeSubsc, setTypeSubsc] = React.useState('');
 
     const handleOpen = () => {
@@ -62,12 +62,17 @@ const About = () => {
     };
 
     const handleOpen2 = () => {
-        setOpen2(true);
+        setOpen1(true);
+        setTypeSubsc('Volontaire');
     };
+    
+    const handleOpen3 = () => {
+        setOpen1(true);
+        setTypeSubsc('Donateur individuel');
+    }
 
     const handleClose = () => {
         setOpen(false);
-        setOpen2(false);
         setOpen1(false);
     };
     const [values, setValues] = React.useState({
@@ -221,7 +226,7 @@ const About = () => {
                         <button
                             type = 'button'
                             className = 'donateBtn'
-                            onClick = {handleOpen2}
+                            onClick = {handleOpen3}
                         >
                             SOUSCRIRE
                         </button>
@@ -266,29 +271,29 @@ const About = () => {
                             }}
                         >
                             <Fade in={open1}>
-                                <Form style={{padding : 20}}>
+                                <Form style={{padding : 30, backgroundColor : '#733b83'}}>
                                     <Form.Group controlId="formBasicEmail">
-                                        <Form.Label>Email address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter email" />
-                                        <Form.Text className="text-muted">
-                                        We'll never share your email with anyone else.
-                                        </Form.Text>
+                                        <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
+                                        <Form.Control type="email" placeholder="Enter email" /><br /><br />
+                                        <Form.Text className="text-muted" style={{color : 'white'}}>
+                                            Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
+                                        </Form.Text> 
                                     </Form.Group>
 
-                                    <Form.Group controlId="formBasicPassword">
-                                        <Form.Label>Password</Form.Label>
-                                        <Form.Control type="password" placeholder="Password" />
-                                    </Form.Group>
-                                    <Form.Group controlId="formBasicCheckbox">
+                                    {/* <Form.Group controlId="formBasicPassword">
+                                        <Form.Label style={{color : 'white'}}>Quel cadeau comptez-vous off</Form.Label>
+                                        <Form.Control type="text" placeholder="La nature de votre cadeau" />
+                                    </Form.Group> */}
+                                    {/* <Form.Group controlId="formBasicCheckbox">
                                         <Form.Check type="checkbox" label="Check me out" />
-                                    </Form.Group>
+                                    </Form.Group> */}
                                     <Button variant="primary" type="submit">
-                                        Submit
-                                    </Button>
+                                        Soumettre
+                                    </Button>   {typeSubsc}
                                 </Form>
                             </Fade>
                         </Modal>
-                        <Modal
+                        {/* <Modal
                             aria-labelledby="transition-modal-title"
                             aria-describedby="transition-modal-description"
                             className={classes.modal}
@@ -315,7 +320,7 @@ const About = () => {
 
                                 </div>
                             </Fade>
-                        </Modal>
+                        </Modal> */}
                     </Grid>
                 </Grid>
             </div>
