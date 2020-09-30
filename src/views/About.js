@@ -48,8 +48,19 @@ const useStyles = makeStyles((theme) => ({
 const About = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
+    const [open1, setOpen1] = React.useState(false);
+    const [open2, setOpen2] = React.useState(false);
+    const [typeSubsc, setTypeSubsc] = React.useState('');
 
     const handleOpen = () => {
+        setOpen1(true);
+    };
+
+    const handleOpen1 = () => {
+        setOpen2(true);
+    };
+
+    const handleOpen2 = () => {
         setOpen(true);
     };
 
@@ -169,7 +180,7 @@ const About = () => {
                         <button
                             type = 'button'
                             className = 'donateBtn'
-                            onClick = {() => console.log('Ok')}
+                            onClick = {handleOpen1}
                         >
                             DONNER
                         </button>
@@ -188,7 +199,7 @@ const About = () => {
                         <button
                             type = 'button'
                             className = 'donateBtn'
-                            onClick = {() => console.log('Ok')}
+                            onClick = {handleOpen2}
                         >
                             SOUSCRIRE
                         </button>
@@ -207,7 +218,7 @@ const About = () => {
                         <button
                             type = 'button'
                             className = 'donateBtn'
-                            onClick = {() => console.log('Ok')}
+                            onClick = {handleOpen2}
                         >
                             SOUSCRIRE
                         </button>
@@ -224,19 +235,75 @@ const About = () => {
                             }}
                         >
                             <Fade in={open}>
-                            <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                                <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                                <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
-                                <div id = 'amountContainer'>
-                                    {values.amount} USD
-                                </div>
-                                <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
-                                <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                                    <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
-                                    <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
-                                </div>
+                                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                                    <div id = 'amountContainer'>
+                                        {values.amount} USD
+                                    </div>
+                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
+                                    </div>
 
-                            </div>
+                                </div>
+                            </Fade>
+                        </Modal>
+                        <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open1}
+                            onClose={handleClose}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                            <Fade in={open1}>
+                                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                                    <div id = 'amountContainer'>
+                                        {values.amount} USD
+                                    </div>
+                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement 1 ?</p>
+                                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
+                                    </div>
+
+                                </div>
+                            </Fade>
+                        </Modal>
+                        <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open2}
+                            onClose={handleClose}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                            <Fade in={open2}>
+                                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                                    <div id = 'amountContainer'>
+                                        {values.amount} USD
+                                    </div>
+                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement 2?</p>
+                                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
+                                    </div>
+
+                                </div>
                             </Fade>
                         </Modal>
                     </Grid>
