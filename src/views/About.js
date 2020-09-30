@@ -7,7 +7,8 @@ import {
 } from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles';
 //images
-import Backdrop from '@material-ui/core/Backdrop'; 
+import Backdrop from '@material-ui/core/Backdrop';
+import emailjs from 'emailjs-com';
 import paypal from '../images/paypal.png';
 import visa from '../images/cartes.png';
 import apropos from '../images/apropos.png';
@@ -80,6 +81,15 @@ const About = () => {
     const [values, setValues] = React.useState({
         amount: 10
     });
+
+    const sendMail = () => {
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+        console.log('FAILED...', error);
+        });
+    }
     // const handleChange = (prop) => (event) => {
     //     setValues({ ...values, [prop]: event.target.value });
     // };
