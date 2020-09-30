@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {usest} from 'react';
 import PreFooter from '../components/PreFooter';
 import Footer from '../components/Footer'; 
-
+import {
+    Modal,
+    Fade
+} from '@material-ui/core'
+import {makeStyles} from '@material-ui/core/styles';
 //images 
 
 import apropos from '../images/apropos.png';
@@ -11,7 +15,67 @@ import donataire from '../images/donataire.png';
 import cadeau from '../images/cadeau.png';
 import { Grid } from '@material-ui/core';
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+    },
+    margin: {
+      margin: theme.spacing(1),
+      width : '100%',
+      right : 10,
+    },
+    withoutLabel: {
+      marginTop: theme.spacing(3),
+    },
+    textField: {
+      width: '25ch',
+    },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+  }));
+  const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const [values, setValues] = React.useState({
+        amount: 10
+    });
+    const handleChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+    };
+
+    const onClickBtn1 = () => {
+      setValues({...values, amount : '10'});
+      console.log('ok');
+    }
+
+    const onClickBtn2 = () => {
+      setValues({...values, amount : '100'});
+      console.log('ok');
+    }
+
+    const onClickBtn3 = () => {
+      setValues({...values, amount : '1.000'});
+      console.log('ok');
+    }
 const About = () => {
+
     return (
         <div>
             {/* <Navbar /> */}
@@ -80,13 +144,13 @@ const About = () => {
                     >
                         <img src = {don} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Faire un Don</h2>
-                        <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br />
+                        <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {() => console.log('Ok')}
                         >
-                            Donate Now
+                            DONNER
                         </button>
                     </Grid>
                     <Grid
@@ -99,14 +163,15 @@ const About = () => {
                     >
                         <img src = {cadeau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Faire un cadeau</h2>
-                        <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br />
-                        {/* <button
+                        {/* <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br /> */}
+                        <br />
+                        <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {() => console.log('Ok')}
                         >
-                            Donate Now
-                        </button> */}
+                            DONNER
+                        </button>
                     </Grid>
                     <Grid
                         item
@@ -118,13 +183,13 @@ const About = () => {
                     >
                         <img src = {volontaire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Devenir volontaire</h2>
-                        <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br />
+                        <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {() => console.log('Ok')}
                         >
-                            En savoir plus
+                            SOUSCRIRE
                         </button>
                     </Grid>
                     <Grid
@@ -137,14 +202,42 @@ const About = () => {
                     >
                         <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Donateur Individuel</h2>
-                        <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br />
-                        {/* <button
+                        <br />
+                        <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {() => console.log('Ok')}
                         >
-                            Donate Now
-                        </button> */}
+                            SOUSCRIRE
+                        </button>
+                        <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open}
+                            onClose={handleClose}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                            <Fade in={open}>
+                            <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                                <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                                <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                                <div id = 'amountContainer'>
+                                    {values.amount} USD
+                                </div>
+                                <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                                <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                                    <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                                    <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
+                                </div>
+
+                            </div>
+                            </Fade>
+                        </Modal>
                     </Grid>
                 </Grid>
             </div>
