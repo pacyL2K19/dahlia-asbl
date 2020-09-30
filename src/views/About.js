@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PreFooter from '../components/PreFooter';
 import Footer from '../components/Footer'; 
 import {
@@ -52,8 +52,8 @@ const About = () => {
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
-    const [typeSubsc, setTypeSubsc] = React.useState(' ');
-    const [from_name, setToName] = useState('');
+    const [typeSubsc, setTypeSubsc] = React.useState(' Faire un cadeau ');
+    // const [from_name, setToName] = useState('');
 
     const handleOpen = () => {
         setOpen(true);
@@ -77,7 +77,11 @@ const About = () => {
     const handleClose = () => {
         setOpen(false);
         setOpen1(false);
-        setTypeSubsc(' ')
+        setTypeSubsc(' Faire un cadeau ')
+        setValues({
+            from_mail : '',
+            from_name : ''
+        })
     };
     const [values, setValues] = React.useState({
         amount: 10,
@@ -85,21 +89,28 @@ const About = () => {
         from_mail : ''
     });
     const templateParams = {
-        from_name,
+        from_name : values.amount+' | '+values.from_mail,
         to_name : 'Dahlia-asbl',
         message : 'Souscription pour '+typeSubsc,
     }
     const sendMail = () => {
-        emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-            console.log('FAILED...', error);
-        });
+        if (values.from_mail !== '' && values.from_name !== '') {
+            emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        } else {
+            alert('Veuillez completer vos identifiants');
+        }
+        
     }
-    const handleChangeName = (prop) => (event) => {
-        setValues({ ...values, from_name : event.target.value });
+    const handleChange = (prop) => (event) => {
+        setValues({ ...values, [prop] : event.target.value });
     };
+
+    // const 
 
     // const onClickBtn1 = () => {
     //   setValues({...values, amount : '10'});
@@ -293,9 +304,9 @@ const About = () => {
                                 <Form style={{padding : 30, backgroundColor : '#733b83'}}>
                                     <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
                                         <Form.Label style={{color : 'white'}}>Votre nom complet</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Mettre votre nom" /><br /><br />
+                                        <Form.Control type="email" placeholder="Mettre votre nom" onChange = {handleChange} value = {values.from_name} /><br /><br />
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" /><br /><br />
+                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {handleChange} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
                                             Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
                                         </Form.Text> 
@@ -310,7 +321,7 @@ const About = () => {
                                     </Form.Group> */}
                                     <Button variant="primary" type="submit">
                                         Soumettre
-                                    </Button>   {typeSubsc}
+                                    </Button>       {typeSubsc}
                                 </Form>
                             </Fade>
                         </Modal>
