@@ -2,13 +2,13 @@
     "supportTransition" : [
         {
             "icon" : "/src/images/Donation.png",
-            "title" : "Faire un don",
-            "description" : "votre don contribuera à donner aux femmes et aux enfants un meilleur avenir"
+            "title" : "Make a donation",
+            "description" : "your donation will help give women and children a better future"
         },
         {
             "icon" : "../images/Support1.png",
-            "title" : "Nous soutenir",
-            "description" : "Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier"
+            "title" : "Support us",
+            "description" : "Support school training and professional preparation for children who do not have the opportunity to study"
         },
         {
             "icon" : "images/Volunteer.png",
@@ -18,15 +18,15 @@
     "bodyElements" : [
         {
             "icon" : "",
-            "description" : "L’écoute, le respect, la coopération sont au cœur de nos actions."
+            "description" : "Listening, respect and cooperation are at the heart of our actions."
         },
         {
             "icon" : "",
-            "description" : "Distinguer l’essentiel du superflu"
+            "description" : "Distinguish the essential from the superfluous"
         },
         {
             "icon" : "",
-            "description" : "Oeuvrer pour la préservation de l’ensemble du vivant"
+            "description" : "Work for the preservation of all living things"
         }
     ]
 }
