@@ -97,12 +97,15 @@ const About = () => {
         from_mail : ''
     });
     const templateParams = {
+        reply_to : values.from_mail,
         from_name : values.amount+' | '+values.from_mail,
         to_name : 'Dahlia-asbl',
         message : 'Souscription pour '+typeSubsc,
     }
-    const sendMail = () => {
+    const sendMail = (e) => {
+        e.preventDefault();
         console.log('arrived')
+
         if (values.from_mail !== '' && values.from_name !== '') {
             emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
                 .then(function(response) {
