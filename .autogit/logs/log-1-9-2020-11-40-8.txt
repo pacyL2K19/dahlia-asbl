@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 01 2020 11:40:08 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/views/About.js
+
+
+Created files:
+* .autogit/logs/log-1-9-2020-11-9-57.txt
+* "src/images/Famille Dub.jpg"
+
+
+Deleted files:
+
+
+Renamed files:
