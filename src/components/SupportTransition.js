@@ -25,7 +25,7 @@ export const SupportTransition = () => {
                                 lg = {4}
                                 xl = {4}
                             >
-                                <div className = 'transitionElement' style = {{display : 'flex', alignItems : 'flex-end', flexDirection : 'column', backgroundColor : '#733b83'}}>
+                                <div className = 'transitionElementN'>
                                     <img
                                         src = {donaImg} 
                                         alt = ''

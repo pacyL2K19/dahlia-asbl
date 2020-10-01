@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 01 2020 02:07:32 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/Footer.js
+
+
+Created files:
+* .autogit/logs/log-1-9-2020-1-18-41.txt
+
+
+Deleted files:
+
+
+Renamed files:
