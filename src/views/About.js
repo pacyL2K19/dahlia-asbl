@@ -18,6 +18,14 @@ import donataire from '../images/donataire.png';
 import cadeau from '../images/cadeau.png';
 import { Grid } from '@material-ui/core';
 import { Form, Button } from 'react-bootstrap'
+import styles from 'styled-components';
+
+const Box = styles.div`
+
+    display : flex;
+    flex-direction : row;
+
+`
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -136,53 +144,57 @@ const About = () => {
                 <h2>À propos</h2>
             </div>
             <div id = 'mainContent' className = 'container'>
-                <Grid container>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
-                    >
-                        <p style = {{textAlign : 'justify'}}>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
-                        <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
-                    </Grid>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}    
-                    >
-                        <div style = {{backgroundImage : 'url('+require('../images/mme.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
+                <Box data-os = 'fade-down'>
+                    <Grid container>
+                        <Grid 
+                            item
+                            xs = {12}
+                            md = {12}
+                            lg = {6}
+                            xl = {6}  
+                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                        >
+                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
+                            <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
+                        </Grid>
+                        <Grid 
+                            item
+                            xs = {12}
+                            md = {12}
+                            lg = {6}
+                            xl = {6}    
+                        >
+                            <div style = {{backgroundImage : 'url('+require('../images/mme.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
-                        </div>
+                            </div>
+                        </Grid>
                     </Grid>
-                </Grid>
-                <Grid container>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}    
-                    >
-                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
+                </Box>
+                <Box data-aos = 'fade-up'>
+                    <Grid container>
+                        <Grid 
+                            item
+                            xs = {12}
+                            md = {12}
+                            lg = {6}
+                            xl = {6}    
+                        >
+                            <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
-                        </div>
+                            </div>
+                        </Grid>
+                        <Grid 
+                            item
+                            xs = {12}
+                            md = {12}
+                            lg = {6}
+                            xl = {6}  
+                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                        >
+                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
+                        </Grid>
                     </Grid>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
-                    >
-                        <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
-                    </Grid>
-                </Grid>
+                </Box>
             </div>
             <div id = 'iconSide'>
                 <Grid container>
@@ -327,34 +339,6 @@ const About = () => {
                                 </Form>
                             </Fade>
                         </Modal>
-                        {/* <Modal
-                            aria-labelledby="transition-modal-title"
-                            aria-describedby="transition-modal-description"
-                            className={classes.modal}
-                            open={open2}
-                            onClose={handleClose}
-                            closeAfterTransition
-                            BackdropComponent={Backdrop}
-                            BackdropProps={{
-                            timeout: 500,
-                            }}
-                        >
-                            <Fade in={open2}>
-                                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
-                                    <div id = 'amountContainer'>
-                                        {values.amount} USD
-                                    </div>
-                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement 2?</p>
-                                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
-                                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
-                                    </div>
-
-                                </div>
-                            </Fade>
-                        </Modal> */}
                     </Grid>
                 </Grid>
             </div>
