@@ -97,16 +97,16 @@ const MainHeader = () => {
                 }}
             >
                 <Fade in={open}>
-                <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                  <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
                     <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
                     <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
                     <div id = 'amountContainer'>
-                        {'10 USD'}
+                        10 USD
                     </div>
-                    <p>Quelle méthode de paiement ?</p>
+                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
-                        <img src =  {paypal} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2}} />
-                        <img src = {visa} alt = '' style = {{height : 100, width : 120, borderColor : '#abcdef', borderWidth : 1, borderRadius : 1}}/>
+                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
                     </div>
 
                 </div>
