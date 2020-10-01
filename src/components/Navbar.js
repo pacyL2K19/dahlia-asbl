@@ -7,24 +7,21 @@ import Vision from '../views/Vision';
 import Contacts from '../views/Contacts';
 import Donate from '../views/Donate';
 import Founder from '../views/Founder';
+import {HomeE} from '../views/Eng/Home';
+import AboutE from '../views/Eng/About';
+import VisionE from '../views/Eng/Vision';
+import ContactsE from '../views/Eng/Contacts';
+import DonateE from '../views/Eng/Donate';
+import FounderE from '../views/Eng/Founder';
+import flagFr from '../images/fr.jpeg';
+import flagEn from '../images/engl.jpeg';
 
 export const Navbar = () => {
-    // const [showing, setShowing] = useState (false);
+    const [showing, setShowing] = useState (false);
     const [lang, setLang] = useState('fr');
-    // // const handleCliclk = () => {
-    // //     showing ? setShowing(false) : setShowing(false)
-    // // }
-    // const main = () => {
-    //     if (lang === 'fr') {
-    //         return (
-                
-    //         )
-    //     } else {
-    //         return (
-    //             <div></div>
-    //         )
-    //     }
-    // }
+    const handleCliclk = () => {
+        showing ? setShowing(false) : setShowing(false)
+    }
     return (
         
         <div>
@@ -62,7 +59,7 @@ export const Navbar = () => {
                     <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default' data-spy="affix" data-offset-top="197">
                         <div className = 'container'>
                             <div className = 'navbar-header'>
-                                {/* {
+                                {
                                     !showing ? (
                                         <button
                                             onClick = {handleCliclk}
@@ -88,7 +85,7 @@ export const Navbar = () => {
                                             
                                         </button>
                                     )
-                                } */}
+                                }
                                 <a href = '#top' className = 'navbar-brand page-scroll'>
                                     <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff', borderRadius : 45, marginTop : -25}} />
                                 </a>
@@ -113,6 +110,12 @@ export const Navbar = () => {
                                     <li>
                                         <Link to = {'/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
                                     </li>
+                                    <li>
+                                       <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 30, width : 30, marginTop : -10}} src = {flagFr} alt = '' /></Link> 
+                                    </li>
+                                    <li>
+                                       <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 25, width : 25, marginTop : -10}} src = {flagEn} alt = '' /></Link> 
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -124,6 +127,12 @@ export const Navbar = () => {
                         <Route path = '/contacts' component = {Contacts} />
                         <Route path = '/donate' component = {Donate}/>
                         <Route path = '/founder' component = {Founder} />
+                        <Route exact path = '/en' component = {HomeE} />
+                        <Route path = '/en/about' component = {AboutE} />
+                        <Route path = '/en/vision' component = {VisionE} />
+                        <Route path = '/en/contacts' component = {ContactsE} />
+                        <Route path = '/en/donate' component = {DonateE}/>
+                        <Route path = '/en/founder' component = {FounderE} />
                     </Switch>
                 </div>
                 </Router>
@@ -160,7 +169,7 @@ export const Navbar = () => {
                     <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default' data-spy="affix" data-offset-top="197">
                         <div className = 'container'>
                             <div className = 'navbar-header'>
-                                {/* {
+                                {
                                     !showing ? (
                                         <button
                                             onClick = {handleCliclk}
@@ -186,7 +195,7 @@ export const Navbar = () => {
                                             
                                         </button>
                                     )
-                                } */}
+                                }
                                 <a href = '#top' className = 'navbar-brand page-scroll'>
                                     <img src = {logo} alt = '' style = {{ height : 90, width : 90, backgroundColor : '#ffffff', borderRadius : 45, marginTop : -25}} />
                                 </a>
@@ -197,31 +206,43 @@ export const Navbar = () => {
                             >
                                 <ul className = 'nav navbar-nav navbar-right'>
                                     <li>
-                                        <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
+                                        <Link to = {'/en'} className = 'nav-link page-scroll' >Home</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/about'} className = 'nav-link dropdown-toggle page-scroll'>A propos</Link>
+                                        <Link to = {'/en/about'} className = 'nav-link dropdown-toggle page-scroll'>About</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/founder'} className = 'nav-link dropdown-toggle page-scroll'>Fondatrice</Link>
+                                        <Link to = {'/en/founder'} className = 'nav-link dropdown-toggle page-scroll'>Founder</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/vision'} className = 'nav-link page-scroll' >Vision</Link>
+                                        <Link to = {'/en/vision'} className = 'nav-link page-scroll' >Vision</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
+                                        <Link to = {'/en/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
+                                    </li>
+                                    <li>
+                                       <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 30, width : 30, marginTop : -10}} src = {flagFr} alt = '' /></Link> 
+                                    </li>
+                                    <li>
+                                       <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 25, width : 25, marginTop : -10}} src = {flagEn} alt = '' /></Link> 
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                     <Switch>
-                        <Route exact path = '/' component = {Home} />
+                    <Route exact path = '/' component = {Home} />
                         <Route path = '/about' component = {About} />
                         <Route path = '/vision' component = {Vision} />
                         <Route path = '/contacts' component = {Contacts} />
                         <Route path = '/donate' component = {Donate}/>
                         <Route path = '/founder' component = {Founder} />
+                        <Route exact path = '/en' component = {Home} />
+                        <Route path = '/en/about' component = {About} />
+                        <Route path = '/en/vision' component = {Vision} />
+                        <Route path = '/en/contacts' component = {Contacts} />
+                        <Route path = '/en/donate' component = {Donate}/>
+                        <Route path = '/en/founder' component = {Founder} />
                     </Switch>
                 </div>
                 </Router>

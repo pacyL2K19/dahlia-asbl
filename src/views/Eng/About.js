@@ -9,13 +9,13 @@ import {makeStyles} from '@material-ui/core/styles';
 //images
 import Backdrop from '@material-ui/core/Backdrop';
 import emailjs from 'emailjs-com';
-import paypal from '../images/paypal.png';
-import visa from '../images/cartes.png';
-import apropos from '../images/apropos.png';
-import volontaire from '../images/volontaire.png';
-import don from '../images/don.png';
-import donataire from '../images/donataire.png';
-import cadeau from '../images/cadeau.png';
+import paypal from '../../images/paypal.png';
+import visa from '../../images/cartes.png';
+import apropos from '../../images/apropos.png';
+import volontaire from '../../images/volontaire.png';
+import don from '../../images/don.png';
+import donataire from '../../images/donataire.png';
+import cadeau from '../../images/cadeau.png';
 import { Grid } from '@material-ui/core';
 import { Form, Button } from 'react-bootstrap'
 import styles from 'styled-components';
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2, 4, 3),
     },
   }));
-const About = () => {
+const AboutE = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
@@ -144,7 +144,7 @@ const About = () => {
             {/* <Navbar /> */}
             <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {apropos} alt = ''/><br /><br />
-                <h2>À propos</h2>
+                <h2>About</h2>
             </div>
             <div id = 'mainContent' className = 'container'>
                 <Box data-os = 'fade-down'>
@@ -157,8 +157,8 @@ const About = () => {
                             xl = {6}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                         >
-                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
-                            <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
+                            <p style = {{textAlign : 'justify'}}>Dahlia asbl was born from our desire to give to each woman and child the chance to succeed in their future.</p><br /><br />
+                            <p style = {{textAlign : 'justify'}}>At Dahlia asbl, we are convinced that knowledge  is the key to a better world. However, access to education or / and professional training is still a challenge for many young people around the world.</p>
                         </Grid>
                         <Grid 
                             item
@@ -194,7 +194,7 @@ const About = () => {
                             xl = {6}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                         >
-                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
+                            <p style = {{textAlign : 'justify'}}>Dahlia asbl is a non-profit organization, which aims to promote the social well-being of disadvantaged children in general and particularly women, and people marginalized in society through re-education, reintegration, social reintegration and mutual aid.</p>
                         </Grid>
                     </Grid>
                 </Box>
@@ -210,14 +210,14 @@ const About = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 500, backgroundColor : '#F2F2F2'}}
                     >
                         <img src = {don} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Faire <br/> un don</h2>
+                        <h2 style = {{textAlign : 'center'}}>Make <br/> a donation</h2>
                         <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {handleOpen}
                         >
-                            DONNER
+                            Donate Now
                         </button>
                     </Grid>
                     <Grid
@@ -229,7 +229,7 @@ const About = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 500, backgroundColor : '#ffffff'}}
                     >
                         <img src = {cadeau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Faire un cadeau</h2>
+                        <h2 style = {{textAlign : 'center'}}>Give <br /> a Gift</h2>
                         {/* <p style = {{textAlign : 'center'}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p><br /> */}
                         <br />
                         <button
@@ -237,7 +237,7 @@ const About = () => {
                             className = 'donateBtn'
                             onClick = {handleOpen1}
                         >
-                            DONNER
+                            Donate Now
                         </button>
                     </Grid>
                     <Grid
@@ -249,14 +249,14 @@ const About = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 500, backgroundColor : '#F2F2F2'}}
                     >
                         <img src = {volontaire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Devenir volontaire</h2>
+                        <h2 style = {{textAlign : 'center'}}>Become <br />a volunteer</h2>
                         <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {handleOpen2}
                         >
-                            SOUSCRIRE
+                            SUBSCRIBE
                         </button>
                     </Grid>
                     <Grid
@@ -268,14 +268,14 @@ const About = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 500, backgroundColor : '#ffffff'}}
                     >
                         <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Donateur Individuel</h2>
+                        <h2 style = {{textAlign : 'center'}}>Individual <br /> Donator</h2>
                         <br />
                         <button
                             type = 'button'
                             className = 'donateBtn'
                             onClick = {handleOpen3}
                         >
-                            SOUSCRIRE
+                            SUBSCRIBE
                         </button>
                         <Modal
                             aria-labelledby="transition-modal-title"
@@ -351,4 +351,4 @@ const About = () => {
     )
 }
 
-export default About
+export default AboutE
