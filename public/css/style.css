@@ -570,6 +570,15 @@ color: #777;
 #supportTransition {
 	margin-bottom: 550px;
 }
+
+#supportTransition .transitionElement h3 {
+	text-align: center;
+}
+
+#supportTransition .transitionElement p {
+	text-align: center;
+}
+
 #iconContents .itemIconContent {
 	margin-bottom: 15px;
 }

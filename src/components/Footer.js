@@ -69,7 +69,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {first} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {first}><img src = {first} alt = '' style = {{height : 50, margin : 5}}/></a>
                                 </Grid>
                                 <Grid 
                                     item 
