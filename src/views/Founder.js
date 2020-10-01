@@ -22,7 +22,7 @@ const Founder = () => {
                         xl = {6}
                         className = 'elmtFounder'
                     >
-                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/founder.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
+                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/Fam.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
 
                         </div>
                     </Grid>
@@ -59,9 +59,8 @@ const Founder = () => {
 
                                 Pour ce faire, commencer par de petites actions comme l’accès à l’eau qui est la première chose que Dieu a créé, est primordiale.<br />
 
-                                «  L’eau c’est la vie ! C’est pourquoi nous devons préserver cette vie et la rendre accessible à tous » – Nadège Dubier<br />
-
-                                « Je suis Nadége Dubier, une femme qui souhaite apporter un réel changement en facilitant l’accès à l’eau potable ! »<br />
+                                «  S’intéresser à des personnes très souvent exclues de la société : les femmes et les enfants.
+                                Pourtant la femme donne la vie ! »
                                 <div style = {{marginTop  : 50}} className = 'iconSection'>
                                     <a href = '#top'><img style = {{height : 90, width : 90}} src = {insta} href = 'https://www.instagram.com/damedubier/' alt = ''/></a>
                                     <a href = '#top'><img style = {{height : 80, width : 80}} src = {link} href = 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/' alt = ''/></a>
@@ -78,7 +77,7 @@ const Founder = () => {
                         xl = {6}
                         className = 'elmtFounder'
                     >
-                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/third.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
+                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/action.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
 
                         </div>
                     </Grid>
