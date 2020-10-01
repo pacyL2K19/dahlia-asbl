@@ -77,7 +77,7 @@ const FounderE = () => {
                         xl = {6}
                         className = 'elmtFounder'
                     >
-                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/action.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
+                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../../images/action.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
 
                         </div>
                     </Grid>

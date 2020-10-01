@@ -131,7 +131,7 @@ const MainBody = () => {
                     >
                         <h4>We have a mission</h4><br />
                         <h2>Help those who need it</h2>
-                        <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat'}}>
+                        <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat'}}>
                             <a rel = 'noopener noreferrer' target = '_blank' href = 'https://www.youtube.com/watch?v=73Yqk3ytXMs&t=32s'>
                                 <img
                                     src = {gifPlayer}
@@ -143,7 +143,7 @@ const MainBody = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div id = 'lastContentE' style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
+            <div id = 'lastContentE' style = {{backgroundImage : 'url('+require('../../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
                 <Grid container>
                     <Grid 
                         item

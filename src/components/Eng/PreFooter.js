@@ -38,7 +38,7 @@ const PreFooter = () => {
                     xl = {6}
                 >
                     <form className={classes.root} noValidate autoComplete="off">
-                        <TextField id="outlined-basic" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Subscribe</div>
+                        <TextField id="outlined-basicE" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Subscribe</div>
                     </form>
                 </Grid>
             </Grid>

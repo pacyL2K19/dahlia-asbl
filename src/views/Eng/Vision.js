@@ -17,7 +17,7 @@ const VisionE = () => {
             {/* <Navbar /> */}
             <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../../images/bgVision1.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {vision} alt = ''/><br /><br />
-                <h2>Notre vision</h2>
+                <h2>Our vision</h2>
             </div>
             <div id = 'mainContent' className = 'container'>
                 <Grid container>

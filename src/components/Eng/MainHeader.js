@@ -52,12 +52,12 @@ const MainHeader = () => {
                     lg = {8}
                     md = {8}
                 >
-                    <p id = 'introHeaderM'>Ensemble, faisons plus</p><br/>
+                    <p id = 'introHeaderME'>Ensemble, faisons plus</p><br/>
                     <h2>
-                        Bienvenue chez <span>Dahlia Asbl</span>.
-                        L'asbl qui donne à chaque
-                        femme et enfant les chances
-                        de réussir leur avenir.
+                        Welcome to <span> Dahlia Asbl </span>.
+                        The non-profit organization that gives each
+                        woman and child chances
+                        to succeed in their future.
                     </h2><br />
                     <p id = 'typicalE'>
                         <Typical 
@@ -71,7 +71,7 @@ const MainHeader = () => {
                         className = 'donateBtn'
                         onClick = {handleOpen}
                     >
-                        <a className = 'donBtns' href ='#top'>DONNER</a>
+                        <a className = 'donBtns' href ='#top'>Donate now</a>
                     </button>
                 </Grid>
                 <Grid

@@ -1,6 +1,6 @@
 import React from 'react';
-import PreFooter from '../components/PreFooter';
-import Footer from '../components/Footer'; 
+import PreFooter from '../../components/Eng/PreFooter';
+import Footer from '../../components/Eng/Footer'; 
 import {
     Modal,
     Fade
@@ -142,7 +142,7 @@ const AboutE = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {apropos} alt = ''/><br /><br />
                 <h2>About</h2>
             </div>
@@ -167,7 +167,7 @@ const AboutE = () => {
                             lg = {6}
                             xl = {6}    
                         >
-                            <div style = {{backgroundImage : 'url('+require('../images/mme.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
+                            <div style = {{backgroundImage : 'url('+require('../../images/mme.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
                             </div>
                         </Grid>
@@ -182,7 +182,7 @@ const AboutE = () => {
                             lg = {6}
                             xl = {6}    
                         >
-                            <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
+                            <div style = {{backgroundImage : 'url('+require('../../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
                             </div>
                         </Grid>

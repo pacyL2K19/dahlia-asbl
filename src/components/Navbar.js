@@ -237,12 +237,12 @@ export const Navbar = () => {
                         <Route path = '/contacts' component = {Contacts} />
                         <Route path = '/donate' component = {Donate}/>
                         <Route path = '/founder' component = {Founder} />
-                        <Route exact path = '/en' component = {Home} />
-                        <Route path = '/en/about' component = {About} />
-                        <Route path = '/en/vision' component = {Vision} />
-                        <Route path = '/en/contacts' component = {Contacts} />
-                        <Route path = '/en/donate' component = {Donate}/>
-                        <Route path = '/en/founder' component = {Founder} />
+                        <Route exact path = '/en' component = {HomeE} />
+                        <Route path = '/en/about' component = {AboutE} />
+                        <Route path = '/en/vision' component = {VisionE} />
+                        <Route path = '/en/contacts' component = {ContactsE} />
+                        <Route path = '/en/donate' component = {DonateE}/>
+                        <Route path = '/en/founder' component = {FounderE} />
                     </Switch>
                 </div>
                 </Router>
