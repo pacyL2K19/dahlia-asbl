@@ -60,7 +60,7 @@ const AboutE = () => {
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
-    const [typeSubsc, setTypeSubsc] = React.useState(' Faire un cadeau ');
+    const [typeSubsc, setTypeSubsc] = React.useState(' Give a gift ');
     // const [from_name, setToName] = useState('');
 
     const handleOpen = () => {
@@ -74,18 +74,18 @@ const AboutE = () => {
 
     const handleOpen2 = () => {
         setOpen1(true);
-        setTypeSubsc('Volontaire');
+        setTypeSubsc('Volunteer');
     };
     
     const handleOpen3 = () => {
         setOpen1(true);
-        setTypeSubsc('Donateur individuel');
+        setTypeSubsc('Individual Donator');
     }
 
     const handleClose = () => {
         setOpen(false);
         setOpen1(false);
-        setTypeSubsc(' Faire un cadeau ')
+        setTypeSubsc(' Give a gift  ')
         setValues({
             from_mail : '',
             from_name : ''
@@ -142,11 +142,11 @@ const AboutE = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {apropos} alt = ''/><br /><br />
                 <h2>About</h2>
             </div>
-            <div id = 'mainContent' className = 'container'>
+            <div id = 'mainContentE' className = 'container'>
                 <Box data-os = 'fade-down'>
                     <Grid container>
                         <Grid 
@@ -294,9 +294,9 @@ const AboutE = () => {
                                     <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
                                     <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
                                     <div id = 'amountContainer'>
-                                        {values.amount} USD
+                                         USD {values.amount}
                                     </div>
-                                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                                    <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
                                         <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
                                         <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
@@ -325,7 +325,7 @@ const AboutE = () => {
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
                                         <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
-                                            Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
+                                            Please, type your current adress<br /> We will contact you back <br /><br />
                                         </Form.Text> 
                                     </Form.Group>
 
@@ -337,7 +337,7 @@ const AboutE = () => {
                                         <Form.Check type="checkbox" label="Check me out" />
                                     </Form.Group> */}
                                     <Button variant="primary" type="submit">
-                                        Soumettre
+                                        Submit
                                     </Button>       {typeSubsc}
                                 </Form>
                             </Fade>

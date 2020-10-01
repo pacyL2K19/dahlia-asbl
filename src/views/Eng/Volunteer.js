@@ -1,6 +1,6 @@
 import React from'react';
 
-const Volunteer = () => {
+const VolunteerE = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const Volunteer = () => {
     )
 }
 
-export default Volunteer
+export default VolunteerE

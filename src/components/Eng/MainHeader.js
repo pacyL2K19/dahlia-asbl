@@ -11,8 +11,8 @@ import {
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import paypal from '../images/paypal.png';
-import visa from '../images/images.png';
+import paypal from '../../images/paypal.png';
+import visa from '../../images/images.png';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -40,7 +40,7 @@ const MainHeader = () => {
         setOpen(false);
     };
     return (
-        <div style = {{ display : 'flex', flexDirection : 'row'}} className = 'container' id = 'mainHeader'>
+        <div style = {{ display : 'flex', flexDirection : 'row'}} className = 'container' id = 'mainHeaderE'>
             <Grid 
                 container
             >
@@ -59,7 +59,7 @@ const MainHeader = () => {
                         femme et enfant les chances
                         de réussir leur avenir.
                     </h2><br />
-                    <p id = 'typical'>
+                    <p id = 'typicalE'>
                         <Typical 
                             steps={[' Apporter de l’aide et de l’espoir aux enfants', 1000, '   ', 100]}
                             loop={Infinity}
@@ -98,12 +98,12 @@ const MainHeader = () => {
             >
                 <Fade in={open}>
                   <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                    <div id = 'headerDonE'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                     <div id = 'amountContainer'>
-                        10 USD
+                        USD 10
                     </div>
-                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                    <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
                         <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
                         <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>

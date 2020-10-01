@@ -12,9 +12,8 @@
         },
         {
             "icon" : "images/Volunteer.png",
-            "title" : "Devenir volontaire",
-            "description" : "Devenxez volontaire pour participer à nos campagnes de sensivilisation et de donation"
-        }
+            "title" : "Become a volunteer",
+            "description" : "Become a volunteer to participate in our awareness and donation campaigns" }
     ],
     "bodyElements" : [
         {

@@ -1,16 +1,16 @@
 import React from 'react';
 // import {Navbar} from '../components/Navbar';
-import MainHeader from '../components/MainHeader';
-import {SupportTransition} from '../components/SupportTransition';
-import MainBody from '../components/MainBody';
-import PreFooter from '../components/PreFooter';
-import Footer from '../components/Footer';
+import MainHeader from '../../components/Eng/MainHeader';
+import {SupportTransition} from '../../components/Eng/SupportTransition';
+import MainBody from '../../components/Eng/MainBody';
+import PreFooter from '../../components/Eng/PreFooter';
+import Footer from '../../components/Eng/Footer';
 
-export const Home = () => {
+export const HomeE = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <div style={{backgroundImage : 'url('+ require('../images/bgHome1.jpg') +')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', marginTop : -20 }}> 
+            <div style={{backgroundImage : 'url('+ require('../../images/bgHome1.jpg') +')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', marginTop : -20 }}> 
                 <MainHeader />
             </div>
             <div>

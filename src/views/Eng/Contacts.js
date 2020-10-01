@@ -1,38 +1,38 @@
 import React from 'react';
-import PreFooter from '../components/PreFooter';
-import Footer from '../components/Footer';
-import contact from '../images/contact.png';
+import PreFooter from '../../components/Eng/PreFooter';
+import Footer from '../../components/Eng/Footer';
+import contact from '../../images/contact.png';
 import {
     Form,
     Button
 } from 'react-bootstrap'
 
-const Contacts = () => {
+const ContactsE = () => {
     return (
         <div id = 'contacts'>
-            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/seventh.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../../images/seventh.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {contact} alt = ''/><br /><br />
-                <h2>Nous contacter</h2>
+                <h2>Contact us</h2>
             </div>
             <div className = 'container formContact'>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Noms *</Form.Label>
-                        <Form.Control type="text" placeholder="Votre nom complet" />
+                        <Form.Label>Names *</Form.Label>
+                        <Form.Control type="text" placeholder="Your complet name" />
                         {/* <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                         </Form.Text> */}
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Adresse Mail *</Form.Label>
+                        <Form.Label>Mail Adress *</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted">
-                        Veuillez saisir une adresse courante
+                        Please provide your current mail adress
                         </Form.Text>
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Sujet</Form.Label>
-                        <Form.Control type="text" placeholder="Le sujet de votre message" />
+                        <Form.Label>Subject</Form.Label>
+                        <Form.Control type="text" placeholder="The subject of your mail " />
                         {/* <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                         </Form.Text> */}
@@ -55,4 +55,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts;
+export default ContactsE;

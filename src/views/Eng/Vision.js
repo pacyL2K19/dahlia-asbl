@@ -1,21 +1,21 @@
 import React from 'react';
-import PreFooter from '../components/PreFooter';
-import Footer from '../components/Footer'; 
+import PreFooter from '../../components/Eng/PreFooter';
+import Footer from '../../components/Eng/Footer'; 
 
 //images 
 
-import vision from '../images/vision.png';
-import support from '../images/Volunteer.png';
-import donataire from '../images/donataire.png';
-import dialogue from '../images/dialogue.png';
-import cerveau from '../images/cerveau.png';
+import vision from '../../images/vision.png';
+import support from '../../images/Volunteer.png';
+import donataire from '../../images/donataire.png';
+import dialogue from '../../images/dialogue.png';
+import cerveau from '../../images/cerveau.png';
 import { Grid } from '@material-ui/core';
 
-const Vision = () => {
+const VisionE = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision1.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAboutE' style = {{backgroundImage : 'url('+require('../../images/bgVision1.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {vision} alt = ''/><br /><br />
                 <h2>Notre vision</h2>
             </div>
@@ -29,8 +29,8 @@ const Vision = () => {
                         xl = {6}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                     >
-                        <p style = {{textAlign:"justify"}}>Préserver et partager sont les mots-clés d’une vision renouvelée de la prospérité et d’une redéfinition du progrès qui placent comme critères premiers le bien-être et l’épanouissement de tous les hommes ainsi que le respect de la vie sous toutes ses formes.</p><br /><br />
-                        <p style = {{textAlign:"justify"}}>Contribuer à une société́ congolaise dynamique où la femme sera libre & forte, valorisée et apportera du progrès et un regard innovant autour des valeurs de travail.</p>
+                        <p style = {{textAlign:"justify"}}>Preservation and sharing are the keywords of a renewed vision of prosperity and of a redefinition of progress which place as primary criteria the well-being and development of all the people as well as respect for life in all its aspects.</p><br /><br />
+                        <p style = {{textAlign:"justify"}}>Contribute to a dynamic Congolese society where women will be free & strong, valued and will bring progress and an innovative perspective around work values.</p>
                     </Grid>
                     <Grid 
                         item
@@ -39,7 +39,7 @@ const Vision = () => {
                         lg = {6}
                         xl = {6}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
 
                         </div>
                     </Grid>
@@ -52,7 +52,7 @@ const Vision = () => {
                         lg = {6}
                         xl = {6}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
 
                         </div>
                     </Grid>
@@ -64,16 +64,16 @@ const Vision = () => {
                         xl = {6}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                     >
-                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
-                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
+                        <h5 style = {{textAlign:"justify"}}>DAHLIA ASBL'S MISSION IS TO:</h5>
+                        <p style = {{textAlign:"justify"}}>• Give children hope for a better future;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Teach children moral values for their development;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Promote women in the professional environment;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Set up sustainable development projects that can facilitate the socio-economic integration of women and children;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Support school training and professional preparation for children who do not have the opportunity to study.</p><br />
                     </Grid>
                 </Grid>
             </div>
-            <div id = 'iconSide'>
+            <div id = 'iconSideE'>
                 <Grid container>
                     <Grid
                         item
@@ -85,7 +85,7 @@ const Vision = () => {
                     >
                         <img src = {dialogue} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Dialogue</h2>
-                        <p style = {{textAlign : 'center'}}>Parce que nous ne pouvons agir seuls, nous plaçons l’écoute, le respect, l’échange, la coopération et la proposition au cœur de nos actions.</p><br />
+                        <p style = {{textAlign : 'center'}}>Because we cannot act alone, we place listening, respect, exchange, cooperation and proposal at the heart of our actions.</p><br />
                     </Grid>
                     <Grid
                         item
@@ -96,8 +96,8 @@ const Vision = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#ffffff'}}
                     >
                         <img src = {cerveau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Sobriété</h2>
-                        <p style = {{textAlign : 'center'}}>Dans un monde où les espèces et les ressources naturelles se raréfient, où les inégalités se creusent, nous souhaitons distinguer l’essentiel du superflu.</p><br />
+                        <h2 style = {{textAlign : 'center'}}>Sobriety</h2>
+                        <p style = {{textAlign : 'center'}}>In a world where species and natural resources are becoming scarce, where inequalities are growing, we want to distinguish the essential from the superfluous.</p><br />
                     </Grid>
                     <Grid
                         item
@@ -108,22 +108,22 @@ const Vision = () => {
                         style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
                     >
                         <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Solidarité</h2>
-                        <p style = {{textAlign : 'center'}}>Parce que les destins de la Nature et de l’Homme sont interdépendants, nous avons le devoir d’œuvrer pour la préservation de l’ensemble du vivant, aujourd’hui et pour demain.</p><br />
+                        <h2 style = {{textAlign : 'center'}}>Solidarity</h2>
+                        <p style = {{textAlign : 'center'}}>Because the destinies of Nature and human are interdependent, we have a duty to work for the preservation of all living things, now and for the future.</p><br />
                     </Grid>
                 </Grid>
             </div>
-            <div style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', padding : 50, display : 'flex', flexDirection : 'column', alignItems : 'center', justifyContent : 'center'}}>
+            <div style = {{backgroundImage : 'url('+require('../../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', padding : 50, display : 'flex', flexDirection : 'column', alignItems : 'center', justifyContent : 'center'}}>
                 <img src = {support} alt = '' style = {{height : 100, width : 100}}/> <br />
-                <h3 style = {{color : 'white', textAlign : 'center', height : 50}}>Devenir volontaire</h3><br />
-                <p style = {{color : 'white', textAlign : 'center', height : 30}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p>
+                <h3 style = {{color : 'white', textAlign : 'center', height : 50}}>Become a volunteer</h3><br />
+                <p style = {{color : 'white', textAlign : 'center', height : 30}}>Become a volunteer to participate in our awareness and donation campaigns.</p>
                 <button
                     type = 'button'
                     className = 'donateBtn'
                     style = {{width : 300, padding : 20, height : 80, fontSize : 20, marginTop : 30}}
                     onClick = {() => console.log('Ok')}
                 >
-                    INSCRIVEZ-VOUS
+                    SUBSCRIBE
                 </button>
             </div>
             <PreFooter />
@@ -132,4 +132,4 @@ const Vision = () => {
     )
 }
 
-export default Vision
+export default VisionE

@@ -116,7 +116,7 @@ const Vision = () => {
             <div style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', padding : 50, display : 'flex', flexDirection : 'column', alignItems : 'center', justifyContent : 'center'}}>
                 <img src = {support} alt = '' style = {{height : 100, width : 100}}/> <br />
                 <h3 style = {{color : 'white', textAlign : 'center', height : 50}}>Devenir volontaire</h3><br />
-                <p style = {{color : 'white', textAlign : 'center', height : 30}}>At quis risus sed vulputate odio ut enim blandit. Massa eget egestas purus viverra.</p>
+                <p style = {{color : 'white', textAlign : 'center', height : 30}}>Devenez volontaires pour participer à nos campagnes de sensibilisation et de donation </p>
                 <button
                     type = 'button'
                     className = 'donateBtn'

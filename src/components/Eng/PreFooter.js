@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 const PreFooter = () => {
     const classes = useStyles ()
     return (
-        <div id = 'pre-footer'>
+        <div id = 'pre-footerE'>
             <Grid container>
             <Grid 
                     item
@@ -28,7 +28,7 @@ const PreFooter = () => {
                     lg = {6}
                     xl = {6}
                 >
-                    <h2>Souscrivez à notre Newsletter</h2>
+                    <h2>Subscribe to a newsletter</h2>
                 </Grid>
                 <Grid 
                     item
@@ -38,7 +38,7 @@ const PreFooter = () => {
                     xl = {6}
                 >
                     <form className={classes.root} noValidate autoComplete="off">
-                        <TextField id="outlined-basic" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Souscrire</div>
+                        <TextField id="outlined-basic" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Subscribe</div>
                     </form>
                 </Grid>
             </Grid>

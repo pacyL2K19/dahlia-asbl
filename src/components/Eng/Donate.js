@@ -8,8 +8,8 @@ import {
 import {makeStyles} from '@material-ui/core/styles';
 import Backdrop from '@material-ui/core/Backdrop';
 // import { Link } from 'react-router-dom';
-import paypal from '../images/paypal.png';
-import visa from '../images/cartes.png';
+import paypal from '../../images/paypal.png';
+import visa from '../../images/cartes.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -60,17 +60,17 @@ export const Donate = () => {
 
     const onClickBtn1 = () => {
       setValues({...values, amount : '10'});
-      console.log('ok');
+
     }
 
     const onClickBtn2 = () => {
       setValues({...values, amount : '100'});
-      console.log('ok');
+
     }
 
     const onClickBtn3 = () => {
       setValues({...values, amount : '1.000'});
-      console.log('ok');
+
     }
 
     // const performPayment = () => {
@@ -78,10 +78,10 @@ export const Donate = () => {
     // }
 
     return(
-        <div id = 'donateField'>
-            <h2>FAITES UN DON</h2>
+        <div id = 'donateFieldE'>
+            <h2>MAKE A DONATION</h2>
             <p>
-                Veuillez entrer le montant
+                Please enter the amount
             </p><br />
             <FormControl fullWidth className={classes.margin} variant="standard">
                 {/* <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel> */}
@@ -95,16 +95,16 @@ export const Donate = () => {
                 />
             </FormControl>
             <div style={{ display : 'flex', flexDirection : 'row', justifyContent : 'space-around', marginTop : 25, marginBottom : 25}}>
-                <p className = 'fundEntry' onClick = {onClickBtn1}>10 $</p>
-                <p className = 'fundEntry' onClick = {onClickBtn2}>100 $</p>
-                <p className = 'fundEntry' onClick = {onClickBtn3}>1.000 $</p>
+                <p className = 'fundEntry' onClick = {onClickBtn1}>$ 10</p>
+                <p className = 'fundEntry' onClick = {onClickBtn2}>$ 100</p>
+                <p className = 'fundEntry' onClick = {onClickBtn3}>$ 1.000</p>
             </div>
             <button
                 type = 'button'
                 className = 'donateBtn1'
                 onClick = {handleOpen}
             >
-                <a className = 'donBtns' href = '#top'>DONNER</a>
+                <a className = 'donBtns' href = '#top'>Donate Now</a>
             </button>
             <Modal
                 aria-labelledby="transition-modal-title"
@@ -120,12 +120,12 @@ export const Donate = () => {
             >
                 <Fade in={open}>
                   <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                    <div id = 'headerDonE'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                     <div id = 'amountContainer'>
-                        {values.amount} USD
+                         USD {values.amount}
                     </div>
-                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                    <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
                         <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
                         <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>

@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 01 2020 14:50:32 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/Navbar.js
+* src/views/Eng/About.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

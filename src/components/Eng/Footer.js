@@ -2,18 +2,18 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 //images
 
-import first from '../images/first.jpg';
-import second from '../images/second.jpg';
-import third from '../images/third.jpg';
-import fourth from '../images/fourth.JPG';
-import fith from '../images/fith.JPG';
-import sixth from '../images/sixth.JPG';
-import eigth from '../images/eigth.JPG';
-import nineth from '../images/nineth.JPG';
+import first from '../../images/first.jpg';
+import second from '../../images/second.jpg';
+import third from '../../images/third.jpg';
+import fourth from '../../images/fourth.JPG';
+import fith from '../../images/fith.JPG';
+import sixth from '../../images/sixth.JPG';
+import eigth from '../../images/eigth.JPG';
+import nineth from '../../images/nineth.JPG';
 
 const Footer = () => {
     return (
-        <div id = 'footer'>
+        <div id = 'footerE'>
             <div className = 'mainFooter'>
                 <div className = 'container'>
                     <Grid container>
@@ -25,7 +25,7 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>INFORMATIONS</h3><br />
-                            <p style = {{paddingRight : 10}}>Dahlia asbl est la pour redonner le sourire aux femmes et aux enfants, vous pouvez egalement participer en faisant un don a ces enfants</p>
+                            <p style = {{paddingRight : 10}}>Dahlia asbl is here to bring back smiles to women and children, you can also participate by making a donation to these children</p>
                         </Grid>
                         <Grid
                             item
@@ -46,11 +46,11 @@ const Footer = () => {
                             xl = {3}
                             lg = {3}
                         >
-                            <h3>LIENS IMPORTANTS</h3><br />
+                            <h3>QUICK LINKS</h3><br />
                             <ul style = {{marginLeft : 10}}>
-                                <li><a href = '#ok' >Faire un don maintenant</a></li><br />
-                                <li><a href = '#ok' >Devenir volontaire</a></li><br />
-                                <li><a href = '#ok' >Nous supporter</a></li><br />
+                                <li><a href = '#ok' >Make a donation</a></li><br />
+                                <li><a href = '#ok' >Become a volunteer </a></li><br />
+                                <li><a href = '#ok' >Support us</a></li><br />
                             </ul>
                         </Grid>
                         <Grid
@@ -60,7 +60,7 @@ const Footer = () => {
                             xl = {3}
                             lg = {3}
                         >
-                            <h3>GALERIE</h3><br />
+                            <h3>GALLERY</h3><br />
                             <Grid container>
                                 <Grid 
                                     item 

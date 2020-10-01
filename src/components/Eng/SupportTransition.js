@@ -1,11 +1,11 @@
 import React from 'react';
-import dataJson from '../helpers/data.json';
+import dataJson from '../../helpers/Eng/data.json';
 import {
     Grid
 } from '@material-ui/core';
-import donaImg from '../images/Donation.png';
-import voluntImg from '../images/Volunteer.png';
-import supportimg from '../images/support.png'
+import donaImg from '../../images/Donation.png';
+import voluntImg from '../../images/Volunteer.png';
+import supportimg from '../../images/support.png'
 import {Spring} from 'react-spring/renderprops';
 
 export const SupportTransition = () => {
@@ -17,7 +17,7 @@ export const SupportTransition = () => {
         >
             {props => (
                 <div style = {props}>
-                    <div id = 'supportTransition' style = {{height : 300}}>
+                    <div id = 'supportTransitionE' style = {{height : 300}}>
                         <Grid container>
                             <Grid
                                 xs = {12}
