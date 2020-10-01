@@ -291,8 +291,8 @@ const AboutE = () => {
                         >
                             <Fade in={open}>
                                 <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
+                                    <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                                     <div id = 'amountContainer'>
                                          USD {values.amount}
                                     </div>
@@ -320,22 +320,15 @@ const AboutE = () => {
                             <Fade in={open1}>
                                 <Form style={{padding : 30, backgroundColor : '#733b83'}}>
                                     <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
-                                        <Form.Label style={{color : 'white'}}>Votre nom complet</Form.Label><br /><br /><br />
-                                        <Form.Control type="text" placeholder="Mettre votre nom" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
+                                        <Form.Label style={{color : 'white'}}>Complet name</Form.Label><br /><br /><br />
+                                        <Form.Control type="text" placeholder="Please enter your name" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
-                                        <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
+                                        <Form.Control type="email" placeholder="Please enter your email adress" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
                                             Please, type your current adress<br /> We will contact you back <br /><br />
                                         </Form.Text> 
                                     </Form.Group>
 
-                                    {/* <Form.Group controlId="formBasicPassword">
-                                        <Form.Label style={{color : 'white'}}>Quel cadeau comptez-vous off</Form.Label>
-                                        <Form.Control type="text" placeholder="La nature de votre cadeau" />
-                                    </Form.Group> */}
-                                    {/* <Form.Group controlId="formBasicCheckbox">
-                                        <Form.Check type="checkbox" label="Check me out" />
-                                    </Form.Group> */}
                                     <Button variant="primary" type="submit">
                                         Submit
                                     </Button>       {typeSubsc}

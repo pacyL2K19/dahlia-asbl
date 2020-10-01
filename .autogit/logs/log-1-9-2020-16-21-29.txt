@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 01 2020 16:21:29 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/css/style.css
+* src/components/Eng/MainBody.js
+* src/components/Eng/MainHeader.js
+* src/components/Eng/PreFooter.js
+* src/components/Navbar.js
+* src/views/Eng/About.js
+* src/views/Eng/Founder.js
+* src/views/Eng/Vision.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

@@ -1506,6 +1506,7 @@ color: #777;
 
 #pre-footerE {
 	padding : 60px;
+	background-color: #55226a;
 }
 
 #pre-footerE .btnNew {
@@ -1544,7 +1545,7 @@ color: #777;
 	margin-top: -30px;
 }
 
-#footerE .mainFooter p, #footer .mainFooter h3 {
+#footerE .mainFooter p, #footerE .mainFooter h3 {
 	color: white;
 	margin : 10px;
 }
@@ -1649,7 +1650,7 @@ color: #777;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#founderE .main p {
+#founder .main p {
 	color: rgb(58, 55, 55);
 	font-size: 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

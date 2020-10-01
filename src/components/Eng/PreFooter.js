@@ -21,7 +21,7 @@ const PreFooter = () => {
     return (
         <div id = 'pre-footerE'>
             <Grid container>
-            <Grid 
+                <Grid 
                     item
                     xs = {12}
                     md = {6}
