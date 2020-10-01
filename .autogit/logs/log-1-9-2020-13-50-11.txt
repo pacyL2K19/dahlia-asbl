@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Thu Oct 01 2020 13:50:11 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/MainHeader.js
+
+
+Created files:
+* .autogit/logs/log-1-9-2020-13-19-59.txt
+
+
+Deleted files:
+
+
+Renamed files:

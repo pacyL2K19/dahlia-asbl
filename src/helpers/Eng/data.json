@@ -1,0 +1,33 @@
+{
+    "supportTransition" : [
+        {
+            "icon" : "/src/images/Donation.png",
+            "title" : "Faire un don",
+            "description" : "votre don contribuera à donner aux femmes et aux enfants un meilleur avenir"
+        },
+        {
+            "icon" : "../images/Support1.png",
+            "title" : "Nous soutenir",
+            "description" : "Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier"
+        },
+        {
+            "icon" : "images/Volunteer.png",
+            "title" : "Devenir volontaire",
+            "description" : "Devenxez volontaire pour participer à nos campagnes de sensivilisation et de donation"
+        }
+    ],
+    "bodyElements" : [
+        {
+            "icon" : "",
+            "description" : "L’écoute, le respect, la coopération sont au cœur de nos actions."
+        },
+        {
+            "icon" : "",
+            "description" : "Distinguer l’essentiel du superflu"
+        },
+        {
+            "icon" : "",
+            "description" : "Oeuvrer pour la préservation de l’ensemble du vivant"
+        }
+    ]
+}
