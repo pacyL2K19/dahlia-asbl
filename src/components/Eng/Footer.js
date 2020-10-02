@@ -78,7 +78,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {second} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {second}><img src = {second} alt = '' style = {{height : 50, margin : 5}}/></a>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -87,7 +87,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {third} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {third}><img src = {third} alt = '' style = {{height : 50, margin : 5}}/></a>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -96,7 +96,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {fourth} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {fourth}><img src = {fourth} alt = '' style = {{height : 50, margin : 5}}/></a>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -105,7 +105,7 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {fith} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {fith}><img src = {fith} alt = '' style = {{height : 50, margin : 5}}/></a>
                                 </Grid>
                                 <Grid 
                                     item 
@@ -114,7 +114,8 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {sixth} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {sixth}><img src = {sixth} alt = '' style = {{height : 50, margin : 5}}/></a>
+
                                 </Grid>
                                 <Grid 
                                     item 
@@ -123,7 +124,8 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {sixth} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {eigth}><img src = {eigth} alt = '' style = {{height : 50, margin : 5}}/></a>
+
                                 </Grid>
                                 <Grid 
                                     item 
@@ -132,7 +134,8 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {eigth} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {second}><img src = {second} alt = '' style = {{height : 50, margin : 5}}/></a>
+
                                 </Grid>
                                 <Grid 
                                     item 
@@ -141,7 +144,8 @@ const Footer = () => {
                                     md = {4}
                                     xl = {4}
                                 >
-                                    <img src = {nineth} alt = '' style = {{height : 50, margin : 5}}/>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href =  {nineth}><img src = {nineth} alt = '' style = {{height : 50, margin : 5}}/></a>
+
                                 </Grid>
                             </Grid>
                         </Grid>

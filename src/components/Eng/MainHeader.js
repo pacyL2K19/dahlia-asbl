@@ -52,7 +52,7 @@ const MainHeader = () => {
                     lg = {8}
                     md = {8}
                 >
-                    <p id = 'introHeaderME'>Ensemble, faisons plus</p><br/>
+                    <p id = 'introHeaderME'>Together, let's do more</p><br/>
                     <h2>
                         Welcome to <span> Dahlia Asbl </span>.
                         The non-profit organization that gives each
@@ -61,7 +61,7 @@ const MainHeader = () => {
                     </h2><br />
                     <p id = 'typicalE'>
                         <Typical 
-                            steps={[' Apporter de l’aide et de l’espoir aux enfants', 1000, '   ', 100]}
+                            steps={[' Bring help and hope to children', 1000, '   ', 100]}
                             loop={Infinity}
                             wrapper="p"
                         />

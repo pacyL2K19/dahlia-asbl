@@ -64,7 +64,7 @@ const MainBody = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div style={{height : 300, width : '100%', backgroundImage : 'url('+require('../../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat'}}>
+            <div style={{height : 400, width : '100%', backgroundImage : 'url('+require('../../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat', paddingTop : 10, marginTop : '5%'}}>
               <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white'}}>
                 Our <br />
                 Achievements <br />
