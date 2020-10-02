@@ -2,11 +2,40 @@ import React from 'react';
 import {
     Grid
 } from '@material-ui/core';
+
 import data from '../helpers/data.json';
 import oreilleIcon from '../images/ecouteIcon.png';
 import okIcon from '../images/okIcon.png';
 import feuilleIcon from '../images/feuilleIcon.png';
 import gifPlayer from '../images/playing.gif';
+import JustifiedGrid from 'react-justified-grid';
+// Images 
+import gal1 from '../images/gal2.JPG';
+import gal2 from '../images/gal3.JPG';
+import gal3 from '../images/gal2e.JPG';
+import gal4 from '../images/gal5.JPG';
+import gal6 from '../images/gal6.JPG';
+import gal5 from '../images/gal15.JPG';
+import gal7 from '../images/gal7.JPG';
+import gal8 from '../images/gal8.JPG';
+import gal9 from '../images/gal2e.JPG';
+import gal10 from '../images/toput.jpeg';
+import gal11 from '../images/gal11.JPG';
+import gal12 from '../images/gal12.JPG';
+import gal13 from '../images/gal13.JPG';
+import gal14 from '../images/gal14.JPG';
+import gal15 from '../images/gal15.JPG';
+import gal16 from '../images/gal16.JPG';
+// import gal17 from '../images/gal17.JPG';
+// import gal18 from '../images/gal18.JPG';
+// import gal19 from '../images/gal19.JPG';
+import gal20 from '../images/gal20.JPG';
+import gal21 from '../images/gal21.jpeg';
+import gal22 from '../images/gal22.jpeg';
+import gal23 from '../images/gal23.jpeg';
+import gal24 from '../images/gal2e.JPG';
+
+// all images
 
 const MainBody = () => {
     return (
@@ -98,6 +127,146 @@ const MainBody = () => {
                         </div>
                     </Grid>
                  </Grid>
+            </div>
+            <div>
+              <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%'}}>
+                Nos <br />
+                Réalisations<br />
+              </h2>
+              <JustifiedGrid
+                gutter={1}
+                images={[
+                  {
+                    height: 182,
+                    src: gal1,
+                    width: 274
+                  },
+                  {
+                    height: 182,
+                    src: gal2,
+                    width: 243
+                  },
+                  {
+                    height: 182,
+                    src: gal3,
+                    width: 272
+                  },
+                  {
+                    height: 182,
+                    src: gal4,
+                    width: 199
+                  },
+                  {
+                    height: 172,
+                    src: gal5,
+                    width: 259
+                  },
+                  {
+                    height: 172,
+                    src: gal6,
+                    width: 240
+                  },
+                  {
+                    height: 172,
+                    src: gal7,
+                    width: 260
+                  },
+                  {
+                    height: 172,
+                    src: gal8,
+                    width: 229
+                  },
+                  {
+                    height: 204,
+                    src: gal9,
+                    width: 272
+                  },
+                  {
+                    height: 204,
+                    src: gal10,
+                    width: 153
+                  },
+                  {
+                    height: 204,
+                    src: gal11,
+                    width: 136
+                  },
+                  {
+                    height: 204,
+                    src: gal12,
+                    width: 153
+                  },
+                  {
+                    height: 204,
+                    src: gal13,
+                    width: 270
+                  },
+                  {
+                    height: 173,
+                    src: gal14,
+                    width: 224
+                  },
+                  {
+                    height: 173,
+                    src: gal15,
+                    width: 231
+                  },
+                  {
+                    height: 173,
+                    src: gal16,
+                    width: 272
+                  },
+                  {
+                    height: 173,
+                    src: gal11,
+                    width: 261
+                  },
+                  {
+                    height: 221,
+                    src: gal15,
+                    width: 260
+                  },
+                  {
+                    height: 221,
+                    src: gal10,
+                    width: 166
+                  },
+                  {
+                    height: 221,
+                    src: gal20,
+                    width: 295
+                  },
+                  {
+                    height: 173,
+                    src: gal21,
+                    width: 231
+                  },
+                  {
+                    height: 173,
+                    src: gal22,
+                    width: 260
+                  },
+                  {
+                    height: 173,
+                    src: gal23,
+                    width: 235
+                  },
+                  {
+                    height: 173,
+                    src: gal24,
+                    width: 262
+                  },
+                  {
+                    height: 198,
+                    src: gal12,
+                    width: 263
+                  },
+                ]}
+                maxRowHeight={150}
+                rows={undefined}
+                showIncompleteRow={false}
+                style={{margin : '5%'}}
+              />
             </div>
             <div id = 'videoBan' className = 'container'>
                 <Grid 
