@@ -243,6 +243,7 @@ export const Navbar = () => {
                         <Route path = '/en/contacts' component = {ContactsE} />
                         <Route path = '/en/donate' component = {DonateE}/>
                         <Route path = '/en/founder' component = {FounderE} />
+                        <Route component = {Home}/>
                     </Switch>
                 </div>
                 </Router>
