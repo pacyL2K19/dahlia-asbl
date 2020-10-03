@@ -37,9 +37,10 @@ const Founder = () => {
                         <div className = 'textBox'>
                             <h2>Nadège Dubier</h2>
                             <p><em>Fondatrice de l'ASBL Dahlia</em></p>
+                            <p><em>Philanthrope - Femme de coeur</em></p>
                             <p>
-                                Un soir, Nadège Dubier rencontre une petite fille, venue de très loin, qui lui expliqua ce dur parcours qu’elle doit faire quotidiennement pour trouver de l’eau potable pour elle et sa famille. Face à cette réalité, l’entreprise « Water Solutions » est née.<br /><br />
-                                Depuis, cette rencontre, son parcours d’entrepreneur est en constante évolution : elle est la seule femme congolaise à tenir une entreprise experte dans la gestion de projet de forage.
+                                Derrière Dahlia il y a Nadège Dubier. Depuis quelques années elle oeuvre pour redonner sa place à la femme marginaliser en l’aidant à être confiante, forte et indépendante. <br />
+                                Elle contribue aussi à la rééducation des enfants défavorisés, à leur réintégration et à leur réinsertion sociale.   Sa philosophie : « Faire une plus grande table et non une plus haute clôture »
                             </p>
                         </div>
                     </Grid>
@@ -62,8 +63,8 @@ const Founder = () => {
                                 «  S’intéresser à des personnes très souvent exclues de la société : les femmes et les enfants.
                                 Pourtant la femme donne la vie ! »
                                 <div style = {{marginTop  : 50}} className = 'iconSection'>
-                                    <a href = '#top'><img style = {{height : 90, width : 90}} src = {insta} href = 'https://www.instagram.com/damedubier/' alt = ''/></a>
-                                    <a href = '#top'><img style = {{height : 80, width : 80}} src = {link} href = 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/' alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href = 'https://www.instagram.com/damedubier/'><img style = {{height : 90, width : 90}} src = {insta} alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href= 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/'><img style = {{height : 80, width : 80}} src = {link} alt = ''/></a>
                                 </div>
                             </p>
                         </div>

@@ -46,8 +46,8 @@ const MainBody = () => {
                         xl = {6}
                     >
                         <h2 style = {{textAlign : 'end'}}>
-                            We are working <br />
-                            To all who are<br />
+                            We are working<br />
+                            For all who are<br />
                             In need<br />
                         </h2>
                     </Grid>
@@ -63,12 +63,6 @@ const MainBody = () => {
                         </p>
                     </Grid>
                 </Grid>
-            </div>
-            <div style={{height : 400, width : '100%', backgroundImage : 'url('+require('../../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat', paddingTop : 10, marginTop : '5%'}}>
-              <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white'}}>
-                Our <br />
-                Achievements <br />
-              </h2>
             </div>
             <div id = 'iconContentsE' className = 'container'>
                  <Grid
@@ -129,6 +123,12 @@ const MainBody = () => {
                         </div>
                     </Grid>
                  </Grid>
+            </div>
+            <div style={{height : 400, width : '100%', backgroundImage : 'url('+require('../../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat', paddingTop : 10, marginTop : '5%'}}>
+              <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white'}}>
+                Our <br />
+                Achievements <br />
+              </h2>
             </div>
             <div id = 'videoBanE' className = 'container'>
                 <Grid 
@@ -204,7 +204,7 @@ const MainBody = () => {
                                 lg = {6}
                                 item
                             >
-                                <p>DBECOME VOLUNTEER</p>
+                                <p>BECOME VOLUNTEER</p>
                             </Grid>
                         </Grid>
                     </Grid>

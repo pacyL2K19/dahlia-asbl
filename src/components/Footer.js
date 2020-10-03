@@ -25,7 +25,7 @@ const Footer = () => {
                             lg = {3}
                         >
                             <h3>INFORMATIONS</h3><br />
-                            <p style = {{paddingRight : 10}}>Dahlia asbl is here to bring back smiles to women and children, you can also participate by making a donation to these children</p>
+                            <p style = {{paddingRight : 10}}>Dahlia asbl est là pour redonner le sourire aux femmes et aux enfants, vous pouvez également participer en faisant un don à ces enfants</p>
                         </Grid>
                         <Grid
                             item
@@ -46,11 +46,11 @@ const Footer = () => {
                             xl = {3}
                             lg = {3}
                         >
-                            <h3>QUICK LINKS</h3><br />
+                            <h3>LIENS IMPORTANTS</h3><br />
                             <ul style = {{marginLeft : 10}}>
-                                <li><a href = '#ok' >Make a donation</a></li><br />
-                                <li><a href = '#ok' >Become a volunteer </a></li><br />
-                                <li><a href = '#ok' >Support us</a></li><br />
+                                <li><a href = '#ok' >Faire un don</a></li><br />
+                                <li><a href = '#ok' >Devenir volontaire </a></li><br />
+                                <li><a href = '#ok' >Nous soutenir </a></li><br />
                             </ul>
                         </Grid>
                         <Grid
@@ -60,7 +60,7 @@ const Footer = () => {
                             xl = {3}
                             lg = {3}
                         >
-                            <h3>GALLERY</h3><br />
+                            <h3>GALERIE</h3><br />
                             <Grid container>
                                 <Grid 
                                     item 

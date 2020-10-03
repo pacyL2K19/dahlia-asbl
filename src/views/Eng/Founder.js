@@ -37,9 +37,10 @@ const FounderE = () => {
                         <div className = 'textBox'>
                             <h2>Nadège Dubier</h2>
                             <p><em>Founder of Dahlia-asbl</em></p>
+                            <p><em>Philanthropist - Woman of heart</em></p>
                             <p>
-                                One evening, Nadège Dubier meets a little girl, who came from far away, who explained to her the hard journey she has to take daily to find drinking water for herself and her family. Faced with this reality, the "Water Solutions" company was born. <br /> <br />
-                                Since then, her career as an entrepreneur has evolved constantly: she is the only Congolese woman to run a company that is expert in drilling project management.
+                                Behind Dahlia there is Nadège Dubier. For several years now, she has been working to give back her place to marginalized women by helping them to be confident, strong and independent.<br />
+                                It also contributes to the rehabilitation of disadvantaged children, their reintegration and their social reintegration. His philosophy: "Make a bigger table and not a higher fence"
                             </p>
                         </div>
                     </Grid>
@@ -62,8 +63,8 @@ const FounderE = () => {
                                 “Focus on people who are very often excluded from society: women and children.
                                 Yet woman gives life! "
                                 <div style = {{marginTop  : 50}} className = 'iconSection'>
-                                    <a href = '#top'><img style = {{height : 90, width : 90}} src = {insta} href = 'https://www.instagram.com/damedubier/' alt = ''/></a>
-                                    <a href = '#top'><img style = {{height : 80, width : 80}} src = {link} href = 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/' alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href = 'https://www.instagram.com/damedubier/'><img style = {{height : 90, width : 90}} src = {insta} alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href= 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/'><img style = {{height : 80, width : 80}} src = {link} alt = ''/></a>
                                 </div>
                             </p>
                         </div>

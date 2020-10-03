@@ -65,6 +65,9 @@ const About = () => {
 
     const handleOpen = () => {
         setOpen(true);
+        setValues ({
+            amount : 10
+        })
     };
 
     const handleOpen1 = () => {

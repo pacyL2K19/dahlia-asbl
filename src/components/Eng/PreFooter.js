@@ -28,7 +28,7 @@ const PreFooter = () => {
                     lg = {6}
                     xl = {6}
                 >
-                    <h2>Subscribe to a newsletter</h2>
+                    <h2>Subscribe to newsletter</h2>
                 </Grid>
                 <Grid 
                     item

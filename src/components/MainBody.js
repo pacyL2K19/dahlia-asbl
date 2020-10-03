@@ -25,7 +25,7 @@ const MainBody = () => {
                         xl = {6}
                     >
                         <h2 style = {{textAlign : 'end'}}>
-                            Nous travaillons <br />
+                            Nous travaillons<br />
                             Auprès de tous ceux qui sont<br />
                             Dans le besoin <br />
                         </h2>
