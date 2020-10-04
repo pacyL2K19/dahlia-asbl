@@ -10,7 +10,7 @@ const FounderE = () => {
         <div id = 'founderE'>
             <div style = {{backgroundImage : 'url('+require('../../images/bgVision1.jpg')+')', display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 40, marginTop: -20, backgroundRepeat : 'no-repeat', backgroundPosition : 'center', backgroundSize : 'cover'}}>
                 <img src = {page} alt = '' />
-                <h2 style = {{color : 'white', margin : 10}}>La Fondatrice</h2>
+                <h2 style = {{color : 'white', margin : 10}}>The founder</h2>
             </div>
             <div className = 'container main'>
                 <Grid container>

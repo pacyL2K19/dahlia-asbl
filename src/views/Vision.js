@@ -15,7 +15,7 @@ const Vision = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision1.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgVision.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {vision} alt = ''/><br /><br />
                 <h2>Notre vision</h2>
             </div>

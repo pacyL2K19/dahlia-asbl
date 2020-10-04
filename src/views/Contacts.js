@@ -10,7 +10,7 @@ import {
 const Contacts = () => {
     return (
         <div id = 'contacts'>
-            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/seventh.JPG')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
+            <div id = 'introAbout' style = {{backgroundImage : 'url('+require('../images/bgCont.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', display : 'flex', justifyContent : 'center', alignItems : 'center', flexDirection : 'column'}}>
                 <img src = {contact} alt = ''/><br /><br />
                 <h2>Nous contacter</h2>
             </div>

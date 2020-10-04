@@ -110,6 +110,7 @@ const AboutE = () => {
         console.log('arrived')
 
         if (values.from_mail !== '' && values.from_name !== '') {
+            
             emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
@@ -297,7 +298,7 @@ const AboutE = () => {
                                     <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
                                     <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                                     <div id = 'amountContainer'>
-                                         USD {values.amount}
+                                         USD   <input placeholder = 'ex : 100' type = 'text' style={{width : 100, backgroundColor : 'transparent', borderWidth : 0 }} /> 
                                     </div>
                                     <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>

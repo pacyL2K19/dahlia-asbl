@@ -122,18 +122,18 @@ export const Navbar = () => {
                     </nav>
                     <Switch>
                         <Route exact path = '/' component = {Home} />
-                        <Route path = '/about' component = {About} />
-                        <Route path = '/vision' component = {Vision} />
-                        <Route path = '/contacts' component = {Contacts} />
-                        <Route path = '/donate' component = {Donate}/>
-                        <Route path = '/founder' component = {Founder} />
+                        <Route exact path = '/about' component = {About} />
+                        <Route exact path = '/vision' component = {Vision} />
+                        <Route exact path = '/contacts' component = {Contacts} />
+                        <Route exact path = '/donate' component = {Donate}/>
+                        <Route exact path = '/founder' component = {Founder} />
                         <Route exact path = '/en' component = {HomeE} />
-                        <Route path = '/en/about' component = {AboutE} />
-                        <Route path = '/en/vision' component = {VisionE} />
-                        <Route path = '/en/contacts' component = {ContactsE} />
-                        <Route path = '/en/donate' component = {DonateE}/>
-                        <Route path = '/en/founder' component = {FounderE} />
-                        <Route component = {Home}/>
+                        <Route exact path = '/en/about' component = {AboutE} />
+                        <Route excat path = '/en/vision' component = {VisionE} />
+                        <Route exact path = '/en/contacts' component = {ContactsE} />
+                        <Route exact path = '/en/donate' component = {DonateE}/>
+                        <Route exact path = '/en/founder' component = {FounderE} />
+                        <Route path = '/*' component = {Home}/>
                     </Switch>
                 </div>
                 </Router>
@@ -233,18 +233,18 @@ export const Navbar = () => {
                     </nav>
                     <Switch>
                     <Route exact path = '/' component = {Home} />
-                        <Route path = '/about' component = {About} />
-                        <Route path = '/vision' component = {Vision} />
-                        <Route path = '/contacts' component = {Contacts} />
-                        <Route path = '/donate' component = {Donate}/>
-                        <Route path = '/founder' component = {Founder} />
+                        <Route exact path = '/about' component = {About} />
+                        <Route exact path = '/vision' component = {Vision} />
+                        <Route exact path = '/contacts' component = {Contacts} />
+                        <Route exact path = '/donate' component = {Donate}/>
+                        <Route exact path = '/founder' component = {Founder} />
                         <Route exact path = '/en' component = {HomeE} />
-                        <Route path = '/en/about' component = {AboutE} />
-                        <Route path = '/en/vision' component = {VisionE} />
-                        <Route path = '/en/contacts' component = {ContactsE} />
-                        <Route path = '/en/donate' component = {DonateE}/>
-                        <Route path = '/en/founder' component = {FounderE} />
-                        <Route component = {Home}/>
+                        <Route exact path = '/en/about' component = {AboutE} />
+                        <Route exact path = '/en/vision' component = {VisionE} />
+                        <Route exact path = '/en/contacts' component = {ContactsE} />
+                        <Route exact path = '/en/donate' component = {DonateE}/>
+                        <Route exact path = '/en/founder' component = {FounderE} />
+                        <Route path = '/*' component = {Home}/>
                     </Switch>
                 </div>
                 </Router>

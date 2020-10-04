@@ -292,7 +292,7 @@ const MainBody = () => {
                                 <Form style={{padding : 30, backgroundColor : '#733b83'}}>
                                     <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
                                         <Form.Label style={{color : 'white'}}>Complet name</Form.Label><br /><br /><br />
-                                        <Form.Control type="text" placeholder="Mettre votre nom" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
+                                        <Form.Control type="text" placeholder="Names" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
                                         <Form.Control type="email" placeholder="Enter your mail adress" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
@@ -327,12 +327,12 @@ const MainBody = () => {
             >
                 <Fade in={open}>
                   <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
-                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
-                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                     <div id = 'amountContainer'>
                         <input placeholder = 'ex : 100' type = 'text' style={{width : 100, backgroundColor : 'transparent', borderWidth : 0 }} /> USD
                     </div>
-                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                    <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
                         <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
                         <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
