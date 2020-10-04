@@ -101,7 +101,7 @@ const MainHeader = () => {
                     <div id = 'headerDonE'><p style= {{textAlign : 'center'}}>Make a donation now</p></div> 
                     <p style = {{textAlign : 'center', margin : 20}}>Amount</p>
                     <div id = 'amountContainer'>
-                        USD 10
+                        USD <input placeholder = 'ex : 100' type = 'text' style={{width : 100, backgroundColor : 'transparent', borderWidth : 0 }} />
                     </div>
                     <p style = {{textAlign : 'center'}}>Which payment method do you prefeer ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>

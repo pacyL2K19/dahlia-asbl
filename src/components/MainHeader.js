@@ -101,7 +101,7 @@ const MainHeader = () => {
                     <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
                     <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
                     <div id = 'amountContainer'>
-                        10 USD
+                        <input placeholder = 'ex : 100' type = 'text' style={{width : 100, backgroundColor : 'transparent', borderWidth : 0 }} /> USD
                     </div>
                     <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
                     <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
