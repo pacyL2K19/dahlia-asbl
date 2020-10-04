@@ -6,34 +6,88 @@ import data from '../../helpers/Eng/data.json';
 import oreilleIcon from '../../images/ecouteIcon.png';
 import okIcon from '../../images/okIcon.png';
 import feuilleIcon from '../../images/feuilleIcon.png';
-import gifPlayer from '../../images/playing.gif';
-// import JustifiedGrid from 'react-justified-grid';
-// Images 
-// import gal1 from '../../images/gal2.JPG';
-// import gal2 from '../../images/gal3.JPG';
-// import gal3 from '../../images/gal2e.JPG';
-// import gal4 from '../../images/gal5.JPG';
-// import gal6 from '../../images/gal6.JPG';
-// import gal5 from '../../images/gal15.JPG';
-// import gal7 from '../../images/gal7.JPG';
-// import gal8 from '../../images/gal8.JPG';
-// import gal9 from '../../images/gal2e.JPG';
-// import gal10 from '../../images/toput.jpeg';
-// import gal11 from '../../images/gal11.JPG';
-// import gal12 from '../../images/gal12.JPG';
-// import gal13 from '../../images/gal13.JPG';
-// import gal14 from '../../images/gal14.JPG';
-// import gal15 from '../../images/gal15.JPG';
-// import gal16 from '../../images/gal16.JPG';
-// import gal20 from '../../images/gal20.JPG';
-// import gal21 from '../../images/gal21.jpeg';
-// import gal22 from '../../images/gal22.jpeg';
-// import gal23 from '../../images/gal23.jpeg';
-// import gal24 from '../../images/gal2e.JPG';
+import gifPlayer from '../../images/playing.gif'
+import {
+    Modal,
+    Fade
+} from '@material-ui/core';
+import {
+    makeStyles
+} from '@material-ui/core/styles';
+import Backdrop from '@material-ui/core/Backdrop';
+import emailjs from 'emailjs-com';
+import { Form, Button } from 'react-bootstrap';
+import paypal from '../../images/paypal.png';
+import visa from '../../images/cartes.png';
 
 // all images
-
+const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+        width: '25ch',
+        },
+        display : 'flex',
+        flexDirection : 'row'
+    },
+    margin: {
+        margin: theme.spacing(1),
+        width : '100%',
+        right : 10,
+      },
+      withoutLabel: {
+        marginTop: theme.spacing(3),
+      },
+      textField: {
+        width: '25ch',
+      },
+      modal: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      paper: {
+        backgroundColor: theme.palette.background.paper,
+        border: '2px solid #000',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+      },
+}));
 const MainBody = () => {
+    const [open1, setOpen1] = React.useState(false);
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen1(false);
+        setOpen(false);
+    };
+    const [values, setValues] = React.useState({
+        from_name : '',
+        from_mail : ''
+    });
+    const templateParams = {
+        reply_to : values.from_mail,
+        from_name : values.amount+' | '+values.from_mail,
+        to_name : 'Dahlia-asbl',
+        message : 'Souscription pour Newsletter',
+    }
+    const sendMail = (e) => {
+        e.preventDefault();
+        console.log('arrived')
+    
+        if (values.from_mail !== '' && values.from_name !== '') {
+            emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        } else {
+            console.log('error ')
+            alert('Veuillez completer vos identifiants');
+        }
+        
+    }
+    const classes = useStyles ();
     return (
         <div id = 'mainBody'>
             <div id = 'firstContentE' className = 'container'>
@@ -195,7 +249,7 @@ const MainBody = () => {
                                 lg = {6}
                                 item
                             >
-                                <p>MAKE A DONATION</p>
+                                <p onClick = {setOpen}>MAKE A DONATION</p>
                             </Grid>
                             <Grid 
                                 xs = {12}
@@ -204,7 +258,7 @@ const MainBody = () => {
                                 lg = {6}
                                 item
                             >
-                                <p>BECOME VOLUNTEER</p>
+                                <p onClick = {setOpen1}>BECOME VOLUNTEER</p>
                             </Grid>
                         </Grid>
                     </Grid>
@@ -222,6 +276,71 @@ const MainBody = () => {
                     </Grid>
                 </Grid>
             </div>
+            <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open1}
+                            onClose={handleClose}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                            <Fade in={open1}>
+                                <Form style={{padding : 30, backgroundColor : '#733b83'}}>
+                                    <Form.Group controlId="formBasicEmail" onSubmit = {sendMail}>
+                                        <Form.Label style={{color : 'white'}}>Complet name</Form.Label><br /><br /><br />
+                                        <Form.Control type="text" placeholder="Mettre votre nom" onChange = {(event) => {setValues({from_name : event.target.value})}} value = {values.from_name} /><br /><br />
+                                        <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
+                                        <Form.Control type="email" placeholder="Enter your mail adress" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
+                                        <Form.Text className="text-muted" style={{color : 'white'}}>
+                                            Please type your current mail adress 
+                                        </Form.Text> 
+                                    </Form.Group>
+
+                                    {/* <Form.Group controlId="formBasicPassword">
+                                        <Form.Label style={{color : 'white'}}>Quel cadeau comptez-vous off</Form.Label>
+                                        <Form.Control type="text" placeholder="La nature de votre cadeau" />
+                                    </Form.Group> */}
+                                    {/* <Form.Group controlId="formBasicCheckbox">
+                                        <Form.Check type="checkbox" label="Check me out" />
+                                    </Form.Group> */}
+                                    <Button variant="primary" type="submit">
+                                        Submit
+                                    </Button>  Volunteer
+                                </Form>
+                            </Fade>
+                        </Modal>
+                        <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classes.modal}
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                timeout: 500,
+                }}
+            >
+                <Fade in={open}>
+                  <div style = {{paddingTop : 40, paddingBottom : 40}} className={classes.paper}>
+                    <div id = 'headerDon'><p style= {{textAlign : 'center'}}>Faire un don maintenant</p></div> 
+                    <p style = {{textAlign : 'center', margin : 20}}>Montant souscrit</p>
+                    <div id = 'amountContainer'>
+                        <input placeholder = 'ex : 100' type = 'text' style={{width : 100, backgroundColor : 'transparent', borderWidth : 0 }} /> USD
+                    </div>
+                    <p style = {{textAlign : 'center'}}>Quelle méthode de paiement ?</p>
+                    <div id = 'btnActions 'style = {{display : 'flex', flexDirection : 'row'}}>
+                        <img src =  {paypal} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}} />
+                        <img src = {visa} alt = '' style = {{height : 55, width : 150, borderColor : '#abcdef', borderWidth : 1, borderRadius : 2, borderStyle : 'solid', margin : 10}}/>
+                    </div>
+
+                </div>
+                </Fade>
+            </Modal>
         </div>
     )
 }
