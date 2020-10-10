@@ -171,6 +171,12 @@ export const Navbar = () => {
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <a href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>
+                            <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                                <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 20, width : 20}} src = {flagFr} alt = '' /></Link> 
+                            </div>
+                            <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                                <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
+                            </div>
                         </div>
                     </section>
                     <nav id='menu' className = 'navbar navbar-expand-lg sticky-top navbar-default' data-spy="affix" data-offset-top="197">
@@ -227,12 +233,12 @@ export const Navbar = () => {
                                     <li>
                                         <Link to = {'/en/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                        <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 30, width : 30, marginTop : -10}} src = {flagFr} alt = '' /></Link> 
                                     </li>
                                     <li>
                                        <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 25, width : 25, marginTop : -10}} src = {flagEn} alt = '' /></Link> 
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
