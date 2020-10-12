@@ -4,6 +4,9 @@ import {
     makeStyles
 } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+// import MailchimpSubscribe from "react-mailchimp-subscribe";
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,6 +42,7 @@ const PreFooter = () => {
                 >
                     <form className={classes.root} noValidate autoComplete="off">
                         <TextField id="outlined-basicE" label="Mail" variant="outlined" placeholder = 'Enter votre adresse mail'/><div className = 'btnNew'>Subscribe</div>
+                        {/* <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} /> */}
                     </form>
                 </Grid>
             </Grid>
@@ -46,4 +50,4 @@ const PreFooter = () => {
     )
 }
 
-export default PreFooter
+export default PreFooter;

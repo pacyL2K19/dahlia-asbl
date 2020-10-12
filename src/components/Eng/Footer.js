@@ -19,7 +19,7 @@ const Footer = () => {
                     <Grid container>
                         <Grid
                             item
-                            xs = {6}
+                            xs = {12}
                             md = {6}
                             xl = {3}
                             lg = {3}
@@ -29,19 +29,19 @@ const Footer = () => {
                         </Grid>
                         <Grid
                             item
-                            xs = {6}
+                            xs = {12}
                             md = {6}
                             xl = {3}
                             lg = {3}
                         >
                             <h3>CONTACTS</h3><br />
                             <p style={{marginBottom : 15}}>04, Av. Frédéric, Q/Kimpe, Kinshasa-Ngaliema</p>
-                            <p style={{marginBottom : 15}}>Phone : +243 819 740 723</p>
-                            <p style={{marginBottom : 15}}>Email : info@dahlia-asbl.org</p>
+                            <p style={{marginBottom : 15}}><a href = 'tel:0819740723'>Phone : +243 819 740 723</a></p>
+                            <p style={{marginBottom : 15}}><a href = 'mailto:info@dahlia-asbl.org'>Email : info@dahlia-asbl.org</a></p>
                         </Grid>
                         <Grid
                             item
-                            xs = {6}
+                            xs = {12}
                             md = {6}
                             xl = {3}
                             lg = {3}
@@ -55,7 +55,7 @@ const Footer = () => {
                         </Grid>
                         <Grid
                             item
-                            xs = {6}
+                            xs = {12}
                             md = {6}
                             xl = {3}
                             lg = {3}

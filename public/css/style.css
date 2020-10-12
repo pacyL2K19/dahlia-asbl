@@ -630,8 +630,16 @@ color: #777;
 	#supportTransitionE .transitionElementN {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-content: center;
 	}
+
+	/* #supportTransitionE h3 {
+		text-align: center;
+	}
+
+	#supportTransition h3 {
+		text-align: center;
+	} */
 	
 	#supportTransitionE .transitionElement {
 		display: flex;

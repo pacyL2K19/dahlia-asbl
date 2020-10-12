@@ -54,13 +54,14 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
-  }));
+}));
 const About = () => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
     const [typeSubsc, setTypeSubsc] = React.useState(' Faire un cadeau ');
+    const [textDscription, setTextDescription] = React.useState('');
     // const [from_name, setToName] = useState('');
 
     const handleOpen = () => {
@@ -72,17 +73,20 @@ const About = () => {
 
     const handleOpen1 = () => {
         setOpen1(true);
-        setTypeSubsc(' ')
+        setTypeSubsc(' ');
+        setTextDescription('Veuillez mettre votre adresse Email courante, nous vous contacterons dans le plus bref délais');
     };
 
     const handleOpen2 = () => {
         setOpen1(true);
         setTypeSubsc('Volontaire');
+        setTextDescription('Insérer votre adresse Email pour votre souhait de volontariat et vous serez contacté dans le plus bref délais');
     };
     
     const handleOpen3 = () => {
         setOpen1(true);
         setTypeSubsc('Donateur individuel');
+        setTextDescription('Pour votre intérêt de devenir donateur individuel, laissez votre adresse Email et nous vous contacterons dans le plus bref délais');
     }
 
     const handleClose = () => {
@@ -309,7 +313,7 @@ const About = () => {
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
                                         <Form.Control type="email" placeholder="Entrez votre adresse mail" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
-                                            Veuillez mettre votre adresse courante<br /> Vous serez contacté via cette adresse <br /><br />
+                                            {textDscription}
                                         </Form.Text> 
                                     </Form.Group>
 

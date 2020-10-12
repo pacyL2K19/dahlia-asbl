@@ -61,6 +61,7 @@ const AboutE = () => {
     const [open1, setOpen1] = React.useState(false);
     // const [open2, setOpen2] = React.useState(false);
     const [typeSubsc, setTypeSubsc] = React.useState(' Give a gift ');
+    const [textDscription, setTextDescription] = React.useState('');
     // const [from_name, setToName] = useState('');
 
     const handleOpen = () => {
@@ -72,17 +73,20 @@ const AboutE = () => {
 
     const handleOpen1 = () => {
         setOpen1(true);
-        setTypeSubsc(' ')
+        setTypeSubsc(' ');
+        setTextDescription('Please put your current Email address, we will contact you as soon as possible');
     };
 
     const handleOpen2 = () => {
         setOpen1(true);
         setTypeSubsc('Volunteer');
+        setTextDescription('Enter your Email address for your volunteering wish and you will be contacted as soon as possible');
     };
     
     const handleOpen3 = () => {
         setOpen1(true);
         setTypeSubsc('Individual Donator');
+        setTextDescription('Please put your current Email address, we will contact you as soon as possible');
     }
 
     const handleClose = () => {
@@ -329,7 +333,7 @@ const AboutE = () => {
                                         <Form.Label style={{color : 'white'}}>Email address</Form.Label><br /><br /><br />
                                         <Form.Control type="email" placeholder="Please enter your email adress" onChange = {(event) => {setValues({from_mail : event.target.value})}} value = {values.from_mail} /><br /><br />
                                         <Form.Text className="text-muted" style={{color : 'white'}}>
-                                            Please, type your current adress<br /> We will contact you back <br /><br />
+                                            {textDscription}
                                         </Form.Text> 
                                     </Form.Group>
 

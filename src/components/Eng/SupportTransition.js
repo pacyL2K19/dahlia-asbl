@@ -13,7 +13,7 @@ export const SupportTransition = () => {
         <Spring
             from = {{opacity : 0, marginTop : -500}}
             to = {{opacity : 1, marginTop : 0}}
-            config = {{duration : 3000}}
+            config = {{duration : 2500}}
         >
             {props => (
                 <div style = {props}>
