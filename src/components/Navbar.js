@@ -15,6 +15,8 @@ import DonateE from '../views/Eng/Donate';
 import FounderE from '../views/Eng/Founder';
 import flagFr from '../images/fr.jpeg';
 import flagEn from '../images/engl.jpeg';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const Navbar = () => {
     const [showing, setShowing] = useState (false);
@@ -127,19 +129,19 @@ export const Navbar = () => {
                         </div>
                     </nav>
                     <Switch>
-                        <Route exact path = '/' component = {Home} />
-                        <Route exact path = '/about' component = {About} />
-                        <Route exact path = '/vision' component = {Vision} />
-                        <Route exact path = '/contacts' component = {Contacts} />
-                        <Route exact path = '/donate' component = {Donate}/>
-                        <Route exact path = '/founder' component = {Founder} />
-                        <Route exact path = '/en' component = {HomeE} />
-                        <Route exact path = '/en/about' component = {AboutE} />
-                        <Route excat path = '/en/vision' component = {VisionE} />
-                        <Route exact path = '/en/contacts' component = {ContactsE} />
-                        <Route exact path = '/en/donate' component = {DonateE}/>
-                        <Route exact path = '/en/founder' component = {FounderE} />
-                        <Route path = '/*' component = {Home}/>
+                        <Route exact path = {process.env.PUBLIC_URL + '/'} component = {Home} />
+                        <Route path = {process.env.PUBLIC_URL +'/about'} component = {About} />
+                        <Route path = {process.env.PUBLIC_URL +'/vision'} component = {Vision} />
+                        <Route path = {process.env.PUBLIC_URL +'/contacts'} component = {Contacts} />
+                        <Route path = {process.env.PUBLIC_URL +'/donate'} component = {Donate}/>
+                        <Route path = {process.env.PUBLIC_URL +'/founder'} component = {Founder} />
+                        <Route path = {process.env.PUBLIC_URL +'/en'} component = {HomeE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/about'} component = {AboutE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/vision'} component = {VisionE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/contacts'} component = {ContactsE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/donate'} component = {DonateE}/>
+                        <Route path = {process.env.PUBLIC_URL +'/en/founder'} component = {FounderE} />
+                        <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
                     </Switch>
                 </div>
                 </Router>
@@ -245,18 +247,19 @@ export const Navbar = () => {
                     </nav>
                     <Switch>
                     <Route exact path = '/' component = {Home} />
-                        <Route exact path = '/about' component = {About} />
-                        <Route exact path = '/vision' component = {Vision} />
-                        <Route exact path = '/contacts' component = {Contacts} />
-                        <Route exact path = '/donate' component = {Donate}/>
-                        <Route exact path = '/founder' component = {Founder} />
-                        <Route exact path = '/en' component = {HomeE} />
-                        <Route exact path = '/en/about' component = {AboutE} />
-                        <Route exact path = '/en/vision' component = {VisionE} />
-                        <Route exact path = '/en/contacts' component = {ContactsE} />
-                        <Route exact path = '/en/donate' component = {DonateE}/>
-                        <Route exact path = '/en/founder' component = {FounderE} />
-                        <Route path = '/*' component = {Home}/>
+                    <Route exact path = {process.env.PUBLIC_URL + '/'} component = {Home} />
+                        <Route path = {process.env.PUBLIC_URL +'/about'} component = {About} />
+                        <Route path = {process.env.PUBLIC_URL +'/vision'} component = {Vision} />
+                        <Route path = {process.env.PUBLIC_URL +'/contacts'} component = {Contacts} />
+                        <Route path = {process.env.PUBLIC_URL +'/donate'} component = {Donate}/>
+                        <Route path = {process.env.PUBLIC_URL +'/founder'} component = {Founder} />
+                        <Route path = {process.env.PUBLIC_URL +'/en'} component = {HomeE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/about'} component = {AboutE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/vision'} component = {VisionE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/contacts'} component = {ContactsE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/donate'} component = {DonateE}/>
+                        <Route path = {process.env.PUBLIC_URL +'/en/founder'} component = {FounderE} />
+                        <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
                     </Switch>
                 </div>
                 </Router>
