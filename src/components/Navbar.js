@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {Home} from '../views/Home';
 import About from '../views/About';
 import Vision from '../views/Vision';
@@ -141,7 +141,8 @@ export const Navbar = () => {
                         <Route path = {process.env.PUBLIC_URL +'/contactsen/'} component = {ContactsE} />
                         <Route path = {process.env.PUBLIC_URL +'/donateen/'} component = {DonateE}/>
                         <Route path = {process.env.PUBLIC_URL +'/founderen/'} component = {FounderE} />
-                        <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
+                        <Route component = {Home} />
+                        {/* <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/> */}
                     </Switch>
                 </div>
                 </Router>
@@ -221,7 +222,7 @@ export const Navbar = () => {
                             >
                                 <ul className = 'nav navbar-nav navbar-right'>
                                     <li>
-                                        <Link to = {'/en'} className = 'nav-link page-scroll' >Home</Link>
+                                        <Link to = {'/en/'} className = 'nav-link page-scroll' >Home</Link>
                                     </li>
                                     <li>
                                         <Link to = {'/abouten/'} className = 'nav-link dropdown-toggle page-scroll'>About</Link>
@@ -246,20 +247,20 @@ export const Navbar = () => {
                         </div>
                     </nav>
                     <Switch>
-                    <Route exact path = '/' component = {Home} />
-                    <Route exact path = {process.env.PUBLIC_URL + '/'} component = {Home} />
+                        <Route exact path = {process.env.PUBLIC_URL + '/'} component = {Home} />
                         <Route path = {process.env.PUBLIC_URL +'/about'} component = {About} />
                         <Route path = {process.env.PUBLIC_URL +'/vision'} component = {Vision} />
                         <Route path = {process.env.PUBLIC_URL +'/contacts'} component = {Contacts} />
                         <Route path = {process.env.PUBLIC_URL +'/donate'} component = {Donate}/>
                         <Route path = {process.env.PUBLIC_URL +'/founder'} component = {Founder} />
-                        <Route path = {process.env.PUBLIC_URL +'/en'} component = {HomeE} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/'} component = {HomeE} />
                         <Route path = {process.env.PUBLIC_URL +'/abouten/'} component = {AboutE} />
                         <Route path = {process.env.PUBLIC_URL +'/visionen/'} component = {VisionE} />
                         <Route path = {process.env.PUBLIC_URL +'/contactsen/'} component = {ContactsE} />
                         <Route path = {process.env.PUBLIC_URL +'/donateen/'} component = {DonateE}/>
                         <Route path = {process.env.PUBLIC_URL +'/founderen/'} component = {FounderE} />
-                        <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
+                        <Route component = {Home} />
+                        {/* <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/> */}
                     </Switch>
                 </div>
                 </Router>
