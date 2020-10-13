@@ -45,22 +45,22 @@ export const Navbar = () => {
                         </div>
                         <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }}>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-facebook'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://web.facebook.com/Dahlia-Asbl-103267777955627/'><i className = 'fa fa-facebook'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-instagram'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.instagram.com/dahlia_asbl/'><i className = 'fa fa-instagram'></i></a>
                             </div>
+                            {/* <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = '#top'><i className = 'fa fa-twitter'></i></a>
+                            </div> */}
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-twitter'></i></a>
-                            </div>
-                            <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 20, width : 20}} src = {flagFr} alt = '' /></Link> 
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
+                                <Link to = {'/en/'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
                             </div>
                         </div>
                     </section>
@@ -107,16 +107,16 @@ export const Navbar = () => {
                                         <Link to = {'/'} className = 'nav-link page-scroll' >Accueil</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/about'} className = 'nav-link dropdown-toggle page-scroll'>A propos</Link>
+                                        <Link to = {'/about/'} className = 'nav-link dropdown-toggle page-scroll'>A propos</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/founder'} className = 'nav-link dropdown-toggle page-scroll'>Fondatrice</Link>
+                                        <Link to = {'/founder/'} className = 'nav-link dropdown-toggle page-scroll'>Fondatrice</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/vision'} className = 'nav-link page-scroll' >Vision</Link>
+                                        <Link to = {'/vision/'} className = 'nav-link page-scroll' >Vision</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
+                                        <Link to = {'/contacts/'} className = 'nav-link page-scroll' >Contacts</Link>
                                     </li>
                                     {/* <li>
                                        <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 30, width : 30, marginTop : -10}} src = {flagFr} alt = '' /></Link> 
@@ -130,17 +130,17 @@ export const Navbar = () => {
                     </nav>
                     <Switch>
                         <Route exact path = {process.env.PUBLIC_URL + '/'} component = {Home} />
-                        <Route path = {process.env.PUBLIC_URL +'/about'} component = {About} />
-                        <Route path = {process.env.PUBLIC_URL +'/vision'} component = {Vision} />
-                        <Route path = {process.env.PUBLIC_URL +'/contacts'} component = {Contacts} />
-                        <Route path = {process.env.PUBLIC_URL +'/donate'} component = {Donate}/>
-                        <Route path = {process.env.PUBLIC_URL +'/founder'} component = {Founder} />
-                        <Route path = {process.env.PUBLIC_URL +'/en'} component = {HomeE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/about'} component = {AboutE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/vision'} component = {VisionE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/contacts'} component = {ContactsE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/donate'} component = {DonateE}/>
-                        <Route path = {process.env.PUBLIC_URL +'/en/founder'} component = {FounderE} />
+                        <Route path = {process.env.PUBLIC_URL +'/about/'} component = {About} />
+                        <Route path = {process.env.PUBLIC_URL +'/vision/'} component = {Vision} />
+                        <Route path = {process.env.PUBLIC_URL +'/contacts/'} component = {Contacts} />
+                        <Route path = {process.env.PUBLIC_URL +'/donate/'} component = {Donate}/>
+                        <Route path = {process.env.PUBLIC_URL +'/founder/'} component = {Founder} />
+                        <Route path = {process.env.PUBLIC_URL +'/en/'} component = {HomeE} />
+                        <Route path = {process.env.PUBLIC_URL +'/abouten/'} component = {AboutE} />
+                        <Route path = {process.env.PUBLIC_URL +'/visione/'} component = {VisionE} />
+                        <Route path = {process.env.PUBLIC_URL +'/contactsen/'} component = {ContactsE} />
+                        <Route path = {process.env.PUBLIC_URL +'/donateen/'} component = {DonateE}/>
+                        <Route path = {process.env.PUBLIC_URL +'/founderen/'} component = {FounderE} />
                         <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
                     </Switch>
                 </div>
@@ -162,22 +162,22 @@ export const Navbar = () => {
                         </div>
                         <div style = {{ height : 50,  display : 'flex', flexDirection : 'row' }}>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-facebook'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://web.facebook.com/Dahlia-Asbl-103267777955627/'><i className = 'fa fa-facebook'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-instagram'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.instagram.com/dahlia_asbl/'><i className = 'fa fa-instagram'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = '#top'><i className = 'fa fa-twitter'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = '#top'><i className = 'fa fa-twitter'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <a href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
+                                <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 20, width : 20}} src = {flagFr} alt = '' /></Link> 
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/en'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
+                                <Link to = {'/en/'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
                             </div>
                         </div>
                     </section>
@@ -224,16 +224,16 @@ export const Navbar = () => {
                                         <Link to = {'/en'} className = 'nav-link page-scroll' >Home</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/en/about'} className = 'nav-link dropdown-toggle page-scroll'>About</Link>
+                                        <Link to = {'/abouten/'} className = 'nav-link dropdown-toggle page-scroll'>About</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/en/founder'} className = 'nav-link dropdown-toggle page-scroll'>Founder</Link>
+                                        <Link to = {'/founderen/'} className = 'nav-link dropdown-toggle page-scroll'>Founder</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/en/vision'} className = 'nav-link page-scroll' >Vision</Link>
+                                        <Link to = {'/visionen/'} className = 'nav-link page-scroll' >Vision</Link>
                                     </li>
                                     <li>
-                                        <Link to = {'/en/contacts'} className = 'nav-link page-scroll' >Contacts</Link>
+                                        <Link to = {'/contactsen/'} className = 'nav-link page-scroll' >Contacts</Link>
                                     </li>
                                     {/* <li>
                                        <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 30, width : 30, marginTop : -10}} src = {flagFr} alt = '' /></Link> 
@@ -254,11 +254,11 @@ export const Navbar = () => {
                         <Route path = {process.env.PUBLIC_URL +'/donate'} component = {Donate}/>
                         <Route path = {process.env.PUBLIC_URL +'/founder'} component = {Founder} />
                         <Route path = {process.env.PUBLIC_URL +'/en'} component = {HomeE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/about'} component = {AboutE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/vision'} component = {VisionE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/contacts'} component = {ContactsE} />
-                        <Route path = {process.env.PUBLIC_URL +'/en/donate'} component = {DonateE}/>
-                        <Route path = {process.env.PUBLIC_URL +'/en/founder'} component = {FounderE} />
+                        <Route path = {process.env.PUBLIC_URL +'/abouten/'} component = {AboutE} />
+                        <Route path = {process.env.PUBLIC_URL +'/visionen/'} component = {VisionE} />
+                        <Route path = {process.env.PUBLIC_URL +'/contactsen/'} component = {ContactsE} />
+                        <Route path = {process.env.PUBLIC_URL +'/donateen/'} component = {DonateE}/>
+                        <Route path = {process.env.PUBLIC_URL +'/founderen/'} component = {FounderE} />
                         <Route path = {process.env.PUBLIC_URL +'/*'} component = {Home}/>
                     </Switch>
                 </div>
