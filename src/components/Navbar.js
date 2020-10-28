@@ -168,9 +168,9 @@ export const Navbar = () => {
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.instagram.com/dahlia_asbl/'><i className = 'fa fa-instagram'></i></a>
                             </div>
-                            <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
+                            {/* <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <a target = '_blank' rel = 'noopeneer noreferrer' href = '#top'><i className = 'fa fa-twitter'></i></a>
-                            </div>
+                            </div> */}
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
                                 <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>

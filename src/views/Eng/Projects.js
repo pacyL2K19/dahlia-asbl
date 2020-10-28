@@ -28,7 +28,7 @@ const ProjectsE = () => {
                         xl = {6}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                     >
-                        <p style = {{textAlign: "center", color: '# 733b83', fontSize: 28, fontWeight: 'bold'}}> Our projects in planning and execution in Kinshasa </p> <br /> < br />
+                        <p style = {{textAlign: "center", color: '#733b83', fontSize: 28, fontWeight: 'bold'}}> Our projects in planning and execution in Kinshasa </p> <br /> < br />
                         <p style = {{textAlign: "justify"}}> • The construction of a school (center) for vocational training for poor young girls and single mothers; </p> <br />
                         <p style = {{textAlign: "justify"}}> • Empowerment of Congolese women through entrepreneurship; </p> <br />
                         <p style = {{textAlign: "justify"}}> • Farming in rural areas to fight against malnutrition; </p> <br />
@@ -41,7 +41,7 @@ const ProjectsE = () => {
                         lg = {6}
                         xl = {6}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../../images/pro.svg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../../images/pro.svg')+')', backgroundPosition : 'center', backgroundSize : '98%', backgroundRepeat : 'no-repeat', height : 400}}>
 
                         </div>
                     </Grid>
