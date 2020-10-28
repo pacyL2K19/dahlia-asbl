@@ -14,7 +14,10 @@ import visa from '../images/cartes.png';
 import apropos from '../images/apropos.png';
 import volontaire from '../images/volontaire.png';
 import don from '../images/don.png';
+import support from '../images/Volunteer.png';
 import donataire from '../images/donataire.png';
+import dialogue from '../images/dialogue.png';
+import cerveau from '../images/cerveau.png';
 import cadeau from '../images/cadeau.png';
 import { Grid } from '@material-ui/core';
 import { Form, Button } from 'react-bootstrap'
@@ -111,7 +114,7 @@ const About = () => {
     }
     const sendMail = (e) => {
         e.preventDefault();
-        console.log('arrived')
+        // console.log('arrived')
 
         if (values.from_mail !== '' && values.from_name !== '') {
             emailjs.send('a5dcaa0031eeaae0302d776030a24e0b', 'template_k380rke', templateParams)
@@ -145,7 +148,8 @@ const About = () => {
                             xl = {6}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                         >
-                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
+                            <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
+                            <p style = {{textAlign : 'justify'}}><b>Dahlia asbl</b> est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
                             <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
                         </Grid>
                         <Grid 
@@ -332,6 +336,115 @@ const About = () => {
                         </Modal>
                     </Grid>
                 </Grid>
+            </div>
+            <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 45, marginTop : 30, marginBottom : 20, color : '#733b83'}}>Notre Vision & Nos Objectifs</h3><br />
+            <div id = 'mainContent' className = 'container'>
+                <Grid container>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                    >
+                        <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br /><br />
+                        <p style = {{textAlign:"justify"}}>Les circonstances fâcheuses de la vie et les obstacles, ne sont pas plus fort que cette énergie positive ; nous nous inscrivons dans la perspective de contribuer à une société congolaise dynamique, forte, harmonieuse où les droits fondamentaux et universels de la femme et des enfants vulnérables sont respectés et valorisés, ce qui garantit le progrès de notre nation congolaise et le travail mérité.</p>
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}    
+                    >
+                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+
+                        </div>
+                    </Grid>
+                </Grid>
+                <Grid container>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}    
+                    >
+                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+
+                        </div>
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                    >
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
+                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
+                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
+                    </Grid>
+                </Grid>
+            </div>
+            <div id = 'iconSide'>
+                <Grid container>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
+                    >
+                        <img src = {dialogue} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Dialogue</h2>
+                        <p style = {{textAlign : 'center'}}>Parce que nous ne pouvons agir seuls, nous plaçons l’écoute, le respect, l’échange, la coopération et la proposition au cœur de nos actions.</p><br />
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#ffffff'}}
+                    >
+                        <img src = {cerveau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Sobriété</h2>
+                        <p style = {{textAlign : 'center'}}>Dans un monde où les espèces et les ressources naturelles se raréfient, où les inégalités se creusent, nous souhaitons distinguer l’essentiel du superflu.</p><br />
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
+                    >
+                        <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Solidarité</h2>
+                        <p style = {{textAlign : 'center'}}>Parce que les destins de la Nature et de l’Homme sont interdépendants, nous avons le devoir d’œuvrer pour la préservation de l’ensemble du vivant, aujourd’hui et pour demain.</p><br />
+                    </Grid>
+                </Grid>
+            </div>
+            <div style = {{backgroundImage : 'url('+require('../images/bgHome.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', padding : 50, display : 'flex', flexDirection : 'column', alignItems : 'center', justifyContent : 'center'}}>
+                <img src = {support} alt = '' style = {{height : 100, width : 100}}/> <br />
+                <h3 style = {{color : 'white', textAlign : 'center', height : 50}}>Devenir volontaire</h3><br />
+                <p style = {{color : 'white', textAlign : 'center', height : 30}}>Devenez volontaires pour participer à nos campagnes de sensibilisation et de donation </p>
+                <button
+                    type = 'button'
+                    className = 'donateBtn'
+                    style = {{width : 300, padding : 20, height : 80, fontSize : 20, marginTop : 30}}
+                    onClick = {() => console.log('Ok')}
+                >
+                    INSCRIVEZ-VOUS
+                </button>
             </div>
             <PreFooter />
             <Footer />

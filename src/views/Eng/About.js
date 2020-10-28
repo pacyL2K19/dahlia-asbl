@@ -165,7 +165,8 @@ const AboutE = () => {
                             xl = {6}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                         >
-                            <p style = {{textAlign : 'justify'}}>Dahlia asbl was born from our desire to give to each woman and child the chance to succeed in their future.</p><br /><br />
+                            <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Who are we ?</h3><br />
+                            <p style = {{textAlign : 'justify'}}><b>Dahlia asbl</b> was born from our desire to give to each woman and child the chance to succeed in their future.</p><br /><br />
                             <p style = {{textAlign : 'justify'}}>At Dahlia asbl, we are convinced that knowledge  is the key to a better world. However, access to education or / and professional training is still a challenge for many young people around the world.</p>
                         </Grid>
                         <Grid 
