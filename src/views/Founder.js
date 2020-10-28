@@ -13,7 +13,7 @@ const Founder = () => {
                 <h2 style = {{color : 'white', margin : 10}}>La Fondatrice</h2>
             </div>
             <div className = 'container main'>
-                <Grid container>
+                <Grid container style = {{paddingBottom : 150}}>
                     <Grid
                         item 
                         xs = {12}
@@ -22,7 +22,7 @@ const Founder = () => {
                         xl = {6}
                         className = 'elmtFounder'
                     >
-                        <div className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/Fam.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
+                        <div data-aos = 'fade-left' className = 'divElmt' style = {{ backgroundImage : 'url('+require('../images/Fam.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover'}}>
 
                         </div>
                     </Grid>
@@ -34,18 +34,30 @@ const Founder = () => {
                         xl = {6}
                         className = 'elmtFounder'
                     >
-                        <div className = 'textBox'>
+                        <div data-aos = 'fade-left' className = 'textBox'>
                             <h2>Nadège Dubier</h2>
                             <p><em>Fondatrice de l'ASBL Dahlia</em></p>
                             <p><em>Philanthrope - Femme de coeur</em></p>
                             <p>
                                 Derrière Dahlia il y a Nadège Dubier. Depuis quelques années elle oeuvre pour redonner sa place à la femme marginaliser en l’aidant à être confiante, forte et indépendante. <br />
-                                Elle contribue aussi à la rééducation des enfants défavorisés, à leur réintégration et à leur réinsertion sociale.   Sa philosophie : « Faire une plus grande table et non une plus haute clôture »
+                                Elle contribue aussi à la rééducation des enfants défavorisés, à leur réintégration et à leur réinsertion sociale. Sa philosophie : « Faire une plus grande table et non une plus haute clôture »
+                            </p>
+                            <p>
+                                Personnalité publique, mère de 3 enfants, entrepreneur et philanthrope, Nadège a toujours pensé que la vie n’a pas de prix. C’est pourquoi se faire plaisir et faire ce bien autour de soi qui permet d’embellir la vie des plus démunies et  la rendre plus simple sont ses aspirations profondes.<br />
+
+                                Pour ce faire, commencer par de petites actions comme l’accès à l’eau qui est la première chose que Dieu a créé, est primordiale.<br />
+
+                                «  S’intéresser à des personnes très souvent exclues de la société : les femmes et les enfants.
+                                Pourtant la femme donne la vie ! »
+                                <div style = {{marginTop  : 50}} className = 'iconSection'>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href = 'https://www.instagram.com/damedubier/'><img style = {{height : 80, width : 80}} src = {insta} alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href= 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/'><img style = {{height : 70, width : 70}} src = {link} alt = ''/></a>
+                                </div>
                             </p>
                         </div>
                     </Grid>
                 </Grid>
-                <Grid container>
+                {/* <Grid container>
                     <Grid
                         item 
                         xs = {12}
@@ -82,7 +94,7 @@ const Founder = () => {
 
                         </div>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </div>
             <Footer />
         </div>

@@ -13,7 +13,7 @@ const FounderE = () => {
                 <h2 style = {{color : 'white', margin : 10}}>The founder</h2>
             </div>
             <div className = 'container main'>
-                <Grid container>
+                <Grid container style = {{paddingBottom : 100}}>
                     <Grid
                         item 
                         xs = {12}
@@ -42,10 +42,22 @@ const FounderE = () => {
                                 Behind Dahlia there is Nadège Dubier. For several years now, she has been working to give back her place to marginalized women by helping them to be confident, strong and independent.<br />
                                 It also contributes to the rehabilitation of disadvantaged children, their reintegration and their social reintegration. His philosophy: "Make a bigger table and not a higher fence"
                             </p>
+                            <p>
+                                Public figure, mother of 3 children, entrepreneur and philanthropist, Nadège has always believed that life is priceless. This is why having fun and doing this good around you which makes it possible to embellish the lives of the most disadvantaged and to make it simpler are his deepest aspirations. <br />
+
+                                To do this, starting with small actions like getting access to water, which is the first thing God created, is essential. <br />
+
+                                “Focus on people who are very often excluded from society: women and children.
+                                Yet woman gives life! "
+                                <div style = {{marginTop  : 50}} className = 'iconSection'>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href = 'https://www.instagram.com/damedubier/'><img style = {{height : 90, width : 90}} src = {insta} alt = ''/></a>
+                                    <a target = '_blank' rel = 'noopener noreferrer' href= 'https://www.linkedin.com/in/nad%C3%A8ge-dubier-27077685/'><img style = {{height : 80, width : 80}} src = {link} alt = ''/></a>
+                                </div>
+                            </p>
                         </div>
                     </Grid>
                 </Grid>
-                <Grid container>
+                {/* <Grid container>
                     <Grid
                         item 
                         xs = {12}
@@ -82,7 +94,7 @@ const FounderE = () => {
 
                         </div>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </div>
             <Footer />
         </div>
