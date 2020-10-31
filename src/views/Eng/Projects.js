@@ -32,7 +32,7 @@ const ProjectsE = () => {
                         <p style = {{textAlign: "justify"}}> • The construction of a school (center) for vocational training for poor young girls and single mothers; </p> <br />
                         <p style = {{textAlign: "justify"}}> • Empowerment of Congolese women through entrepreneurship; </p> <br />
                         <p style = {{textAlign: "justify"}}> • Farming in rural areas to fight against malnutrition; </p> <br />
-                        <p style = {{textAlign: "justify"}}> • The implementation of the Oréal Paris company in Kinshasa. </p> <br />
+                        <p style = {{textAlign: "justify"}}> • The implementation of the <b>l'Oréal Paris company</b> in Kinshasa. </p> <br />
                     </Grid>
                     <Grid 
                         item

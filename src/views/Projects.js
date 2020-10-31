@@ -33,7 +33,7 @@ const Projects = () => {
                         <p style = {{textAlign:"justify"}}>• La construction d’une école (d’un centre ) de formations professionnelles pour jeunes filles, filles-mères démunies ;</p><br />
                         <p style = {{textAlign:"justify"}}>• L’autonomisation de la femme congolaise par l’entrepreneuriat;</p><br />
                         <p style = {{textAlign:"justify"}}>• L’exploitation agricole en milieu rural pour lutter contre la malnutrition;</p><br />
-                        <p style = {{textAlign:"justify"}}>• L’implémentation de l’entreprise Oréal Paris à Kinshasa.</p><br />
+                        <p style = {{textAlign:"justify"}}>• L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p><br />
                     </Grid>
                     <Grid 
                         item
