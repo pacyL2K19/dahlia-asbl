@@ -221,17 +221,30 @@ const About = () => {
                     </Grid>
                 </Grid>
             </div>
-            <div id = 'mainContent' className = 'container'>
+            <div style = {{width : '100%', backgroundColor:'#926ba1', padding : 30, marginTop : -5}}>
+                <h3 style={{textAlign : 'center', color : "white", fontWeight : 'bold', fontSize:45}}>Notre Vision & Nos Objectifs</h3>
+            </div>
+            <div id = 'mainContent' style={{width : '100%'}}>
                 <Grid container>
                     <Grid 
                         item
                         xs = {12}
                         md = {12}
-                        lg = {6}
-                        xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                        lg = {4}
+                        xl = {4}    
                     >
-                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 30, marginTop : 30, marginBottom : 20, color : '#733b83'}}>Notre Vision & Nos Objectifs</h3><br />
+                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : '100%'}}>
+
+                        </div>
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {4}
+                        xl = {4}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
+                    >
                         <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br /><br />
                         <p style = {{textAlign:"justify"}}>Les circonstances fâcheuses de la vie et les obstacles, ne sont pas plus fort que cette énergie positive ; nous nous inscrivons dans la perspective de contribuer à une société congolaise dynamique, forte, harmonieuse où les droits fondamentaux et universels de la femme et des enfants vulnérables sont respectés et valorisés, ce qui garantit le progrès de notre nation congolaise et le travail mérité.</p>
                     </Grid>
@@ -239,10 +252,10 @@ const About = () => {
                         item
                         xs = {12}
                         md = {12}
-                        lg = {6}
-                        xl = {6}    
+                        lg = {4}
+                        xl = {4}    
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <div style = {{backgroundImage : 'url('+require('../images/gal24.jpeg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : '100%'}}>
 
                         </div>
                     </Grid>
