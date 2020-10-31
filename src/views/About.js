@@ -243,10 +243,13 @@ const About = () => {
                         md = {12}
                         lg = {4}
                         xl = {4}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 40}}  
                     >
-                        <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br /><br />
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Vision</h3>
+                        <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br />
                         <p style = {{textAlign:"justify"}}>Les circonstances fâcheuses de la vie et les obstacles, ne sont pas plus fort que cette énergie positive ; nous nous inscrivons dans la perspective de contribuer à une société congolaise dynamique, forte, harmonieuse où les droits fondamentaux et universels de la femme et des enfants vulnérables sont respectés et valorisés, ce qui garantit le progrès de notre nation congolaise et le travail mérité.</p>
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Objectifs</h3>
+                        <p style = {{textAlign:"justify"}}>Dahlia Asbl est une organisation à but non lucratif, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p><br />
                     </Grid>
                     <Grid 
                         item
@@ -265,10 +268,26 @@ const About = () => {
                         item
                         xs = {12}
                         md = {12}
-                        lg = {6}
-                        xl = {6}    
+                        lg = {4}
+                        xl = {4}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                     >
-                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
+                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
+                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {4}
+                        xl = {4}    
+                    >
+                        <div style = {{backgroundImage : 'url('+require('../images/gal22.jpeg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : '100%'}}>
 
                         </div>
                     </Grid>
@@ -276,11 +295,14 @@ const About = () => {
                         item
                         xs = {12}
                         md = {12}
-                        lg = {6}
-                        xl = {6}  
+                        lg = {4}
+                        xl = {4}  
                         style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                     >
-                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
+                        <div>
+                            
+                        </div>
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Nos champs d’intervention</h3><br />
                         <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
                         <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
                         <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
