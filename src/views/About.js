@@ -270,7 +270,7 @@ const About = () => {
                         md = {12}
                         lg = {4}
                         xl = {4}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                     >
                         <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
                         <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
@@ -297,18 +297,17 @@ const About = () => {
                         md = {12}
                         lg = {4}
                         xl = {4}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                     >
                         <div>
                             
                         </div>
                         <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Nos champs d’intervention</h3><br />
-                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
-                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
+                        <h5 style = {{textAlign:"justify"}}>Nos champs d’intervention sont repartis en 4 piliers :</h5>
+                        <p style = {{textAlign:"justify"}}>• La défense des droits humains et les droits de personnes vulnérables et démunies ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• L’éducation inclusive ( notamment les formations professionnelles, de métiers et les activités de rassemblement ayant pour but de redonner le sourire );</p><br />
+                        <p style = {{textAlign:"justify"}}>• La promotion du développement du capital humain ( par le biais de nos formations transformationnelles ) ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• L’orientation des femmes et les jeunes à l’entrepreneuriat, secteur pourvoyeur d’emplois et d’autonomisation en République Démocratique du Congo.</p><br />
                     </Grid>
                 </Grid>
             </div>
