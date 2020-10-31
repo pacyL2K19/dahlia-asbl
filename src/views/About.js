@@ -146,7 +146,7 @@ const About = () => {
                             md = {12}
                             lg = {4}
                             xl = {4}  
-                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                         >
                             <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
                             <p style = {{textAlign : 'justify'}}><b>Dahlia asbl</b> est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
@@ -169,7 +169,7 @@ const About = () => {
                             md = {12}
                             lg = {4}
                             xl = {4}  
-                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', padding : 30}}  
                         >
                             <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
                             <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p><br/>
@@ -179,7 +179,7 @@ const About = () => {
                 </Box>
             </div>
             <div id = 'iconSide'>
-                <div style = {{width : '100%', backgroundColor:'#926ba1', padding : 30}}>
+                <div style = {{width : '100%', backgroundColor:'#926ba1', padding : 30, marginTop : -5}}>
                     <h3 style={{textAlign : 'center', color : "white", fontWeight : 'bold', fontSize:45}}>Nos Valeurs</h3>
                 </div>
                 <Grid container>
@@ -218,6 +218,62 @@ const About = () => {
                         <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
                         <h2 style = {{textAlign : 'center'}}>Solidarité</h2>
                         <p style = {{textAlign : 'center'}}>Parce que les destins de la Nature et de l’Homme sont interdépendants, nous avons le devoir d’œuvrer pour la préservation de l’ensemble du vivant, aujourd’hui et pour demain.</p><br />
+                    </Grid>
+                </Grid>
+            </div>
+            <div id = 'mainContent' className = 'container'>
+                <Grid container>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
+                    >
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 30, marginTop : 30, marginBottom : 20, color : '#733b83'}}>Notre Vision & Nos Objectifs</h3><br />
+                        <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br /><br />
+                        <p style = {{textAlign:"justify"}}>Les circonstances fâcheuses de la vie et les obstacles, ne sont pas plus fort que cette énergie positive ; nous nous inscrivons dans la perspective de contribuer à une société congolaise dynamique, forte, harmonieuse où les droits fondamentaux et universels de la femme et des enfants vulnérables sont respectés et valorisés, ce qui garantit le progrès de notre nation congolaise et le travail mérité.</p>
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}    
+                    >
+                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+
+                        </div>
+                    </Grid>
+                </Grid>
+                <Grid container>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}    
+                    >
+                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
+
+                        </div>
+                    </Grid>
+                    <Grid 
+                        item
+                        xs = {12}
+                        md = {12}
+                        lg = {6}
+                        xl = {6}  
+                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                    >
+                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
+                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
+                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
+                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
                     </Grid>
                 </Grid>
             </div>
@@ -364,62 +420,6 @@ const About = () => {
                                 </Form>
                             </Fade>
                         </Modal>
-                    </Grid>
-                </Grid>
-            </div>
-            <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 45, marginTop : 30, marginBottom : 20, color : '#733b83'}}>Notre Vision & Nos Objectifs</h3><br />
-            <div id = 'mainContent' className = 'container'>
-                <Grid container>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
-                    >
-                        <p style = {{textAlign:"justify"}}><b>« La bonté de l’homme est une flamme qu’on peut cacher, mais qu’on ne peut pas éteindre. Oui, une énergie positive ne peut jamais disparaitre sans avoir impacté son périmètre carré. »</b></p><br /><br />
-                        <p style = {{textAlign:"justify"}}>Les circonstances fâcheuses de la vie et les obstacles, ne sont pas plus fort que cette énergie positive ; nous nous inscrivons dans la perspective de contribuer à une société congolaise dynamique, forte, harmonieuse où les droits fondamentaux et universels de la femme et des enfants vulnérables sont respectés et valorisés, ce qui garantit le progrès de notre nation congolaise et le travail mérité.</p>
-                    </Grid>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}    
-                    >
-                        <div style = {{backgroundImage : 'url('+require('../images/second.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
-
-                        </div>
-                    </Grid>
-                </Grid>
-                <Grid container>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}    
-                    >
-                        <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 400}}>
-
-                        </div>
-                    </Grid>
-                    <Grid 
-                        item
-                        xs = {12}
-                        md = {12}
-                        lg = {6}
-                        xl = {6}  
-                        style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
-                    >
-                        <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Notre Mission</h3><br />
-                        <h5 style = {{textAlign:"justify"}}>Dahlia asbl a pour mission de :</h5>
-                        <p style = {{textAlign:"justify"}}>• Donner aux enfants l’espoir à un avenir meilleur ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Apprendre aux enfants des valeurs morales pour leurs épanouissements ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
-                        <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
                     </Grid>
                 </Grid>
             </div>
