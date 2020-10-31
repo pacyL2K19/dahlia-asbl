@@ -150,7 +150,7 @@ const About = () => {
                         >
                             <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
                             <p style = {{textAlign : 'justify'}}><b>Dahlia asbl</b> est née de notre volonté de donner à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />
-                            <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p>
+                            <p style = {{textAlign : 'justify'}}>L’objet visé par Dahlia Asbl est d’apporter assistance, plaidoirie, défense, faire des recherches et des analyses des situations, éduquer ( former, informer et sensibiliser ), fédérer, accompagner, orienter et coordonner les initiatives et les volontés liées au développement durable en faveur des populations vulnérables et démunies tout en donnant à chaque femme et enfant les chances de réussir leur avenir.</p><br /><br />                            
                         </Grid>
                         <Grid 
                             item
@@ -186,10 +186,54 @@ const About = () => {
                             xl = {6}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
                         >
+                            <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p><br/>
                             <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
                         </Grid>
                     </Grid>
                 </Box>
+            </div>
+            <div id = 'iconSide'>
+                <div style = {{width : '100%', backgroundColor:'#926ba1', padding : 30}}>
+                    <h3 style={{textAlign : 'center', color : "white", fontWeight : 'bold', fontSize:45}}>Nos Valeurs</h3>
+                </div>
+                <Grid container>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
+                    >
+                        <img src = {dialogue} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Dialogue</h2>
+                        <p style = {{textAlign : 'center'}}>Parce que nous ne pouvons agir seuls, nous plaçons l’écoute, le respect, l’échange, la coopération et la proposition au cœur de nos actions.</p><br />
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#ffffff'}}
+                    >
+                        <img src = {cerveau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Sobriété</h2>
+                        <p style = {{textAlign : 'center'}}>Dans un monde où les espèces et les ressources naturelles se raréfient, où les inégalités se creusent, nous souhaitons distinguer l’essentiel du superflu.</p><br />
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {4}
+                        lg = {4}
+                        xl = {4}
+                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
+                    >
+                        <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
+                        <h2 style = {{textAlign : 'center'}}>Solidarité</h2>
+                        <p style = {{textAlign : 'center'}}>Parce que les destins de la Nature et de l’Homme sont interdépendants, nous avons le devoir d’œuvrer pour la préservation de l’ensemble du vivant, aujourd’hui et pour demain.</p><br />
+                    </Grid>
+                </Grid>
             </div>
             <div id = 'iconSide'>
                 <Grid container>
@@ -390,46 +434,6 @@ const About = () => {
                         <p style = {{textAlign:"justify"}}>• Faire la promotion de la femme dans le milieu professionnel;</p><br />
                         <p style = {{textAlign:"justify"}}>• Mettre sur pieds des projets de développement durable pouvant faciliter l’insertion socio-économique de la femme et de l’enfant ;</p><br />
                         <p style = {{textAlign:"justify"}}>• Soutenir la formation scolaire et la préparation professionnelle des enfants n’ayant pas la possibilité d’étudier.</p><br />
-                    </Grid>
-                </Grid>
-            </div>
-            <div id = 'iconSide'>
-                <Grid container>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {4}
-                        lg = {4}
-                        xl = {4}
-                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
-                    >
-                        <img src = {dialogue} alt = ''style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Dialogue</h2>
-                        <p style = {{textAlign : 'center'}}>Parce que nous ne pouvons agir seuls, nous plaçons l’écoute, le respect, l’échange, la coopération et la proposition au cœur de nos actions.</p><br />
-                    </Grid>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {4}
-                        lg = {4}
-                        xl = {4}
-                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#ffffff'}}
-                    >
-                        <img src = {cerveau} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Sobriété</h2>
-                        <p style = {{textAlign : 'center'}}>Dans un monde où les espèces et les ressources naturelles se raréfient, où les inégalités se creusent, nous souhaitons distinguer l’essentiel du superflu.</p><br />
-                    </Grid>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {4}
-                        lg = {4}
-                        xl = {4}
-                        style = {{display : 'flex', flexDirection : 'column', justifyContent : 'center', alignItems : 'center', padding : 50, height : 400, backgroundColor : '#F2F2F2'}}
-                    >
-                        <img src = {donataire} alt = '' style ={{height : 100, width : 100}}/> <br /><br />
-                        <h2 style = {{textAlign : 'center'}}>Solidarité</h2>
-                        <p style = {{textAlign : 'center'}}>Parce que les destins de la Nature et de l’Homme sont interdépendants, nous avons le devoir d’œuvrer pour la préservation de l’ensemble du vivant, aujourd’hui et pour demain.</p><br />
                     </Grid>
                 </Grid>
             </div>
