@@ -137,15 +137,15 @@ const About = () => {
                 <img src = {apropos} alt = ''/><br /><br />
                 <h2>À propos</h2>
             </div>
-            <div id = 'mainContent' className = 'container'>
+            <div id = 'mainContent' className = 'container-fluid'>
                 <Box data-os = 'fade-down'>
                     <Grid container>
                         <Grid 
                             item
                             xs = {12}
                             md = {12}
-                            lg = {6}
-                            xl = {6}  
+                            lg = {4}
+                            xl = {4}  
                             style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                         >
                             <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
@@ -156,23 +156,8 @@ const About = () => {
                             item
                             xs = {12}
                             md = {12}
-                            lg = {6}
-                            xl = {6}    
-                        >
-                            <div style = {{backgroundImage : 'url('+require('../images/toput.jpeg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
-
-                            </div>
-                        </Grid>
-                    </Grid>
-                </Box>
-                <Box data-aos = 'fade-up'>
-                    <Grid container>
-                        <Grid 
-                            item
-                            xs = {12}
-                            md = {12}
-                            lg = {6}
-                            xl = {6}    
+                            lg = {4}
+                            xl = {4}    
                         >
                             <div style = {{backgroundImage : 'url('+require('../images/first.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', height : 600}}>
 
@@ -182,12 +167,13 @@ const About = () => {
                             item
                             xs = {12}
                             md = {12}
-                            lg = {6}
-                            xl = {6}  
-                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingLeft : 30}}  
+                            lg = {4}
+                            xl = {4}  
+                            style = {{display : 'flex', justifyContent : 'center', flexDirection : 'column', paddingRight : 30}}  
                         >
+                            <h3 style={{textAlign:'center', fontWeight : 'bold', fontSize : 28, color : '#733b83'}}>Qui sommes-nous ?</h3><br />
                             <p style = {{textAlign : 'justify'}}>Chez Dahlia asbl, nous sommes convaincus que la connaissance et le savoir sont les clés d’un monde meilleur. Pourtant, l’accès à l’éducation ou/et la formation professionnelle reste encore une épreuve pour de nombreux jeunes à travers le monde.</p><br/>
-                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>
+                            <p style = {{textAlign : 'justify'}}>Dahlia asbl est une organisation non lucrative, qui a pour objectifs de promouvoir le bien être social des enfants défavorisés en général et particulièrement des femmes, et les personnes marginalisées dans la société par la rééducation, la réintégration, la réinsertion sociale et l’entraide.</p>                            
                         </Grid>
                     </Grid>
                 </Box>
