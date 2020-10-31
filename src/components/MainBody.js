@@ -185,10 +185,8 @@ const MainBody = () => {
                  </Grid>
             </div>
             <div style={{height : 400, width : '100%', backgroundImage : 'url('+require('../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat', paddingTop : 10, marginTop : '5%'}}>
-              <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white'}}>
-                Nos <br />
-                Réalisations <br />
-              </h2>
+                <p style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white', fontSize : 25}}><em>" Quand on a une vie meilleure que les autres,<br/> on construit une table longue,<br/> pas une clôture plus haute."</em></p>
+                <h2 style={{fontSize:25, textAlign:"end", marginRight : '5%', color:'white'}}>Nadège Dubier</h2>
             </div>
             <div id = 'videoBan' className = 'container'>
                 <Grid 
