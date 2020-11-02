@@ -15,10 +15,11 @@ const Projects = () => {
                 <img src = {vision} alt = ''/><br /><br />
                 <h2>Nos Projets</h2>
             </div>
-            <div style={{height : 450, backgroundImage : 'url('+require('../images/realisations.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', paddingTop : 300, width : '40%', marginLeft : 'auto', marginRight : 'auto', height : 250, marginBottom : 30}}>
-                <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat'}}>
+            <div style={{height : 450, backgroundImage : 'url('+require('../images/realisations.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', paddingTop : 300, borderRadius : 5}}>
+                <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', width : '40%', marginLeft : 'auto', marginRight : 'auto', height : 400, marginBottom : 20, display : 'flex', alignItems : 'center', justifyContent : 'center'}}>
                     <a rel = 'noopener noreferrer' target = '_blank' href = 'https://www.youtube.com/watch?v=73Yqk3ytXMs&t=32s'>
                         <img
+                            style={{height:80, width : 80, borderRadius : 5}}
                             src = {gifPlayer}
                             alt = ''
                             // to put request to youtube api before playing
@@ -26,7 +27,7 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
-            <div id = 'mainContent' className = 'container' style={{width : '40%', marginLeft : 'auto', marginRight : 'auto'}}>
+            <div id = 'mainContent' className = 'container' style={{width : '40%', marginLeft : 'auto', marginRight : 'auto', marginTop : 300}}>
                 <p style = {{textAlign:"center", color : '#733b83', fontSize : 28, fontWeight:'bold'}}>Nos projets en cours de planification et exécution à Kinshasa</p><br /><br />
                 <p style = {{textAlign:"justify"}}>• La construction d’une école (d’un centre ) de formations professionnelles pour jeunes filles, filles-mères démunies ;</p><br />
                 <p style = {{textAlign:"justify"}}>• L’autonomisation de la femme congolaise par l’entrepreneuriat;</p><br />
