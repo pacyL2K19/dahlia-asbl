@@ -13,8 +13,8 @@ import ProjectsE from '../views/Eng/Projects';
 import ContactsE from '../views/Eng/Contacts';
 import DonateE from '../views/Eng/Donate';
 import FounderE from '../views/Eng/Founder';
-import flagFr from '../images/fr.jpeg';
-import flagEn from '../images/engl.jpeg';
+// import flagFr from '../images/fr.jpeg';
+// import flagEn from '../images/engl.jpeg';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -57,10 +57,10 @@ export const Navbar = () => {
                                 <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 20, width : 20}} src = {flagFr} alt = '' /></Link> 
+                                <Link to = {'/'} style={{color : '#55226a'}}><b onClick = {() => setLang('fr')}>| FR |</b></Link> 
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/en/'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
+                                <Link to = {'/en/'} style={{color : '#55226a'}}><b onClick = {() => setLang('en')}>| EN |</b></Link> 
                             </div>
                         </div>
                     </section>
@@ -175,10 +175,10 @@ export const Navbar = () => {
                                 <a target = '_blank' rel = 'noopeneer noreferrer' href = 'https://www.youtube.com/channel/UC7wb77U1XgDdIYDMm1nX_jQ'><i className = 'fa fa-youtube'></i></a>
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/'}><img onClick = {() => setLang('fr')} style={{height : 20, width : 20}} src = {flagFr} alt = '' /></Link> 
+                                <Link to = {'/'} style={{color : '#55226a'}}><b onClick = {() => setLang('fr')}>| FR |</b></Link> 
                             </div>
                             <div style = {{ alignSelf : "center", alignContent : 'center', marginTop : 10, padding : 20}}>
-                                <Link to = {'/en/'}><img onClick = {() => setLang('en')} style={{height : 20, width : 20}} src = {flagEn} alt = '' /></Link> 
+                                <Link to = {'/en/'} style={{color : '#55226a'}}><b onClick = {() => setLang('en')}>| EN |</b></Link> 
                             </div>
                         </div>
                     </section>
