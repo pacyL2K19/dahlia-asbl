@@ -5,10 +5,6 @@ import Footer from '../../components/Eng/Footer';
 //images 
 
 import vision from '../../images/pro.png';
-import support from '../../images/Volunteer.png';
-import donataire from '../../images/donataire.png';
-import dialogue from '../../images/dialogue.png';
-import cerveau from '../../images/cerveau.png';
 import { Grid } from '@material-ui/core';
 
 const ProjectsE = () => {
