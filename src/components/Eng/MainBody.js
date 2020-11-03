@@ -179,10 +179,8 @@ const MainBody = () => {
                  </Grid>
             </div>
             <div style={{height : 400, width : '100%', backgroundImage : 'url('+require('../../images/bloc.jpg')+')', backgroundSize : 'cover', backgroundPosition : 'center', backgroundRepeat : 'no-repeat', paddingTop : 10, marginTop : '5%'}}>
-              <h2 style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white'}}>
-                Our <br />
-                Achievements <br />
-              </h2>
+                <p style = {{textAlign : 'end', marginRight : '5%', marginTop : '5%', color : 'white', fontSize : 25}}><em>" When you have a better life than others, <br/> you build a long table, <br/> not a taller fence. "</em></p>
+                <h2 style={{fontSize:25, textAlign:"end", marginRight : '5%', color:'white'}}>Nadège Dubier</h2>
             </div>
             <div id = 'videoBanE' className = 'container'>
                 <Grid 

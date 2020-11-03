@@ -19,7 +19,7 @@ const Projects = () => {
                 <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/Famille.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', width : '40%', marginLeft : 'auto', marginRight : 'auto', height : 400, marginBottom : 20, display : 'flex', alignItems : 'center', justifyContent : 'center'}}>
                     <a rel = 'noopener noreferrer' target = '_blank' href = 'https://www.youtube.com/watch?v=73Yqk3ytXMs&t=32s'>
                         <img
-                            style={{height:80, width : 80, borderRadius : 5}}
+                            style={{height:80, width : 80, borderRadius : 40}}
                             src = {gifPlayer}
                             alt = ''
                             // to put request to youtube api before playing
