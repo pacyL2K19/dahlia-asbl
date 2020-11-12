@@ -6,6 +6,10 @@ import Footer from '../../components/Eng/Footer';
 
 import vision from '../../images/pro.png';
 import gifPlayer from '../../images/playing.gif';
+import agri from '../images/agri.jpg';
+import auto from '../../images/autonomie.jpg';
+import ecole from '../../images/ecole.jpg';
+import loreal from '../../images/loreal.jpg';
 
 const ProjectsE = () => {
     return (
@@ -28,10 +32,52 @@ const ProjectsE = () => {
             </div>
             <div id = 'mainContent' className = 'container' style={{width : '40%', marginLeft : 'auto', marginRight : 'auto', marginTop : 300}}>
                 <p style = {{textAlign: "center", color: '#733b83', fontSize: 28, fontWeight: 'bold'}}> Our projects in planning and execution in Kinshasa </p> <br /> < br />
-                <p style = {{textAlign: "justify"}}> • The construction of a school (center) for vocational training for poor young girls and single mothers; </p> <br />
-                <p style = {{textAlign: "justify"}}> • Empowerment of Congolese women through entrepreneurship; </p> <br />
-                <p style = {{textAlign: "justify"}}> • Farming in rural areas to fight against malnutrition; </p> <br />
-                <p style = {{textAlign: "justify"}}> • The implementation of the <b>l'Oréal Paris company</b> in Kinshasa. </p> <br />
+                <Grid container style={{pading: 50}}>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {6}
+                        lg = {6}
+                        xl = {6}
+                        style={{padding: 10}}
+                    >
+                        <img src = {ecole} alt = 'image' style={{width: '100%'}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The construction of a school (center) for vocational training for poor young girls and single mothers</p>
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {6}
+                        lg = {6}
+                        xl = {6}
+                        style={{padding: 10}}
+                    >
+                        <img src = {auto} alt = 'image' style={{width: '100%'}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Empowerment of Congolese women through entrepreneurship</p>
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {6}
+                        lg = {6}
+                        xl = {6}
+                        style={{padding: 10}}
+                    >
+                        <img src = {agri} alt = 'image' style={{width: '100%'}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Farming in rural areas to fight against malnutrition</p>
+                    </Grid>
+                    <Grid
+                        item
+                        xs = {12}
+                        md = {6}
+                        lg = {6}
+                        xl = {6}
+                        style={{padding: 10}}
+                    >
+                        <img src = {loreal} alt = 'image' style={{width: '100%'}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
+                    </Grid>
+                </Grid>
             </div>
             <PreFooter />
             <Footer />
