@@ -43,7 +43,7 @@ const Projects = () => {
                         xl = {6}
                         style={{padding: 10}}
                     >
-                        <img src = {ecole} alt = 'image' style={{width: '100%'}} />
+                        <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>La construction d’une école (d’un centre ) de formations professionnelles pour jeunes filles, filles-mères démunies</p>
                     </Grid>
                     <Grid
@@ -54,7 +54,7 @@ const Projects = () => {
                         xl = {6}
                         style={{padding: 10}}
                     >
-                        <img src = {auto} alt = 'image' style={{width: '100%'}} />
+                        <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p>
                     </Grid>
                     <Grid
@@ -65,7 +65,7 @@ const Projects = () => {
                         xl = {6}
                         style={{padding: 10}}
                     >
-                        <img src = {agri} alt = 'image' style={{width: '100%'}} />
+                        <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’exploitation agricole en milieu rural pour lutter contre la malnutrition</p>
                     </Grid>
                     <Grid
@@ -76,7 +76,7 @@ const Projects = () => {
                         xl = {6}
                         style={{padding: 10}}
                     >
-                        <img src = {loreal} alt = 'image' style={{width: '100%'}} />
+                        <img src = {loreal} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p>
                     </Grid>
                 </Grid>
