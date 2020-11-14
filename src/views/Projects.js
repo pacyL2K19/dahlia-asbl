@@ -33,7 +33,7 @@ const Projects = () => {
                 </div>
             </div>
             <div id = 'mainContent' style={{marginTop : 380}}>
-                <p style = {{textAlign:"center", color : '#733b83', fontSize : 28, fontWeight:'bold'}}>Nos projets en cours de planification et exécution à Kinshasa</p><br /><br />
+                <p style = {{textAlign:"center", color : '#733b83', fontSize : 35, fontWeight:'bold'}}>Nos projets en cours de planification et exécution à Kinshasa</p><br />
                 <Grid container style={{pading: 50}}>
                     <Grid
                         item
@@ -44,7 +44,7 @@ const Projects = () => {
                         style={{padding: 10}}
                     >
                         <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>La construction d’une école (d’un centre ) de formations professionnelles pour jeunes filles, filles-mères démunies</p>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>La construction d’une école (d’un centre ) de formations professionnelles pour jeunes filles, filles-mères démunies</p> */}
                     </Grid>
                     <Grid
                         item
@@ -55,7 +55,7 @@ const Projects = () => {
                         style={{padding: 10}}
                     >
                         <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
                     </Grid>
                     <Grid
                         item
@@ -66,7 +66,7 @@ const Projects = () => {
                         style={{padding: 10}}
                     >
                         <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’exploitation agricole en milieu rural pour lutter contre la malnutrition</p>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’exploitation agricole en milieu rural pour lutter contre la malnutrition</p> */}
                     </Grid>
                     <Grid
                         item
@@ -77,7 +77,7 @@ const Projects = () => {
                         style={{padding: 10}}
                     >
                         <img src = {loreal} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p> */}
                     </Grid>
                 </Grid>
             </div>

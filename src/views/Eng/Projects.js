@@ -33,7 +33,7 @@ const ProjectsE = () => {
                 </div>
             </div>
             <div id = 'mainContent' className = 'container' style={{marginTop : 380}}>
-                <p style = {{textAlign: "center", color: '#733b83', fontSize: 28, fontWeight: 'bold'}}> Our projects in planning and execution in Kinshasa </p> <br /> < br />
+                <p style = {{textAlign: "center", color: '#733b83', fontSize: 35, fontWeight: 'bold'}}> Our projects in planning and execution in Kinshasa </p> <br />
                 <Grid container style={{pading: 50}}>
                     <Grid
                         item
@@ -41,10 +41,10 @@ const ProjectsE = () => {
                         md = {6}
                         lg = {6}
                         xl = {6}
-                        style={{padding: 10, backgroundImage: 'url('+require('../../images/ecole.jpg')+')', height: 424, backgroundPosition:'center', backgroundSize:'100%'}}
+                        style={{padding: 10}}
                     >
-                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', }} /> */}
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The construction of<br/> a school (center) for vocational<br/> training for poor young girls and single mothers</p> */}
+                        <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The construction of a school (center) for vocational training for poor young girls and single mothers</p>
                     </Grid>
                     <Grid
                         item
@@ -52,10 +52,10 @@ const ProjectsE = () => {
                         md = {6}
                         lg = {6}
                         xl = {6}
-                        style={{padding: 10, height: 424, backgroundImage: 'url('+require('../../images/autonomie.jpg')+')', backgroundPosition: 'center', backgroundSize: '100%'}}
+                        style={{padding: 10}}
                     >
-                        {/* <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Empowerment<br/> of Congolese women<br/> through entrepreneurship</p> */}
+                        <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Empowerment of Congolese women through entrepreneurship</p>
                     </Grid>
                     <Grid
                         item
@@ -63,10 +63,10 @@ const ProjectsE = () => {
                         md = {6}
                         lg = {6}
                         xl = {6}
-                        style={{padding: 10, height: 424, backgroundImage: 'url('+require('../../images/agri.jpg')+')', backgroundPosition: 'center', backgroundSize: '100%'}}
+                        style={{padding: 10}}
                     >
-                        {/* <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Farming in<br/> rural areas to fight<br/> against malnutrition</p> */}
+                        <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Farming in rural areas to fight against malnutrition</p>
                     </Grid>
                     <Grid
                         item
@@ -74,10 +74,10 @@ const ProjectsE = () => {
                         md = {6}
                         lg = {6}
                         xl = {6}
-                        style={{padding: 10, height: 424, backgroundImage: 'url('+require('../../images/loreal.jpg')+')', backgroundPosition: 'center', backgroundSize: '100%'}}
+                        style={{padding: 10}}
                     >
-                        {/* <img src = {loreal} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        {/* <p style = {{textAlign:"left", backgroundColor: 'white',color:'', fontWeight: 'bold', marginTop: 15}}>The implementation<br/> of the <b>l'Oréal Paris company</b><br/> in Kinshasa.</p> */}
+                        <img src = {loreal} alt = 'image' style={{width: '100%', height: 400}} />
+                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
                     </Grid>
                 </Grid>
             </div>
