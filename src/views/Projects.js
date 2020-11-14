@@ -21,7 +21,7 @@ const Projects = () => {
                 <h2>Nos Projets</h2>
             </div>
             <div style={{height : 450, backgroundImage : 'url('+require('../images/realisations.jpg')+')', backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', paddingTop : 300, borderRadius : 5}}>
-                <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/boss1.jpg')+')',  backgroundPosition : 'center', backgroundSize : 'cover', backgroundRepeat : 'no-repeat', width : '35%', marginLeft : 'auto', marginRight : 'auto', height : 500, marginBottom : 20, display : 'flex', alignItems : 'center', justifyContent : 'center'}}>
+                <div className = 'videoBack' style = {{ backgroundImage : 'url('+require('../images/boss1.jpg')+')',  backgroundPosition : 'center', backgroundSize : '90%', backgroundRepeat : 'no-repeat', width : '35%', marginLeft : 'auto', marginRight : 'auto', height : 500, marginBottom : 20, display : 'flex', alignItems : 'center', justifyContent : 'center'}}>
                     <a rel = 'noopener noreferrer' target = '_blank' href = 'https://www.youtube.com/watch?v=73Yqk3ytXMs&t=32s'>
                         <img
                             style={{height:80, width : 80, borderRadius : 40}}
