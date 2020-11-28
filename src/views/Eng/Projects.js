@@ -44,7 +44,7 @@ const ProjectsE = () => {
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
                         {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        <p style = {{textAlign:"justify", fontSize: 28, fontWeight: 'bold', marginTop: 0}}  classNames="uppercase">The construction of a school (center) for vocational training for poor young girls and single mothers</p>
+                        <p style = {{textAlign:"justify", fontSize:  32, fontWeight: 'bold', marginTop: 0}}  classNames="uppercase">The construction of a school (center) for vocational training for poor young girls and single mothers</p>
                     </Grid>
                     <Grid
                         item
@@ -65,7 +65,7 @@ const ProjectsE = () => {
                         xl = {6}
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
-                        <p style = {{textAlign:"justify", fontSize: 28, fontWeight: 'bold', marginTop: 0}}>Empowerment of Congolese women through entrepreneurship</p>
+                        <p style = {{textAlign:"justify", fontSize: 32, fontWeight: 'bold', marginTop: 0}}>Empowerment of Congolese women through entrepreneurship</p>
                         {/* <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} /> */}
                         {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’exploitation agricole en milieu rural pour lutter contre la malnutrition</p> */}
                     </Grid>
@@ -89,7 +89,7 @@ const ProjectsE = () => {
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
                         {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        <p style = {{textAlign:"justify", fontSize: 28, fontWeight: 'bold', marginTop: 0}}>Farming in rural areas to fight against malnutrition</p>
+                        <p style = {{textAlign:"justify", fontSize: 32, fontWeight: 'bold', marginTop: 0}}>Farming in rural areas to fight against malnutrition</p>
                     </Grid>
                     <Grid
                         item
@@ -111,7 +111,7 @@ const ProjectsE = () => {
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
                         {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
-                        <p style = {{textAlign:"justify", fontSize: 28, fontWeight: 'bold', marginTop: 0}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
+                        <p style = {{textAlign:"justify", fontSize: 32, fontWeight: 'bold', marginTop: 0}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
                     </Grid>
                     <Grid
                         item
