@@ -32,7 +32,7 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
-            <div id = 'mainContent' style={{marginTop : 380}}>
+            <div id = 'mainContent' className = 'container' style={{marginTop : 380}}>
                 <p style = {{textAlign:"center", color : '#733b83', fontSize : 35, fontWeight:'bold'}}>Nos projets en cours de planification et exécution à Kinshasa</p><br />
                 <Grid container style={{pading: 80}} className="container">
                     <Grid
