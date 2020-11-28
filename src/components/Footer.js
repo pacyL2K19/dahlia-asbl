@@ -14,7 +14,7 @@ import nineth from '../images/nineth.JPG';
 const Footer = () => {
     return (
         <div id = 'footer'>
-                        <div className = 'mainFooter'>
+            <div className = 'mainFooter'>
                 <div className = 'container'>
                     <Grid container>
                         <Grid
