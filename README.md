@@ -8,6 +8,7 @@
 > Desktop version 
 ![screenshot](public/dahlia1.PNG)
 ![screenshot](public/dahlia2.PNG)
+>> This website is bilingual
 ![screenshot](public/dahlia3.PNG)
 
 > Tablet version 
