@@ -25,7 +25,6 @@ const ProjectsE = () => {
                             style={{height:80, width : 80, borderRadius : 40}}
                             src = {gifPlayer}
                             alt = ''
-                            // to put request to youtube api before playing
                         />  
                     </a>
                 </div>
@@ -41,7 +40,6 @@ const ProjectsE = () => {
                         xl = {6}
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
-                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
                         <p style = {{fontSize:  32, fontWeight: 'bold', marginTop: 0}}  classNames="uppercase">The construction of a school (center) for vocational training for poor young girls and single mothers</p>
                     </Grid>
                     <Grid
@@ -76,7 +74,6 @@ const ProjectsE = () => {
                         style={{padding: 10}}
                     >
                         <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} />
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p> */}
                     </Grid>
                     <Grid
                         item
