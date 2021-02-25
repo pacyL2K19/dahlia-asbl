@@ -102,7 +102,7 @@ const Projects = () => {
                         <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
                         {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
                     </Grid>
-                    <Grid
+{/*<Grid
                         item
                         xs = {12}
                         md = {6}
@@ -110,7 +110,7 @@ const Projects = () => {
                         xl = {6}
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
-                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
+                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{fontSize: 32, fontWeight: 'bold', marginTop: 0}}>L’implémentation de l’entreprise <b>l'Oréal Paris</b> à Kinshasa.</p>
                     </Grid>
                     <Grid
@@ -122,8 +122,8 @@ const Projects = () => {
                         style={{padding: 10}}
                     >
                         <img src = {loreal} alt = 'image' style={{width: '100%', height: 400, borderStyle: "solid", borderWidth: 1, borderColor: '#733b83', borderRadius: 10}} />
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
-                    </Grid>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p>
+                    </Grid>*/}
                 </Grid>
             </div>
             <PreFooter />
