@@ -102,7 +102,7 @@ const Projects = () => {
                         <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
                         {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
                     </Grid>
-{/*<Grid
+                    {/*<Grid
                         item
                         xs = {12}
                         md = {6}
