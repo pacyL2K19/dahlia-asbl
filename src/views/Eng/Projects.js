@@ -1,8 +1,6 @@
 import React from 'react';
 import PreFooter from '../../components/Eng/PreFooter';
-import Footer from '../../components/Eng/Footer'; 
-
-//images 
+import Footer from '../../components/Eng/Footer';
 
 import {Grid} from '@material-ui/core';
 
@@ -102,7 +100,7 @@ const ProjectsE = () => {
                         <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
                         {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
                     </Grid>
-                    <Grid
+                    {/*<Grid
                         item
                         xs = {12}
                         md = {6}
@@ -110,7 +108,7 @@ const ProjectsE = () => {
                         xl = {6}
                         style={{paddingTop: 0, paddingLeft: 10, paddingRight: 10}}
                     >
-                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} /> */}
+                        {/* <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
                         <p style = {{fontSize: 32, fontWeight: 'bold', marginTop: 0}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
                     </Grid>
                     <Grid
@@ -122,55 +120,9 @@ const ProjectsE = () => {
                         style={{padding: 10}}
                     >
                         <img src = {loreal} alt = 'image' style={{width: '100%', height: 400, borderStyle: "solid", borderWidth: 1, borderColor: '#733b83', borderRadius: 10}} />
-                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> */}
-                    </Grid>
+                        {/* <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>L’autonomisation de la femme congolaise par l’entrepreneuriat</p> 
+                    </Grid>*/}
                 </Grid>
-                {/* <Grid container style={{pading: 50}}>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {6}
-                        lg = {6}
-                        xl = {6}
-                        style={{padding: 10}}
-                    >
-                        <img src = {ecole} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The construction of a school (center) for vocational training for poor young girls and single mothers</p>
-                    </Grid>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {6}
-                        lg = {6}
-                        xl = {6}
-                        style={{padding: 10}}
-                    >
-                        <img src = {auto} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Empowerment of Congolese women through entrepreneurship</p>
-                    </Grid>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {6}
-                        lg = {6}
-                        xl = {6}
-                        style={{padding: 10}}
-                    >
-                        <img src = {agri} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>Farming in rural areas to fight against malnutrition</p>
-                    </Grid>
-                    <Grid
-                        item
-                        xs = {12}
-                        md = {6}
-                        lg = {6}
-                        xl = {6}
-                        style={{padding: 10}}
-                    >
-                        <img src = {loreal} alt = 'image' style={{width: '100%', height: 400}} />
-                        <p style = {{textAlign:"justify", fontWeight: 'bold', marginTop: 15}}>The implementation of the <b>l'Oréal Paris company</b> in Kinshasa.</p>
-                    </Grid>
-                </Grid> */}
             </div>
             <PreFooter />
             <Footer />
