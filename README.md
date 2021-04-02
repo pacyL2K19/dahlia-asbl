@@ -27,7 +27,7 @@
 
 ## Live link
 
-[Live Demo Link](https://dahlia-asbl.org/)
+[Live Demo](https://dahlia-asbl.org/)
 
 ## Getting Started
 
